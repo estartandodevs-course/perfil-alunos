@@ -1,0 +1,40 @@
+/*IMPORTS*/
+
+@import url("reset.css");
+@import url("nav.css");
+
+/*MAIN CSS*/
+
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+div.welcome p {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+div.welcome h1 {
+    font-size: 6.5rem;
+    letter-spacing: 0.9rem;
+}
+
+div.welcome h2 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+div.btnAbout a:hover {
+    color: #21bf73;
+}
