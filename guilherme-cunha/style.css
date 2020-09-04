@@ -1,0 +1,106 @@
+body{
+    background-color: #d9e7ff;
+}
+#orkut{
+    background-color: rgb(105, 144, 252);
+    padding: 7px 0 7px 0;
+}
+.perfil{
+   padding: 3px 12px 20px 3px; 
+   margin: 5px 0 0 0;
+   background-color: white;
+}
+#inicio{
+    font-size: small;
+    color: rgb(72, 121, 255);
+}
+.texts{
+    font-size: medium;
+    color: rgb(184, 184, 184);
+}
+h1{
+    margin-bottom: 0;
+}
+h2{
+    margin-top: 0;
+    font-size: small;
+    color: rgb(184, 184, 184);
+}
+#box{
+  border: 1px solid rgb(184, 184, 184); 
+  width: 380px;
+}
+button{
+    color:rgb(72, 121, 255);
+    background-color: white;
+    border: 2px solid rgb(184, 184, 184);
+    margin: 0 0 0 12px;
+}
+#box_text{
+    margin: 0 0 0 0;
+}
+.icon{
+    width: 30px;
+    height: 15px;
+    margin: 0;
+}
+.iconC{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+#things{
+    border-top: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+    margin-top: 20px;
+}
+.things-text{
+    margin: 0 5px 0 0;
+}
+#social{
+    font-size: medium;
+    color: white;
+    background-color: rgb(88, 110, 172);
+    width: 40px;
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#about-you{
+    border-top: 1px solid rgb(184, 184, 184);
+}
+.about-you-impar{
+    font-size: medium;
+    color: rgb(153, 153, 153);
+    background-color: rgb(186, 203, 250);
+    margin: 0;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+.about-you-par{
+    font-size: medium;
+    color: rgb(153, 153, 153);
+    background-color: rgb(214, 223, 252);
+    margin: 0;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+#aby1{
+    margin: 10px 0 0 0;
+}
+.page-organization{
+    display: flex;
+    justify-content: center;
+}
+#left-side{
+    background-color: white;
+    margin: 5px 10px 0 0;
+    padding-left: 200px;
+}
+#right-side{
+    background-color: white;
+    margin: 5px 0 0 10px;
+    padding-right: 200px;
+}
