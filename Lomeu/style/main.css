@@ -1,7 +1,11 @@
 /*IMPORTS*/
 
 @import url("reset.css");
+@import url("default.css");
 @import url("nav.css");
+@import url("sobre.css");
+@import url("projetos.css");
+@import url("contato.css");
 
 /*MAIN CSS*/
 
@@ -11,7 +15,17 @@ body {
     color: white;
 }
 
-main {
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
+
+header h1:hover {
+    color: #21bf73;
+    cursor: pointer;
+}
+
+section#home {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -30,11 +44,16 @@ div.welcome h1 {
     letter-spacing: 0.9rem;
 }
 
+div.welcome h1:hover {
+    color: #21bf73;
+    cursor: pointer;
+}
+
 div.welcome h2 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
 }
 
-div.btnAbout a:hover {
+div.btnSobre a:hover {
     color: #21bf73;
 }

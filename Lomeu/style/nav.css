@@ -1,15 +1,15 @@
-main nav {
+section nav {
     display: flex;
     font-size: 1.5rem;
 }
 
-main nav a {
+section nav a {
     text-decoration: none;
     list-style-type: none;
     text-transform: uppercase;
     margin: 0 20px;
 }
 
-main nav a:hover {
+section nav a:hover {
     color: #21bf73;
 }
