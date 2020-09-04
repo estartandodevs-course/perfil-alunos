@@ -1,5 +1,5 @@
 name: Discord Commits
-        uses: Sniddl/discord-commits@v1.2
+        uses: "Sniddl/discord-commits@v1.2"
         with:
           webhook: ${{ secrets.DISCORD }}
           message: "Successful commit to **{{ github.context.payload.repository.owner.name }}/{{ github.context.payload.repository.name}}**.\nDiff: {{ github.context.payload.compare }}"
