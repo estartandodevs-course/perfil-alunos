@@ -34,10 +34,10 @@ button{
     color:rgb(72, 121, 255);
     background-color: white;
     border: 2px solid rgb(184, 184, 184);
-    margin: 0 0 0 12px;
+    margin: 0 0 0 2px;
 }
 #box_text{
-    margin: 0 0 0 0;
+    margin: 0 0 0 5px;
 }
 .icon{
     width: 30px;
@@ -50,9 +50,12 @@ button{
     margin: 0 3px 0 0;
 }
 #things{
+    
+}
+#things-border{
+    margin-top: 20px;
     border-top: 1px solid rgb(184, 184, 184);
     border-bottom: 1px solid rgb(184, 184, 184);
-    margin-top: 20px;
 }
 .things-text{
     margin: 0 5px 0 0;
@@ -139,8 +142,63 @@ button{
     background-color: rgb(214, 223, 252);
 }
 #right-side{
-    background-color: white;
     margin: 5px 0 0 10px;
-    padding-right: 200px;
 }
-
+#friends{
+    background-color: white;
+    padding: 0 10px 2px 0;
+    margin-bottom: 5px;
+}
+#adding-friends{
+    font-size: small;
+    color: rgb(235, 235, 235);
+    background-color: rgb(180, 208, 252);
+    width: max-content;
+    margin: 3px 3px 10px 3px;
+    padding: 2px;
+}
+#community{
+    background-color: white;
+    padding: 0 0 2px 0;
+}
+#right-side h3{
+    font-size: medium;
+    width: max-content;
+    margin: 0 0 0 5px;
+}
+.friend-community-number{
+    margin: 0;
+    color: rgb(64, 109, 233);
+    font-size: medium;
+}
+#community-ajust{
+    display: flex;
+    justify-content: center;
+}
+#community-place1{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#community-place2{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#community-place3{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#see-all{
+    font: small;
+    color: rgb(64, 109, 233);
+    text-decoration: rgb(64, 109, 233) underline;
+    margin: 0 0 0 5px;
+}
