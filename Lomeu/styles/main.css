@@ -6,17 +6,18 @@
 @import url("sobre.css");
 @import url("projetos.css");
 @import url("contato.css");
+@import url("mediaquerie.css");
 
 /*MAIN CSS*/
 
 body {
-    background-image: url(../img/bg.png);
+    background-image: url(../assets/img/bg.png);
     background-size: cover;
     color: white;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 1rem;
 }
 

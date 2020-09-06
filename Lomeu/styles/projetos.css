@@ -34,6 +34,7 @@ div.projetos figure figcaption {
 div.projetos figure:hover {
     border-color: #21bf73;
     color: #21bf73;
+    cursor: pointer;
 }
 
 div.projetos img {
