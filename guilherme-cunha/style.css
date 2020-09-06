@@ -3,7 +3,43 @@ body{
 }
 #orkut{
     background-color: rgb(105, 144, 252);
-    padding: 7px 0 7px 0;
+}
+#orkut-organization{
+    display: flex;
+}
+#orkut-icon{
+   margin: 1px 15px 1px 5px;
+}
+.td-options{
+    color: white;
+    margin-right: 15px;
+}
+#email-sair-search{
+   position: absolute;
+   right: 0;
+}
+#sair{
+    color: white;
+    margin-right: 210px;
+}
+#email{
+    color: white;
+    margin-right: 10px;
+}
+#search{
+    background-color: rgb(54, 62, 172);
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    margin: 10px 20px 0 10px;
+}
+#search p {
+    background-color: white;
+    padding: 1px 2px 1px 2px;
+    margin: 5px 5px 5px 2px;
+    text-align: center;
+    color: rgb(184, 184, 184);
 }
 .perfil{
    padding: 3px 12px 20px 3px; 
@@ -48,9 +84,6 @@ button{
     width: 15px;
     height: 15px;
     margin: 0 3px 0 0;
-}
-#things{
-    
 }
 #things-border{
     margin-top: 20px;
