@@ -16,11 +16,11 @@ div.projetosImg {
     display: flex;
     flex-wrap: wrap;
     max-width: 900px;
-    margin: 0 10px;
+    margin: 2rem 0.8rem;
 }
 
 div.projetos figure {
-    margin: 20px auto;
+    margin: 1.1rem auto;
     border: 4px solid #000;
     border-radius: 3px;
     background-color: #000;

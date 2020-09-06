@@ -19,6 +19,7 @@ body {
 header h1 {
     font-size: 4rem;
     letter-spacing: 1rem;
+    margin: 2rem 0;
 }
 
 header h1:hover {
