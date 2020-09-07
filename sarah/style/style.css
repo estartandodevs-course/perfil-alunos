@@ -1,0 +1,90 @@
+/* GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/bg.jpg");
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* INTRODUAÇÃO */
+
+.menu-navegacao {
+    width: 100vw;
+    height: 50px;
+    display: block;
+}
+
+.menu-navegacao nav {
+    padding: 14px 100px;
+    float: right;
+}
+
+.menu-navegacao a {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.menu-navegacao a:hover {
+    color: #FF5E84;
+}
+
+/* INTRODUÇÃO */
+
+.intro-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.introducao {
+    display: block;
+    padding-top: 290px;
+    border: 2px solid yellow;
+}
+
+.introducao h1 {
+    font-size: 36px;
+    font-weight: normal;
+    
+}
+
+.introducao span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.introducao a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.introducao a > span {
+    color: transparent;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.introducao a:hover {
+    color: #FF5E84;
+    font-weight: bold;
+}
+
+.introducao a > span:hover {
+    color: #FF5E84;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
