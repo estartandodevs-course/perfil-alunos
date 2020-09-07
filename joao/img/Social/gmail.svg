@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="202" viewBox="0 0 197 202">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="GitHub" width="197" height="202" transform="translate(418 188)" fill="#d6d6d6"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_6" data-name="Grupo de máscara 6" transform="translate(-418 -188)" clip-path="url(#clip-path)">
+    <g id="Gmail" transform="translate(418 190.5)">
+      <rect id="Retângulo_10" data-name="Retângulo 10" width="197" height="197" rx="29.55" fill="#fff"/>
+      <path id="Caminho_12" data-name="Caminho 12" d="M46.172,150.828v-92.7H150.828v92.7" fill="#f2f2f2"/>
+      <path id="Caminho_13" data-name="Caminho 13" d="M98.5,109.658l-52.328,41.17-1.539-81.57" fill="rgba(0,0,0,0.05)"/>
+      <path id="Caminho_14" data-name="Caminho 14" d="M46.172,150.828h-8.85a8.628,8.628,0,0,1-8.465-8.85V55.021H46.172Z" fill="#d54c3f"/>
+      <path id="Caminho_15" data-name="Caminho 15" d="M121.971,150.828H151.6V61.178H31.551" fill="rgba(0,0,0,0.08)"/>
+      <path id="Caminho_16" data-name="Caminho 16" d="M37.322,46.557H159.678L98.5,90.035" fill="#f2f2f2"/>
+      <path id="Caminho_17" data-name="Caminho 17" d="M150.828,150.828h8.85a8.628,8.628,0,0,0,8.465-8.85V55.021H150.828Z" fill="#b63524"/>
+      <path id="Caminho_18" data-name="Caminho 18" d="M37.322,55.021,98.5,99.27l61.178-44.248" fill="none" stroke="#de5145" stroke-linecap="round" stroke-width="16.93"/>
+    </g>
+  </g>
+</svg>
