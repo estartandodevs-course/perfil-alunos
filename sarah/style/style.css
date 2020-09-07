@@ -6,7 +6,8 @@
 }
 
 body {
-    background: url("../img/bg.jpg");
+    background: url("../img/bg2.jpg");
+    background-size: cover;
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -42,18 +43,15 @@ body {
 .intro-container {
     width: 100vw;
     height: 100vh;
-}
-
-.introducao {
-    display: block;
-    padding-top: 290px;
-    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .introducao h1 {
     font-size: 36px;
-    font-weight: normal;
-    
+    font-weight: normal; 
 }
 
 .introducao span {
@@ -63,24 +61,37 @@ body {
 
 .introducao a {
     text-decoration: none;
-    color: #FFF;
+    color: #FF5E84;
+    font-weight: bold;
 }
 
-.introducao a > span {
-    color: transparent;
-    font-size: 36px;
-    font-weight: normal;
-}
 
 .introducao a:hover {
-    color: #FF5E84;
+    color: #FFF;
     font-weight: bold;
 }
 
-.introducao a > span:hover {
-    color: #FF5E84;
-    font-weight: bold;
+
+.introducao ul li {
+    margin: 20px 5px;
+    display: inline-block;
 }
+
+.introducao svg, .next svg {
+    width: 52px;
+    height: 52px;
+    fill: #FFF;
+}
+
+.introducao svg:hover, .next svg:hover {
+    fill:  #FA9EBA;
+}
+
+.next {
+    position: absolute;
+    bottom: 10px;
+}
+
 
 
 
