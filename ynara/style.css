@@ -15,6 +15,8 @@ body {
    color: var(--text-color);
    font-family: 'Work Sans',
       sans-serif;
+   width: 90vw;
+   margin: 0 auto;
 }
 
 #about {
@@ -23,7 +25,7 @@ body {
 
 .navbar {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    font-size: 1.5rem;
    padding: 2rem;
 }
@@ -41,6 +43,23 @@ body {
    color: var(--text-color);
 }
 
+.navbar .menu-items li a:hover {
+   border-bottom: 1px solid var(--text-color);
+}
+
+.navbar .english,
+.navbar .portuguese {
+   border: 1px solid var(--text-color);
+   padding: 0.5rem;
+   border-radius: 5px;
+}
+
+#about .language a.current {
+   background: var(--text-color);
+   border: 1px solid var(--text-color);
+   color: var(--bg-color);
+}
+
 #about img {
    width: 200px;
    height: 200px;
@@ -52,13 +71,19 @@ body {
 }
 
 .picture {
+   width: 30%;
    margin: 5rem;
    text-align: center;
 }
 
 .picture h1 {
-   padding-top: 1.8rem;
+   padding: 1.8rem 0 1rem;
    font-size: 2.5rem;
+}
+
+.picture h3 a {
+   text-decoration: none;
+   color: var(--text-color);
 }
 
 .description {
