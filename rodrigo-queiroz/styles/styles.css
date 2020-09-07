@@ -1,9 +1,17 @@
 @import "reset.css";
 @import "variables.css";
 
-body {
-    background-color: #000500;
+::-webkit-scrollbar {
+    width: 0;
 }
+body {
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* =======================================
+                NAVBAR
+======================================= */
 nav {
     position: fixed;
     left: 0;
@@ -28,4 +36,63 @@ nav svg {
 }
 nav svg:hover {
     stroke: #10ff10;
+}
+/* =======================================
+                BACKGROUND
+======================================= */
+.bg-photo {
+    z-index: -9;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    min-height: 600px;
+    max-height: 100vmin;
+}
+/* =======================================
+                INTRO
+======================================= */
+section {
+    display: block;
+    height: 100vh;
+    width: 100vw - var(--nav-size); 
+    margin-left: var(--nav-size);
+}
+.white-text {
+    color: white;
+}
+.red-text {
+    color: red;
+}
+.intro-container {
+    position: relative;
+    left: 10%;
+    top: 15%;
+    width: fit-content;
+}
+.intro-text {
+    font-size: 15vmin;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+#about-text:hover {
+    content: "SOBRE";
+}
+.intro #about-text::after {
+    content: "OLÁ.";
+}
+.intro #about-text:hover::after {
+    content: "SOBRE";
+}
+.intro #work-text::after {
+    content: "SOU O";
+}
+.intro #work-text:hover::after {
+    content: "TRABALHO";
+}
+.intro #contact-text::after {
+    content: "RODRIGO";
+}
+.intro #contact-text:hover::after {
+    content: "CONTATO";
 }
