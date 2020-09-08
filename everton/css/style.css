@@ -29,3 +29,35 @@ header .menu ul li {
 header .menu ul li a {
     color: #fff;
 }
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url('../img/background-hero.jpg') fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
