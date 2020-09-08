@@ -6,8 +6,7 @@
 }
 
 body {
-    background: url("../img/bg2.jpg");
-    background-size: cover;
+    background: url("../img/bg.png");
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -17,13 +16,14 @@ body {
 
 .menu-navegacao {
     width: 100vw;
-    height: 50px;
-    display: block;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .menu-navegacao nav {
-    padding: 14px 100px;
-    float: right;
+    margin-right: 105px;
 }
 
 .menu-navegacao a {
@@ -91,6 +91,55 @@ body {
     position: absolute;
     bottom: 10px;
 }
+
+/* SOBRE */
+
+#sobre {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-foto {
+    width: 50%;
+}
+
+.sobre-foto img {
+    width: 450px;
+}
+
+.sobre-texto {
+    width: 50%;
+}
+
+.sobre-texto h1 {
+    padding: 40px 0;
+    text-align: justify;
+    color: #FF5E84;
+    font-weight: bold;
+    font-size: 36px;
+
+}
+
+.sobre-texto p {
+    padding-right: 80px;
+    font-size: 20px;
+    text-indent: 70px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+.sobre-texto span:hover {
+    color: #FA9EBA;
+}
+
+.sobre-texto h3 {
+    padding: 20px 0;
+    text-align: justify;
+}
+
 
 
 
