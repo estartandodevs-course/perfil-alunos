@@ -11,7 +11,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: white;
-    font-size: 22px;
+    font-size: var(--font-size);
     font-family: 'Poppins', sans-serif;
 }
 section h1 {
@@ -25,6 +25,19 @@ section p {
 }
 .right {
     right: 0;
+}
+.italic {
+    font-style: italic;
+}
+.big-font {
+    font-size: 1.25em;
+    margin-bottom: .8em;
+}
+div.central {
+    max-width: var(--central-div);
+    position: relative;
+    left: calc((100% - var(--central-div))/2);
+    top: 10%;
 }
 /* =======================================
                 NAVBAR
@@ -124,16 +137,6 @@ section {
 /* =======================================
                 ABOUT
 ======================================= */
-.big-font {
-    font-size: 1.25em;
-    margin-bottom: .8em;
-}
-div.central {
-    max-width: var(--central-div);
-    position: relative;
-    left: calc((100% - var(--central-div))/2);
-    top: 10%;
-}
 .img-about {
     position: absolute;
     top: 100%;
@@ -165,4 +168,31 @@ div.central {
 }
 .contact {
     fill: white;
+}
+/* =======================================
+                PROJECTS
+======================================= */
+figure {
+    width: 30%;
+}
+figure img {
+    display: block;
+    margin: auto;
+}
+img.vertical {
+    width: 100%;
+}
+img.horizontal {
+    height: 50%;
+}
+.projects {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
 }
