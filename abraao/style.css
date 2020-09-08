@@ -1,0 +1,68 @@
+
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 99vw;
+  height: 300vh ;
+  grid-template-areas: "capa" "barra1" "main" "barra2" "image" "foote" 
+}
+header{
+  display: flex;
+  background: url(./img/IMG-20190212-WA0130.jpg);
+  background-repeat: round;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(3em, 8em, 10em);
+ /*  font-size: 4rem; */
+  text-align: center; 
+  color: white;
+  
+  width: 99vw;
+  height: 100vh;
+  grid-area: capa;
+}
+.barraSobre{
+  display: flex;
+  align-items: center;
+  grid-area: barra1;
+  align-content: center;
+  height: 8vh ;
+  color: white;
+
+  font-size: clamp(2em, 2.7em, 4em);  
+
+  background-color:blue; 
+}
+main{
+  grid-area: main;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+}
+.titulo{
+  font-size: 1.5rem;
+}
+.blocoTexto{
+  width: 40vw;
+  height: 30vh;
+  font-size: 1.3rem;
+}
+.barraFotos{
+  grid-area: barra2;
+  height: 50vh ;
+}
+.containterFotos{
+  grid-area: image;
+  height: 50vh ;
+}
+footer{
+  grid-area: foote;
+}
