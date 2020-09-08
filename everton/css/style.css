@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 260px;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 10px 15px;
+}
+
+header .menu ul li a {
+    color: #fff;
+}
