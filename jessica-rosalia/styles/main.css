@@ -102,3 +102,22 @@ header .content-header p.presentation{
     max-width: 27rem; 
     margin: 0.6rem 0.8rem;
 }
+
+#about{
+    height: 70vh;
+}
+
+#about,#projects,#contact{
+    max-width: 85%;
+    margin:2rem auto;
+}
+
+#about img{
+    width: 200px;
+}
+
+#about p{
+    margin-top:0.5rem;
+    line-height: 1.7rem;
+    max-width: 36rem;
+}
