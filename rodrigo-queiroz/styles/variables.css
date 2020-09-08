@@ -2,7 +2,7 @@
     --icon-size: 40px;
     --icon-padding: 7px;
     --nav-size: calc(var(--icon-size) + 2*var(--icon-padding));
-    --central-div: 50%;
+    --central-div: 55%;
 }
 a {
     text-decoration: none;

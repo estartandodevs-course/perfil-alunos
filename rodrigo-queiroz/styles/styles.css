@@ -12,9 +12,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: white;
     font-size: 22px;
+    font-family: 'Poppins', sans-serif;
 }
 section h1 {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 section p {
     margin-bottom: 0.5em;
@@ -89,7 +90,6 @@ section {
 .intro-text {
     font-size: 15vmin;
     display: block;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 #about-text:hover {
@@ -105,7 +105,7 @@ section {
     content: "SOU O";
 }
 .intro #work-text:hover::after {
-    content: "TRABALHO";
+    content: "PROJETOS";
 }
 .intro #contact-text::after {
     content: "RODRIGO";
@@ -113,11 +113,20 @@ section {
 .intro #contact-text:hover::after {
     content: "CONTATO";
 }
+.tooltip .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
 /* =======================================
                 ABOUT
 ======================================= */
 .big-font {
     font-size: 1.25em;
+    margin-bottom: .8em;
 }
 div.central {
     max-width: var(--central-div);
@@ -153,4 +162,7 @@ div.central {
     max-width: 7em;
     min-height: 5em;
     max-height: 7em;
+}
+.contact {
+    fill: white;
 }
