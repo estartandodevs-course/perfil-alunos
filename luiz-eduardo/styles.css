@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: inline;
+    text-align: center;
+}
+
+.link li{
+    display: inline-table;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
+.link a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
+/* #cabecalho{
+    background-color: blue;
+    padding: 50px;
+    margin: ;
+} */
+
+
+
