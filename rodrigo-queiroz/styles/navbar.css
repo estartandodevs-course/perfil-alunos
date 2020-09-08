@@ -1,0 +1,25 @@
+nav {
+    position: fixed;
+    left: 0;
+    background-color: #3c423c36;
+    width: var(--icon-size);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 var(--icon-padding) 0 var(--icon-padding);
+}
+.nav {
+    height: calc(4*var(--icon-size));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+nav svg {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    stroke: white;
+}
+nav svg:hover {
+    stroke: #10ff10;
+}

@@ -1,0 +1,29 @@
+.whole-screen {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.whole-screen a{
+    color: var(--font-color);
+}
+figure {
+    width: 30vw;
+    background-color: #0a1707;
+    border: 5px solid #0a1707;
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+figure:hover {
+    border: 5px solid #15e01ce0;
+}
+figure img {
+    min-height: 30vh;
+    max-height: 50vh;
+}
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+}

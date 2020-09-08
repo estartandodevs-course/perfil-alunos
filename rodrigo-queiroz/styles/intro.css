@@ -1,0 +1,52 @@
+section {
+    display: block;
+    height: 100vh;
+    width: 100vw - var(--nav-size); 
+    margin-left: var(--nav-size);
+}
+.white-text {
+    color: white;
+}
+.red-text {
+    color: red;
+}
+.intro-container {
+    position: relative;
+    left: 10%;
+    top: 15%;
+    width: fit-content;
+}
+.intro-text {
+    font-size: 4.5em;
+    display: block;
+    font-weight: bold;
+}
+#about-text:hover {
+    content: "SOBRE";
+}
+.intro #about-text::after {
+    content: "OLÁ.";
+}
+.intro #about-text:hover::after {
+    content: "SOBRE";
+}
+.intro #work-text::after {
+    content: "SOU O";
+}
+.intro #work-text:hover::after {
+    content: "PROJETOS";
+}
+.intro #contact-text::after {
+    content: "RODRIGO";
+}
+.intro #contact-text:hover::after {
+    content: "CONTATO";
+}
+.tooltip .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
