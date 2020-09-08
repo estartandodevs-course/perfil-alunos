@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100px;
+    background:purple;
+    
+}
+body {
+     border:10px solid white;
+     color: white;
+    background-color: black;
+    }
+      
+.titulo{
+    border:10px solid purple;
+    text-align: center;
+    margin: 40px 15px 20px 15px;    
+    color:white
+
+}
+.pai{
+    border:10px solid white;
+    text-align: center;
+    margin: 40px 15px 20px 15px;    
+    color:white
+}
+.quebrando{
+    border:10px solid white;
+    text-align: center;
+    background-image: center;
+    margin: 40px 15px 20px 15px;
+}
+
+.jhon{
+    margin-right: 50px;
+    text-align: center;
+    margin: 40px 15px 20px 15px;
+    color: white;
+
+}
+.backzada{
+    border-block: 50px ;
+
+}
+.baixo{
+    border:10px solid green;
+    text-align: center;
+    background-image: center;
+    margin: 40px 15px 20px 15px;
+}
