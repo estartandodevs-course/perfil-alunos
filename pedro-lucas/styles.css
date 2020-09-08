@@ -1,0 +1,32 @@
+:root {
+    font-size: 16px;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    background-color: black;
+    color: white;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+}
+
+.navList {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
