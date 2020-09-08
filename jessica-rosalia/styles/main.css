@@ -1,9 +1,9 @@
 :root{
-    --color-hover-link: rgba(223, 116, 1,0.8);
+    --color-hover-link:  rgb(140, 124, 66);
     --color-text:rgba(0,0,0,0.85);
     --color-text-header:  rgba(255, 255, 255,0.9);
     --color-background: rgb(242, 242, 242);
-    --color-background-nav: rgb(14, 17, 21);
+    --color-background-nav: rgba(14, 17, 21,0.85);
     --color-gradient-one: rgb(255, 71, 84);
     --color-gradient-two: rgb(232, 44, 232);
 }
@@ -128,15 +128,16 @@ header .content-header p.presentation{
 }
 
 .up{
-    color: var(--color-text);
+    color:var(--color-background-nav);
+    font-size:1.1rem;
     width: 50px;
     height: 50px;
     position: fixed;
     bottom: 0.8rem;
     right: 0.8rem;
-    background: linear-gradient(to right, var(--color-gradient-one),var(--color-gradient-two));
+    background:var(--color-hover-link);
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.85;
     text-align: center;
 }
 
