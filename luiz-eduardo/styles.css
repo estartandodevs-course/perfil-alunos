@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: 'Oxygen', sans-serif;
     display: inline;
     text-align: center;
 }
@@ -28,7 +29,7 @@ background-color: blue;
 }
 
 .link a:hover{
-    color: blue;
+    color: white;
     cursor: pointer;
 }
 
