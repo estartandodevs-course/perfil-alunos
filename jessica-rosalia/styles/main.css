@@ -1,11 +1,12 @@
+
 :root{
-    --color-hover-link:  rgb(140, 124, 66);
-    --color-text:rgba(0,0,0,0.85);
+    --color-background-body: rgb(242, 242, 242);
     --color-text-header:  rgba(255, 255, 255,0.9);
-    --color-background: rgb(242, 242, 242);
-    --color-background-nav: rgba(14, 17, 21,0.85);
-    --color-gradient-one: rgb(255, 71, 84);
-    --color-gradient-two: rgb(232, 44, 232);
+    --color-black-opaque:rgba(0,0,0,0.85);
+    --color-black-strong: rgba(14, 17, 21,0.85);
+    --color-gold: rgb(140, 124, 66);
+    --color-gradient-pink: rgb(255, 71, 84);
+    --color-gradient-purple: rgb(232, 44, 232);
 }
 
 *{
@@ -19,10 +20,10 @@ html{
 }
 
 body{
-    background: var(--color-background);
+    background: var(--color-background-body);
     font-size:clamp(1rem,2.5vw,1.3rem);
     font-family: 'Roboto', sans-serif;
-    color: var(--color-text);
+    color: var(--color-black-opaque);
 }
 
 a{
@@ -34,7 +35,7 @@ h2{
 }
 
 header{
-    background-color: var(--color-text);
+    background-color: var(--color-black-opaque);
     color: var(--color-text-header);
     display: flex;
     flex-direction: column;
@@ -50,7 +51,7 @@ nav{
     width: 100vw;
     padding-top:0.8rem;
     padding-bottom: 0.8rem;
-    background: var(--color-background-nav);
+    background: var(--color-black-strong);
 }
 
 header nav ul{
@@ -75,7 +76,7 @@ header ul a{
 }
 
 header ul a:hover{
-    color: var(--color-hover-link);
+    color: var(--color-gold);
 }
 
 header .content-header{
@@ -91,7 +92,7 @@ header .content-header h1{
 }
 
 header .content-header h1:hover{
-    background: linear-gradient(to right, var(--color-gradient-one),var(--color-gradient-two));
+    background: linear-gradient(to right, var(--color-gradient-pink),var(--color-gradient-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -128,14 +129,14 @@ header .content-header p.presentation{
 }
 
 .up{
-    color:var(--color-background-nav);
+    color:var(--color-black-strong);
     font-size:1.1rem;
     width: 50px;
     height: 50px;
     position: fixed;
     bottom: 0.8rem;
     right: 0.8rem;
-    background:var(--color-hover-link);
+    background:var(--color-gold);
     border-radius: 50%;
     opacity: 0.85;
     text-align: center;
