@@ -4,13 +4,22 @@ nav {
     background-color: #3c423c36;
     width: var(--icon-size);
     height: 100vh;
+    padding: 0 var(--icon-padding);
+}
+.nav-icon {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+.nav-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0 var(--icon-padding) 0 var(--icon-padding);
 }
 .nav {
-    height: calc(4*var(--icon-size));
+    position: relative;
+    height: calc(5*var(--icon-size));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
