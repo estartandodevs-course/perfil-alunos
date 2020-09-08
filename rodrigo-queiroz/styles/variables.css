@@ -1,7 +1,8 @@
 :root {
     --icon-size: 40px;
-    --icon-padding: 5px;
-    --nav-size: calc(var(--icon-size) + 2*var(--icon-padding))
+    --icon-padding: 7px;
+    --nav-size: calc(var(--icon-size) + 2*var(--icon-padding));
+    --central-div: 50%;
 }
 a {
     text-decoration: none;
