@@ -8,9 +8,13 @@ body{
     text-align: center;
 }
 
+.link{
+background-color: blue;
+}
+
 .link li{
     display: inline-table;
-    margin: 30px;
+    margin: 25px 100px;
     font-size: 30px;
 }
 
@@ -24,12 +28,44 @@ body{
     cursor: pointer;
 }
 
+.link h1{
+    font-size: 50px;
+}
 
-/* #cabecalho{
-    background-color: blue;
+main{
+    margin: 1000px;
+}
+
+.estatico{
+    display: inline-block;
+    margin: 10px;
     padding: 50px;
-    margin: ;
-} */
+}
+
+.estatico img{
+    width: 250px;
+    height: 250px;
+}
+
+.main{
+    display: inline-block;
+    width: 700px;
+    height: 350px
+    margin 10px;
+    padding: 10px;
+}
+
+.main h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.main p{
+    text-align: justify;
+    font-size: 25px;
+}
+
+
 
 
 
