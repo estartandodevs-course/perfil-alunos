@@ -1,21 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgb(255, 182, 254);
-
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(255, 182, 254);
 }
+
 .menu {
-    text-align: center;
-    overflow: hidden;
-    list-style-type: none;
-    background-color: #000;
-    color: white;
+  text-align: center;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #000;
+  color: white;
 }
 
   li {
@@ -24,7 +25,6 @@ body {
     text-transform: uppercase;
     font-weight: 300;
     font-size: 18px;
-
   }
 
   li a {
@@ -32,6 +32,11 @@ body {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
+    transition: 0.5s;
+  }
+
+  ul li:hover {
+    opacity: 0.5;
   }
 
   .name {
@@ -41,8 +46,6 @@ body {
     font-weight: 700;
     margin-top: 150px;
     font-family: 'Ubuntu', sans-serif;
-
-      
   }
 
   .description {
@@ -64,6 +67,11 @@ body {
     height: 50px;
     padding: 10px 12px;
     margin-top: 150px;
+    transition: all .2s ease-in-out;
+ }
+
+ .footer img:hover{
+  transform: scale(1.2);
  }
 
 
