@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 260px;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    margin: 10px 15px;
+}
+
+header .menu ul li a {
+    color: #fff;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
+        url('../img/background-hero.jpg') fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 2;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 4.2s;
+}
+
+.fadeInUp {
+    animation: fadeInUp 2.5s;
+}
+
+/* ===== MEDIA QUERY ==== */
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+    }
+
+    header {
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero h3 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+
+    header .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu ul li {
+        margin: 0 15px;
+        margin-bottom: 5px;
+    }
+
+    .hero h1 {
+        margin-top: 100px;
+    }
+
+    header {
+        padding: 0 40px;
+    }
+}
