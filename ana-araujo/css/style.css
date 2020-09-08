@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
+}
+
+/* Estilização MENU */
+
+.menu {
+  text-align: center;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #000;
+  color: white;
+}
+
+  li {
+    display: inline-block;
+    padding: 10px 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  ul li a:hover {
+    color: rgba(232,116,198);
+    opacity: 0.5;
+  }
+
+  .name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 110px;
+    font-weight: 700;
+    margin-top: 150px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ .footer img {
+    width: 60px;
+    height: 60px;
+    padding: 10px 12px;
+    margin-top: 150px;
+    transition: all .2s ease-in-out;
+ }
+
+ .footer img:hover{
+  transform: scale(1.2);
+ }
+
+ /* ABOUT PAGE */
+ 
+ .about-box{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+ 
+}
+ .about-image {
+  align-items: flex-end;
+  align-self: center;
+  width: 650px;
+  height: 450px;
+ }
+
+ .about-text {
+  align-items: flex-end;
+  height: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: justify;
+  align-self: center;
+  margin-left: -90px;
+ }
+  
+
+  
