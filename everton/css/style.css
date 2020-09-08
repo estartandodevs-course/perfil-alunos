@@ -61,3 +61,33 @@ header .menu ul li a {
     letter-spacing: 4px;
     text-align: center;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 2;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 4.2s;
+}
+
+.fadeInUp {
+    animation: fadeInUp 2.5s;
+}
