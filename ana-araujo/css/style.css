@@ -11,6 +11,8 @@ body {
   background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
 }
 
+/* Estilização MENU */
+
 .menu {
   text-align: center;
   overflow: hidden;
@@ -75,5 +77,33 @@ body {
   transform: scale(1.2);
  }
 
+ /* ABOUT PAGE */
+ 
+ .about-box{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+ 
+}
+ .about-image {
+  align-items: flex-end;
+  align-self: center;
+  width: 650px;
+  height: 450px;
+ }
+
+ .about-text {
+  align-items: flex-end;
+  height: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: justify;
+  align-self: center;
+  margin-left: -90px;
+ }
+  
 
   
