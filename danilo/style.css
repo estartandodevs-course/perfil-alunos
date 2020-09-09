@@ -2,3 +2,53 @@
   margin: 0;
   padding: 0;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.side-menu {
+  position: fixed;
+  width: 100px;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out, background-color 1s ease-out;
+  background: #536976;
+  background: -webkit-linear-gradient(to right, #292e49, #536976);
+  background: linear-gradient(to right, #292e49, #536976);
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-mobile {
+  position: absolute;
+  right: -37px;
+  font-size: 30px;
+}
+
+.menu img {
+  width: 30px;
+  margin-top: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.menu img:hover {
+  background-color: #8fc4eb;
+}
+
+#toggle:checked + .side-menu {
+  transform: translateX(0px);
+}
+
+#toggle {
+  display: none;
+}
