@@ -20,18 +20,20 @@ body {
 
 .menu-navegacao {
     width: 100vw;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid red;
+    background: #000;
+    position: fixed;
+    z-index: 10;
 }
 
 
 .menu-navegacao a {
     color: #FFF;
     font-weight: bold;
-    font-size: 2.25rem;
+    font-size: 2rem;
     text-decoration: none;
     margin-right: 80px;
 }
