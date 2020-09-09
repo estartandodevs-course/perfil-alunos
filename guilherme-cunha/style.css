@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "pacifico";
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+html,
+body{
+    height: 100%;
+}
+body{
+    background-color: black;
+}
+/*top-page*/
+#menu-switch{
+    display: none;
+}
+#menu-switch:checked + .top-menu{
+    transform: translateY(0px);
+}
+#main-header {
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.top-menu {
+    background-color: teal;
+    width: 100%;
+    height: 20%;
+    transform: translateY(-100%);
+}
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    bottom: -22%;
+}
+.menu-icon:hover{
+    color: teal;
+}
+h1 {
+    text-align: center;
+    font-family: "pacifico";
+    font-size: 50px;
+    color: white;
+    margin-top: 0;
+}
+#main-header a {
+    color: white;
+    text-align: center; 
+    margin: 10px;
+    text-decoration: none;
+}
+#main-header a:hover {
+    color: teal;
+}
+#main-header nav {
+    display: flex;
+    justify-content: center;
+}
+/*main*/
+.about-me {
+    display: flex;
+    justify-content: center;
+}
+main div{
+    background-color: rgb(36, 36, 36);
+    padding: 5px;
+}
+.text {
+    color: white;
+    margin: 10px 0 0 0;
+}
+.title{
+    color: white;
+    margin: 10px 0 0 0;
+}
