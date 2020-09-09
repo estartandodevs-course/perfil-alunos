@@ -1,5 +1,19 @@
 body{
     background-color: #d9e7ff;
+    width: 100%;
+    margin: 0;
+}
+.portfolio{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.portfolio:hover{
+    color: teal;
 }
 #orkut{
     background-color: rgb(105, 144, 252);

@@ -14,6 +14,23 @@ body{
     background-color: black;
 }
 /*top-page*/
+.work {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+}
+.work:hover{
+    background-color: rgb(15, 48, 48);
+}
+#work-nav {
+    display: flex;
+    justify-content: center;
+}
+.top-menu h2{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+}
 #menu-switch{
     display: none;
 }
@@ -22,8 +39,30 @@ body{
 }
 #main-header {
     background-color: black;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 200px;
+    height: 100%;
+}
+h1 {
+    text-align: center;
+    font-family: "pacifico";
+    font-size: 70px;
+    color: white;
+    margin-top: 0;
+    text-decoration: underline white;
+}
+#main-header a {
+    color: white;
+    text-align: center; 
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+#main-header a:hover {
+    color: teal;
+}
+#main-header nav {
+    display: flex;
+    justify-content: center;
 }
 .top-menu {
     background-color: teal;
@@ -42,32 +81,13 @@ body{
 .menu-icon:hover{
     color: teal;
 }
-h1 {
-    text-align: center;
-    font-family: "pacifico";
-    font-size: 50px;
-    color: white;
-    margin-top: 0;
-}
-#main-header a {
-    color: white;
-    text-align: center; 
-    margin: 10px;
-    text-decoration: none;
-}
-#main-header a:hover {
-    color: teal;
-}
-#main-header nav {
-    display: flex;
-    justify-content: center;
-}
 /*main*/
 .about-me {
     display: flex;
     justify-content: center;
 }
 main div{
+    background-image: url(./images/Polka-Dots.svg);
     background-color: rgb(36, 36, 36);
     padding: 5px;
 }
@@ -79,3 +99,25 @@ main div{
     color: white;
     margin: 10px 0 0 0;
 }
+/*footer*/
+.footer{
+    background-color: black;
+}
+footer h2{
+    text-align: center;
+    color: white;
+}
+.icon-organization{
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    font-size: 50px;
+    color: white;
+    margin: 10px;
+}
+.icon:hover {
+    color: teal;
+}
+
+
