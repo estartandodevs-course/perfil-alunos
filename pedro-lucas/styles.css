@@ -47,8 +47,8 @@ a {
 }   
 
 #home-logo:hover {
-    fill: #f4791f;
-    
+    fill: #f4791f; 
+    color: #f4791f;  
 }
 
 .navItem {
