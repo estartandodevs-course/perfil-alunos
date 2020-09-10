@@ -89,7 +89,10 @@ h1 {
 main div{
     background-image: url(./images/Polka-Dots.svg);
     background-color: rgb(36, 36, 36);
-    padding: 30px;
+    width: 750px;
+}
+.me{
+    margin-left: 200px;
 }
 .text {
     color: white;
@@ -108,7 +111,7 @@ main div{
 .previus-pages-org {
     width: 1500px;
     background-color: teal;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .previus-pages p{
     color: white;
