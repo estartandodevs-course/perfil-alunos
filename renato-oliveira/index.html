@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" , minimum-scale=200, maximum-scale=1920,>
     <title>_RAOC_</title>
     <link rel="icon" type="image/x-icon" href="images/icon3.jpg">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -12,21 +12,26 @@
 
     <body>
         <header class="header">
-            <nav class="menu">
+            <input type="checkbox" name="toggle" id="toggle">
+            <div class="side-menu">
 
-                <ul>
-                    <li>
-                        <a href="#titulo ">Home</a>
-                    </li>
-                    <li>
-                        <a href="#sobre">Sobre</a>
-                    </li>
-                    <li>
+                <nav>
+
+                    <label class="menu-icon" for="toggle">&#9776</label>
+                    <div class="menu-item">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="menu-item">
+                        <a href="index.html">Sobre</a>
+                    </div>
+                    <div class="menu-item">
                         <a href="#footer">Contato</a>
-                    </li>
-                </ul>
-
-            </nav>
+                    </div>
+                    <!-- <div class="menu-item">
+                        <a href="#">Page 4</a>
+                    </div> -->
+                </nav>
+            </div>
 
             <div id="nome" class="name">
                 <article>
