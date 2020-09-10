@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Concert+One&family=Courgette&family=Dancing+Script:wght@400;500&family=Roboto:wght@300;400&family=Rock+Salt&family=Satisfy&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
-	<title>Jéssica Rosália</title>
+    <title>Jéssica Rosália</title>
 </head>
+
 <body>
-	<div class="container">
+    <div class="container">
         <header id="start">
+            <input type="checkbox" class="toggle" id="toggle">
+
+            <div class="menu-mobile">
+                <label class="menu-icon" for="toggle">&#9776</label>
+                <ul>
+                    <li> <a href="#about"> <img width="24" src="images/about.svg" alt="about section icon">
+                            <span>About me</span></a> </li>
+
+                    <li> <a href="#projects"> <img width="24" src="images/projects.svg" alt="projects section icon">
+                            <span>Projects</span></a> </li>
+                    <li> <a href="#contact"> <img width="24" src="images/contact.svg" alt="contact section icon">
+                            <span>Contacts</span></a> </li>
+                </ul>
+            </div>
+
             <nav>
                 <ul>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#about">About me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contacts</a></li>
                 </ul>
             </nav>
+
             <div class="content-header">
                 <h1> &lt;/Rosália &gt; </h1>
                 <p class="presentation">Aspiring developer. My focus today is the study of frontend technologies, but I
@@ -36,8 +54,8 @@
                     frontend
                     technologies like
                     HTML, CSS, JavaScript and React, as well as code versioning and SCRUM tools.</p>
-        	</div>
-    	</main>
+            </div>
+        </main>
 
         <section id="projects">
             <h2>My Projects</h2>
@@ -50,6 +68,7 @@
         </footer>
         <a class="up" href="#start"> <span>UP</span> </a>
 
-	</div>
+    </div>
 </body>
+
 </html>
