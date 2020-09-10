@@ -30,7 +30,7 @@ a {
 
 .main-content {
     margin-left: 5rem;
-  
+    padding-top: 2rem;
 }
 
 .nav-item:last-child {
@@ -48,6 +48,12 @@ a {
     height: 100vh;
 }
 
+
+.main-content p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100rem;
+}
 
 .nav-item {
     width: 100%;
