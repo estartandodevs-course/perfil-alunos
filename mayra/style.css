@@ -1,42 +1,71 @@
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     text-align: center;
     font-family: 'Philosopher', sans-serif;
-    margin: 0;
     scroll-behavior: smooth;
 }
 
-img {
-    width: 25%;
+.about-me img {
+    width: 20%;
     padding-left: 80px;
 }
 
 .navigation a {
     font-weight: bold;
-    color: white;
-    text-decoration: none;
 }
   
 .navigation  {
-    background-color: #0c06099c;
-    height: 45px;
-    margin: auto;
-    padding: 5px;
-}
-  
-.navigation li {
-    display: inline-block;
-    margin: 0 25px;
-    text-align: center;
-    font-size: large;
-}
-.navigation ul {
-    padding-left: 0;
-    list-style-type: none;  
+    height: 40px;
 }
 
 .navigation a:hover {
-	text-decoration: underline; 
-    color:rgba(52, 5, 90, 0.616);
+    color:rgba(226, 221, 230, 0.616);
+    background-color: #5a010193;
+    padding: 20px;
+}
+
+.projects {  
+    padding: 16px;  
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+  
+.dropdown-content a:hover {
+    background-color: #5a010193;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .projects {
+    background-color: #5a010193;
 }
 
 .about-me {
@@ -52,10 +81,6 @@ img {
     padding-left: 70px;
     margin-left: 70px;
     font-size: 23px;
-}
-
-#projects {
-    margin-bottom: 50px;
 }
 
 h1 {
@@ -86,23 +111,55 @@ h1 {
     margin-top:-8px;
 }
 
-#contact {
-    margin-bottom: 30px;
-}
-
 h1, h2 {
     font-size: 40px;
 }
 
-.project, .email {
-    font-size: 20px;
+.menu-item {
+    background-color: #0c06099c;
+    padding: 20px;
+    margin-bottom: 3px;
 }
-
-.email, .github {
+  
+.menu-item a {
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
+}
+  
+.side-menu nav {
+    display: block;
+    position: relative;
+}
+  
+.side-menu {
+    background-color: #a84141;
+    width: 20%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+}
+  
+.menu-icon {
+    position: absolute;
+    right: -37px;
+    font-size: 30px;
+}
+  
+#toggle:checked + .side-menu {
+    transform: translateX(0px);
+    background-color: #301313;
+}
+  
+#toggle {
+    display: none;
 }
 
-.email a:hover, .github a:hover {
-    color:red;
+#contact img {
+    width: 5%;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+#contact {
+    margin-top: 450px;
 }
