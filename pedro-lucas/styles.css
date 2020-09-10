@@ -40,11 +40,16 @@ a {
     padding: 0;
 }
 
-
-.home-logo {
+#home-logo {
     width: 3rem;
     padding: 0.5rem;
-}    
+    
+}   
+
+#home-logo:hover {
+    fill: #f4791f;
+    
+}
 
 .navItem {
     padding: 1rem;
