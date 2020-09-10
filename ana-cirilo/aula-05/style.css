@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url("./fonts/Alegreya/Alegreya-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.side-menu {
+    height: 100%;
+    width: 15%;
+    background-color: #0f123b;
+    transform: translatex(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+
+}
+
+.menu-item{
+    background-color: #0d0625;
+    padding:20px;
+    margin-bottom:3px;
+    transition: transform 0.3 ease-out;
+
+}
+
+.menu-item:hover{
+    background-color: #0f123b;
+}
+
+.side-menu nav{
+    display:block;
+    position: relative;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+    font-family:"Alegreya";
+}
+
+.menu-icon {
+    position:absolute;
+    right:-37px;
+    font-size:30px;
+    color: white;
+}
+
+#toggle{
+    display:none;
+}
+
+#toggle:checked + .side-menu {
+    transform:translateX(0px)
+
+}
+
+.body-home{
+    background-color: #0d0625;
+    background-image: url(./img/DFFpng.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
