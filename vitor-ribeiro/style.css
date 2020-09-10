@@ -1,4 +1,23 @@
 body{
-background: linear-gradient(90deg, #061700 35%, #52c234 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+    background-image: url(./imagens/background.jpg);
+    background-size: auto;
+    
+}
+
+html{
+    cursor: url(imagens/download.ico),auto;
+}
+
+#page{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 70px 0;
+  background: white;
+  -moz-box-shadow: 0 0 50px black;
+  -webkit-box-shadow: 0 0 50px black;
+  box-shadow: 0 0 50px black;
+  border-style: double;
+  position: absolute;
+  opacity: 0.9;
 }
