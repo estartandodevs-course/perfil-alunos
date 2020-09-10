@@ -1,243 +1,283 @@
- html {
-     scroll-behavior: smooth;
- }
- /* * Menu da página * */
- 
- .header {
-     width: 100%;
- }
- 
- .menu {
-     font-family: 'Kumbh Sans', sans-serif;
-     background-color: #ffffff00;
-     text-align: center;
- }
- 
- .menu ul li {
-     display: inline-block;
- }
- 
- .menu ul li a {
-     display: block;
-     color: #FFFFFF;
-     padding: 20px 10px;
- }
- /* * Menu da página * */
- /* * Footer da página * */
- 
- .site-fooder {
-     width: 100%;
- }
- 
- .footer {
-     background-color: #2c2c2c00;
-     text-align: center;
- }
- 
- .footer ul li {
-     font-family: 'Times New Roman';
-     display: inline-block;
- }
- 
- .footer ul li a {
-     display: block;
-     color: #ffffff;
-     padding: 10px 10px;
- }
- 
- .footer p {
-     display: block;
-     color: #ffffff;
-     padding: 10px 10px;
- }
- /* * Footer da página * */
- 
- html,
- body {
-     background-color: #000000;
-     height: 100%;
- }
- /** formata elementos que tem backgrounds  **/
- 
- .name {
-     font-family: 'Playfair Display', serif;
-     font-weight: lighter;
-     margin: 0 auto;
-     width: 100%;
-     max-width: 1920px;
-     position: relative;
-     min-height: 100%;
-     /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
-     background-position: 50% 0;
-     background-repeat: repeat;
-     background-attachment: fixed;
- }
- 
- .main {
-     font-family: 'Times New Roman';
-     font-weight: lighter;
-     color: #FFF;
-     margin: 0 auto;
-     width: 100%;
-     max-width: 1920px;
-     position: relative;
-     min-height: 100%;
-     /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
-     background-position: 50% 0;
-     background-repeat: repeat;
-     background-attachment: fixed;
- }
- /* Define backgrounds dos divs */
- 
- #nome {
-     background-image: url(images/4.png);
- }
- /** formata texto **/
- 
- .name article {
-     width: 80%;
-     text-align: center;
-     margin: 0 auto;
-     padding: 10% 0% 30%;
- }
- 
- article h1 {
-     color: #FFF;
-     font-size: 90px;
-     text-align: center;
-     margin-top: 200px;
-     margin-bottom: 30px;
-     /* border: 3px solid #ffffff; */
- }
- 
- article p {
-     color: #FFF;
-     font-size: 25px;
-     text-align: center;
-     margin-top: 20px;
-     margin-bottom: 30px;
- }
- 
- #hr_1 {
-     margin-top: 460px;
- }
- 
- #sobre {
-     padding: 5% 2% 5%;
- }
- 
- #H2 {
-     padding: 1% 0% 2%;
-     font-size: 44px;
-     text-decoration-line: underline;
- }
- 
- #sobretxt {
-     font-size: 20px;
- }
- 
- .about {
-     text-align: center;
- }
- 
- body {
-     background-color: black;
- }
- 
- .titulo {
-     display: block;
-     width: 100%;
-     text-align: center;
-     color: #b3b9bf;
-     font-size: 30px;
-     margin: 25px 0;
- }
- 
- .titulo:hover {
-     color: #ffffff;
- }
- 
- #box {
-     width: 880px;
-     height: auto;
-     margin: 15px auto;
-     display: block;
-     margin-bottom: 50px;
- }
- 
- #box:after {
-     display: block;
-     content: '.';
-     line-height: 0;
-     visibility: hidden;
- }
- 
- .estilizacao {
-     display: block;
-     width: 880px;
-     list-style: none;
- }
- 
- .estilizacao li {
-     position: relative;
-     display: block;
-     float: left;
-     width: 400px;
-     height: 300px;
-     margin: 20px;
-     cursor: pointer;
- }
- 
- .estilizacao li img {
-     width: 100%;
-     height: 100%;
-     display: block;
-     z-index: 999;
-     position: absolute;
-     transition: .5s;
- }
- 
- .conteudo {
-     display: block;
-     width: 100%;
-     height: 80px;
-     background-color: #070e07;
-     overflow: hidden;
-     color: #fff;
-     margin-top: 220px;
- }
- 
- .estilizacao li:hover img {
-     margin-top: -80px;
- }
- 
- .conteudo p {
-     display: block;
-     color: #fff;
-     position: relative;
-     float: left;
-     width: 250px;
-     margin: 10px;
-     margin-bottom: 0;
-     text-indent: 10px;
- }
- 
- .btn-more {
-     display: block;
-     text-decoration: none;
-     color: #fff;
-     position: relative;
-     float: right;
-     padding: 3px 10px;
-     background: #23ae80;
-     border-radius: 4px;
-     margin: 10px;
- }
- 
- .nome-secao {
-     font-size: 18px;
- }
- 
- .descricao {
-     font-size: 14px;
- }
+/* * Menu da página * */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: #000000;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.menu-item {
+    background-color: #ffffff00;
+    padding: 10px;
+    margin-bottom: 31px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+}
+
+.side-menu nav {
+    display: block;
+    position: relative;
+}
+
+.side-menu {
+    background-color: #ffffff00;
+    width: 45%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+}
+
+.menu-icon {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 80px;
+    left: 75%;
+    top: -0%;
+    font-size: 40px;
+}
+
+#toggle:checked+.side-menu {
+    position: relative;
+    right: -20px;
+    top: 10px;
+    transform: translateX(-60%);
+}
+
+#toggle {
+    display: none;
+}
+
+
+/* * Menu da página * */
+
+
+/* * Footer da página * */
+
+.site-fooder {
+    width: 100%;
+}
+
+.footer {
+    background-color: #2c2c2c00;
+    text-align: center;
+}
+
+.footer ul li {
+    font-family: 'Times New Roman';
+    display: inline-block;
+}
+
+.footer ul li a {
+    display: block;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+
+.footer p {
+    display: block;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+
+
+/* * Footer da página * */
+
+
+/** formata elementos que tem backgrounds  **/
+
+.name {
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
+    background-position: 50% 0% 0%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.main {
+    font-family: 'Times New Roman';
+    color: #FFF;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    min-height: 0%;
+    /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
+    background-position: 50% 0% 0%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+
+/* Define backgrounds dos divs */
+
+#nome {
+    background-image: url(images/4.png);
+}
+
+
+/** formata texto **/
+
+.name article {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10% 0% 30%;
+}
+
+article h1 {
+    color: #FFF;
+    font-size: 90px;
+    text-align: center;
+    margin-top: -15%;
+    margin-bottom: 0%;
+    /* border: 3px solid #ffffff; */
+}
+
+article p {
+    color: #FFF;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+#hr_1 {
+    margin-top: 460px;
+}
+
+#sobre {
+    padding: 5% 2% 5%;
+}
+
+#H2 {
+    margin-top: -5%;
+    margin-bottom: 2%;
+    padding: 5% 0% 2%;
+    font-size: 44px;
+    text-decoration-line: underline;
+}
+
+#sobretxt {
+    font-size: 20px;
+}
+
+
+/** Caixinhas maneiras com links **/
+
+.about {
+    text-align: center;
+}
+
+.titulo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #b3b9bf;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.titulo:hover {
+    color: #ffffff;
+}
+
+#box {
+    width: 880px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+#box:after {
+    display: block;
+    content: '.';
+    line-height: 0;
+    visibility: hidden;
+}
+
+.estilizacao {
+    display: block;
+    width: 880px;
+    list-style: none;
+}
+
+.estilizacao li {
+    position: relative;
+    display: block;
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.estilizacao li img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    transition: .5s;
+}
+
+.conteudo {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #070e07;
+    overflow: hidden;
+    color: #fff;
+    margin-top: 220px;
+}
+
+.estilizacao li:hover img {
+    margin-top: -80px;
+}
+
+.conteudo p {
+    display: block;
+    color: #fff;
+    position: relative;
+    float: left;
+    width: 250px;
+    margin: 10px;
+    margin-bottom: 0;
+    text-indent: 10px;
+}
+
+.btn-more {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    float: right;
+    padding: 3px 10px;
+    background: #23ae80;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.nome-secao {
+    font-size: 18px;
+}
+
+.descricao {
+    font-size: 14px;
+}
