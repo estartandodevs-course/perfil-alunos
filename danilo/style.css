@@ -7,6 +7,7 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -152,7 +153,7 @@ body {
   min-height: 100vh;
 }
 
-/* section2 */
+/* section3 */
 
 .section-3{
   min-height: 100vh;
@@ -163,7 +164,7 @@ body {
 }
 
 .bg-3{
-  background-color: rgba(20, 2, 19, 0.911);
+  background-color: rgba(20, 24, 2, 0.911);
   min-height: 100vh;
 }
 
@@ -173,4 +174,49 @@ margin-bottom: 20px;
 
 }
 
+/* section4 */
+
+.section-4{
+  min-height: 100vh;
+  background-image: url('./img/b4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-4{
+  background-color: rgba(20, 2, 19, 0.911);
+  min-height: 100vh;
+}
+
+.team-img {
+  display: inline-block;
+}
+
+.team-img img{
+  width: 200px;
+  border-radius: 050px;
+}
+
+
+.footer{
+  min-height: 100vh;
+  background-image: url('./img/b4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-5{
+  background-color: rgba(24, 2, 2, 0.911);
+  min-height: 100vh;
+}
+
+.red-img {
+  display: inline-block;
+}
+.red-img img {
+  margin:20px 20px 0 0;
+  width: 150px;
+}
 
