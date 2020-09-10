@@ -36,6 +36,7 @@ body {
   right: -37px;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
 }
 
 .menu img {
@@ -67,7 +68,7 @@ body {
 }
 
 .inside {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -86,3 +87,54 @@ body {
   padding-top: 60px;
   text-align: center;
 }
+.img img {
+  width: 70%;
+}
+
+/* section01 */
+
+.section-1{
+  height: 100vh;
+  background-image: url('./img/b4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-1{
+  background-color: rgba(16, 43, 56, 0.911);
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+  padding-top: 180px;
+}
+
+.title h2, p {
+
+  color: #fff;
+  display: inline-block;
+}
+
+.title h2{
+  font-size: 56px;
+}
+
+.about {
+  padding-top:60px;
+  text-align: center;
+}
+
+.about p,.about-img {
+  font-size: 34px;
+  width: 300px;
+  display: inline-block;
+  padding: 0 60px 60px 0 ;
+
+}
+.about-img img{
+  width: 400px;
+}
+
+
