@@ -58,3 +58,17 @@ ul {
       bottom: 30px;
       right: 30px;
   }
+
+  #foto{
+      position:fixed;
+      right: 90px;
+      top:150px;
+      border-radius: 50%;
+      border: solid;
+  }
+
+  #footer{
+      position: absolute;
+      display: inline;
+      bottom:0;
+  }
