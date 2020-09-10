@@ -14,21 +14,22 @@ section {
     position: relative;
     left: 10%;
     top: 15%;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .intro-text {
     font-size: 4.5em;
-    display: block;
     font-weight: bold;
-}
-#about-text:hover {
-    content: "SOBRE";
 }
 .intro #about-text::after {
     content: "OLÁ.";
+    transform: translateY(-20px);
+    /* transition: all 1s ease-in; */
 }
 .intro #about-text:hover::after {
     content: "SOBRE";
+    /* transform: translateX(20px); */
 }
 .intro #work-text::after {
     content: "SOU O";
