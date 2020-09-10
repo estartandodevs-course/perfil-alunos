@@ -53,10 +53,9 @@ li a:hover{
 
 .menu-icon {
   position: absolute;
- 
   top: 100%;
-  font-size: 30px;
-  left: 50px;
+  font-size: 45px;
+  left: 48px;
 }
 
 #toggle:checked + .menu {
@@ -75,7 +74,6 @@ li a:hover{
   margin-top: 150px;
   font-family: 'Ubuntu', sans-serif;
 }
-
 
   .description {
     text-align: center;
