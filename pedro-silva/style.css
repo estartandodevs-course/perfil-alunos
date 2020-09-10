@@ -12,8 +12,11 @@ body {
      color: white;
     background-color: black;
     }
-      
+.titulo:hover{
+    background-color: rgb(255, 255, 255);
+}
 .titulo{
+    
     border:10px solid purple;
     text-align: center;
     margin: 40px 15px 20px 15px;    
@@ -50,3 +53,12 @@ body {
     background-image: center;
     margin: 40px 15px 20px 15px;
 }
+
+.btn{
+    border:10px;    
+    text-align:center;
+    margin: 40px 15px 20px 15px;    
+    background-size: auto;
+    background-color:purple;
+}
+
