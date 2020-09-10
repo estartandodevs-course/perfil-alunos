@@ -30,22 +30,70 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 h2{
     font-family: 'Rock Salt', cursive;
 }
 
 header{
-    background-color: var(--color-black-opaque);
+    background: var(--color-black-opaque);
     color: var(--color-text-header);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: 'Concert One', cursive;
     height: 90vh;
 }
 
+input.toggle{
+    display: none;
+}
+
+.menu-mobile{
+    background: var(--color-gold);
+    background-position-y: bottom;
+    position: relative;
+    transform: translateX(-100%);
+    width: 65%;
+    transition: 400ms ease-out;
+}
+
+.menu-mobile ul{
+    padding: 0.625rem 0.5rem;
+}
+
+.menu-mobile ul a{
+    display: flex;
+    align-items: center;
+}
+
+.menu-mobile ul a img{
+    margin-right: 0.625rem;
+}
+
+.menu-mobile ul a:hover{
+    color: var(--color-black-opaque);
+}
+
+.menu-icon{
+    position: absolute;
+    top:0.5rem;
+    right: -1.6rem;
+}
+
+.menu-mobile ul a img:hover,
+.menu-icon:hover{
+    transform: scale(1.1);
+}
+
+input.toggle:checked + .menu-mobile{
+    transform: translateX(0%);
+}
+
 nav{
+    display: none;
     position: fixed;
     top:0;
     width: 100vw;
@@ -56,15 +104,14 @@ nav{
 
 header nav ul{
     display: flex;
-    list-style: none;
     justify-content: center;
 }
 
-header ul li{
+header nav ul li{
     margin-left:1.5rem;
 }
 
-header ul li:nth-child(1){
+header nav ul li:nth-child(1){
     margin-left:0;
 }
 
@@ -84,6 +131,10 @@ header .content-header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+input.toggle:checked ~ .content-header{
+    margin-top:2rem;
 }
 
 header .content-header h1{
@@ -109,13 +160,9 @@ header .content-header p.presentation{
     margin: 0.6rem 0.8rem;
 }
 
-#about{
-    height: 70vh;
-}
-
 #about,#projects,#contact{
     max-width: 85%;
-    margin:2rem auto;
+    margin:3rem auto 2rem auto;
 }
 
 #about img{
