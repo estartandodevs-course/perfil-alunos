@@ -1,0 +1,71 @@
+@import "reset.css";
+@import "variables.css";
+@import "about.css";
+@import "project.css";
+@import "navbar.css";
+@import "intro.css";
+
+/* =======================================
+                GENERAL
+======================================= */
+::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-family: 'Poppins', sans-serif;
+}
+section h1 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+section p {
+    margin-bottom: 0.4em;
+}
+.left {
+    left: var(--nav-size);
+}
+.right {
+    right: 0;
+}
+.italic {
+    font-style: italic;
+}
+.big-font {
+    font-size: 1.25em;
+    margin-bottom: .8em;
+}
+.central {
+    max-width: var(--central-div);
+    position: relative;
+    left: calc((100% - var(--central-div))/2);
+    top: 10%;
+}
+/* =======================================
+                BACKGROUND
+======================================= */
+.bg-photo {
+    z-index: -9;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    min-height: 600px;
+    max-height: 100vmin;
+}
+/* =======================================
+                CONTACT
+======================================= */
+.contact svg {
+    width: 10vmin;
+    height: 10vmin;
+}
+div.inspiration {
+    margin-top: 60vh;
+}
+div.inspiration p {
+    text-align: center;
+}

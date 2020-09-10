@@ -1,0 +1,24 @@
+@media(min-width:539px){
+    nav{
+        padding-top:1.2rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+@media(min-width:699px){
+    #about .description{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media(min-width:960px){
+    #about .description{
+        justify-content: space-between;
+    }
+    #about img{
+        margin-right: 200px;
+    }
+}

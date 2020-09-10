@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197" height="202" viewBox="0 0 197 202">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_3" data-name="Retângulo 3" width="197" height="202" transform="translate(418 188)" fill="#d2d2d2"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" transform="translate(-418 -188)" clip-path="url(#clip-path)">
+    <g id="HTML" transform="translate(415.697 188)">
+      <path id="Caminho_1" data-name="Caminho 1" d="M28.012,181.484,11.836,0H189.77L173.594,181.484,100.605,202" fill="#e34f26"/>
+      <path id="Caminho_2" data-name="Caminho 2" d="M101,186.219l58.785-16.176L173.594,14.6H101" fill="#ef652a"/>
+      <path id="Caminho_3" data-name="Caminho 3" d="M101,82.063H71.41L69.438,59.18H101V37.086H44.977l5.918,67.465H101Zm-.395,58L75.75,133.352,74.172,115.6H52.078l2.762,35.113,45.766,12.625Z" fill="#ebebeb"/>
+      <path id="Caminho_4" data-name="Caminho 4" d="M100.605,82.063v22.488h27.617l-2.762,28.8-24.855,6.707v23.277l45.766-12.625,6.313-68.648Zm0-44.977V59.18h54.051l1.973-22.094Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

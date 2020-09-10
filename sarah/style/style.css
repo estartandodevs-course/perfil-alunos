@@ -1,0 +1,153 @@
+/* GERAL */
+
+:root {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/bg.png");
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* INTRODUAÇÃO */
+
+.menu-navegacao {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #000;
+    position: fixed;
+    z-index: 10;
+}
+
+
+.menu-navegacao a {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.menu-navegacao a:hover {
+    color: #FF5E84;
+}
+
+/* INTRODUÇÃO */
+
+.intro-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introducao h1 {
+    font-size: 3.25rem;
+    font-weight: normal; 
+}
+
+.introducao span {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.introducao a {
+    text-decoration: none;
+    color: #FF5E84;
+    font-weight: bold;
+}
+
+
+.introducao a:hover {
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+.introducao ul li {
+    margin: 20px 5px;
+    display: inline-block;
+}
+
+.introducao svg, .next svg {
+    width: 52px;
+    height: 52px;
+    fill: #FFF;
+}
+
+.introducao svg:hover, .next svg:hover {
+    fill:  #FA9EBA;
+}
+
+.next {
+    position: absolute;
+    bottom: 50px;
+}
+
+/* SOBRE */
+
+#sobre {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sobre-foto {
+    width: 50%;
+}
+
+.sobre-foto img {
+    width: 450px;
+}
+
+.sobre-texto {
+    width: 50%;
+}
+
+.sobre-texto h1 {
+    padding: 40px 0;
+    text-align: justify;
+    color: #FF5E84;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+.sobre-texto p {
+    padding-right: 80px;
+    font-size: 1.25rem;
+    text-indent: 70px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+
+.sobre-texto span:hover {
+    color: #FA9EBA;
+}
+
+.sobre-texto h3 {
+    padding: 20px 0;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
