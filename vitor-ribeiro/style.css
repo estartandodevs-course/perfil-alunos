@@ -5,8 +5,9 @@ body{
 }
 
 html{
-    cursor: url(imagens/download.ico),auto;
+    cursor: url(./imagens/navi.ico),auto;
 }
+
 
 #page{
     margin: auto;
@@ -19,5 +20,41 @@ html{
   box-shadow: 0 0 50px black;
   border-style: double;
   position: absolute;
-  opacity: 0.9;
+  opacity: 0.6;
 }
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  #under{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+  }
