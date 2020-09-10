@@ -1,3 +1,4 @@
+
 *{
     font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -87,6 +88,7 @@ a{
             border: 5px solid #840D0D;
             border-radius: 50%;
             margin: 50px auto;
+            cursor: pointer;
         }
 
         .menu::after {
@@ -150,6 +152,11 @@ a{
     max-width: 7800px;
     margin: 0 auto;
     padding: 0 2%;
+}
+
+.sobre ul li {
+    display: flex;
+    align-items: center;
 }
 
 h1{
