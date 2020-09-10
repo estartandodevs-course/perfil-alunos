@@ -33,6 +33,10 @@ a {
   
 }
 
+.nav-item:last-child {
+    margin-top: auto;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -41,6 +45,7 @@ a {
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 
