@@ -91,6 +91,11 @@ a{
         h1{
             text-align: center;
         }
+
+        .copy{
+            margin-top: 100px;
+            display: block !important;
+        }
     }
 /*perfil*/
 
@@ -130,13 +135,48 @@ a{
         margin-top: 102px;
     }
 
-    @media (max-width:600px){
+    @media (max-width:790px){
+
+        .sobre{
+            width: 95%;
+            margin: 0 0;
+            padding: 0 2%;
+        }
+
+        h1.titulo{
+            font-size: 40px;
+        }
+    
+        .sobre ul li{
+            font-size: 18px;
+            padding: 7.5px;
+        }
+        
 
         .sobre p{
             text-align: justify;
-            padding-bottom: 100px;
+            font-size: 18px;
         }
     }
 
 
 /*sobre*/
+
+/*footer*/
+
+    .copy{
+        display: none;
+    }
+
+    footer{
+        padding: 20px;
+        background-color: #A13838;
+    }
+
+    footer p{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        text-align: center;
+    }
+/*footer*/
