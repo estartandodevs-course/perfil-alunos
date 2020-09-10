@@ -61,14 +61,14 @@ body {
 /* banner */
 
 .banner {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./img/bg3.jpg");
   background-position: top;
   background-size: cover;
 }
 
-.inside {
-  height: 100%;
+.name {
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -94,7 +94,7 @@ body {
 /* section01 */
 
 .section-1{
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('./img/b4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -102,8 +102,8 @@ body {
 }
 
 .bg-1{
-  background-color: rgba(16, 43, 56, 0.911);
-  height: 100vh;
+  background-color: rgba(2, 18, 27, 0.911);
+  min-height: 100vh;
 }
 
 .title {
@@ -118,7 +118,7 @@ body {
 }
 
 .title h2{
-  font-size: 56px;
+  font-size: 52px;
 }
 
 .about {
@@ -128,13 +128,49 @@ body {
 
 .about p,.about-img {
   font-size: 34px;
-  width: 300px;
+  width: 400px;
   display: inline-block;
   padding: 0 60px 60px 0 ;
 
 }
 .about-img img{
   width: 400px;
+}
+
+/* section2 */
+
+.section-2{
+  min-height: 100vh;
+  background-image: url('./img/b4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-2{
+  background-color: rgba(11, 4, 46, 0.911);
+  min-height: 100vh;
+}
+
+/* section2 */
+
+.section-3{
+  min-height: 100vh;
+  background-image: url('./img/b4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.bg-3{
+  background-color: rgba(20, 2, 19, 0.911);
+  min-height: 100vh;
+}
+
+.portfolio-img img{
+width: 500px;
+margin-bottom: 20px;
+
 }
 
 
