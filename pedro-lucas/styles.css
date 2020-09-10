@@ -3,18 +3,19 @@
     --bg-gradient1: #355C7D;
     --bg-gradient2: #6C5B7B;
     --bg-gradient3: #C06C84;
-
 }
 
-main {
-    margin-left: 5rem;
-    padding: 1rem;
+@font-face {
+    font-family: 'Kufam';
+    src: url("./assets/fonts/Kufam/static/Kufam-Medium.ttf");
 }
-
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Kufam";
+}
+body {
     background-image: linear-gradient(to top right, var(--bg-gradient1), var(--bg-gradient2), var(--bg-gradient3));
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,53 +27,70 @@ a {
     color: #f9eac3;
 }
 
-.navBar {
+.main-content {
+    margin-left: 5rem;
+  
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-item {
+    width: 100%;
+}
+
+
+.nav-icon:hover {
+    fill: #f4791f;
+}
+.nav-bar {
     background-image: linear-gradient(to top, #c31432, #240b36);
     color: white;
     width: 5rem;
     height: 100vh;
     position: fixed;
+    top: 0;
+    transition: width 200ms ease;
 }
 
-.navList {
-    height: 100vh;
+.nav-link{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    height: 5rem;
 }
 
 #toggle {
    display: none;
 }
 
-#toggle:checked + nav {
-    width: 20rem;
+.nav-bar:hover {
+    width: 16rem;
+    background-image: linear-gradient(to top, #c31432, #240b36);
 }
 
-#home-logo {
-    font-size: 2.5rem;
-    margin: 0;
-    left: 1.25rem;
-    position: absolute;
-    z-index: 2;
-}   
-
-#home-logo:hover {
-    color: #f4791f; 
-}
-
-.navItem {
-    padding: 1rem;
-}
 
 .profilePicture {
     border-radius: 50%;
 }
 
-.navItem:hover {
-    color: #f4791f;
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    fill: white;
+}
+
+.nav-bar:hover .link-text {
+    display: block;
+}
+.link-text {
+    display: none;
+    margin-left: 1rem;
 }
