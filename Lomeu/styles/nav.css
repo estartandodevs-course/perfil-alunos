@@ -12,29 +12,33 @@ section#nav .drop-menu nav .menu-item a {
     text-transform: uppercase;
 }
 
-section#nav .drop-menu nav .menu-item a li {
-    margin: 20px 10px 5px 10px;
-}
-
 section nav a:hover {
     color: #21bf73;
 }
 
-.drop-menu nav {
-    position: relative;
+section#nav .drop-menu nav .menu-item a li {
+    margin: 20px 10px 5px 10px;
 }
 
 .drop-menu {
     background-color: transparent;
     width: 100%;
     transform: translateY(-60%);
-    transition: transform 0.3s ease-out, background-color 1s ease-out;
+    transition: transform 0.4s ease-out, background-color 0.6s ease-out;
 }
 
 .menu-icon {
     position: absolute;
     bottom: 0px;
     font-size: 30px;
+}
+
+.menu-icon:hover {
+    color: #21bf73;
+}
+
+.drop-menu nav {
+    position: relative;
 }
 
 #toggle:checked+.drop-menu {
