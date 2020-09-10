@@ -1,9 +1,3 @@
-section {
-    display: block;
-    height: 100vh;
-    width: 100vw - var(--nav-size); 
-    margin-left: var(--nav-size);
-}
 .white-text {
     color: white;
 }
@@ -21,20 +15,23 @@ section {
 .intro-text {
     font-size: 4.5em;
     font-weight: bold;
+    display: inline-block;
+    transition: all .4s ease-out;
 }
-.intro #about-text::after {
+.intro-text:hover {
+    transform: translateX(10%);
+}
+#about-text::after {
     content: "OLÁ.";
-    transform: translateY(-20px);
-    /* transition: all 1s ease-in; */
 }
 .intro #about-text:hover::after {
     content: "SOBRE";
-    /* transform: translateX(20px); */
 }
-.intro #work-text::after {
+
+.intro #project-text::after {
     content: "SOU O";
 }
-.intro #work-text:hover::after {
+.intro #project-text:hover::after {
     content: "PROJETOS";
 }
 .intro #contact-text::after {
@@ -42,12 +39,4 @@ section {
 }
 .intro #contact-text:hover::after {
     content: "CONTATO";
-}
-.tooltip .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-}
-.tooltip:hover .tooltip-text {
-    visibility: visible;
 }

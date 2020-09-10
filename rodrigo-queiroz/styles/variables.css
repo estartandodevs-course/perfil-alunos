@@ -3,7 +3,7 @@
     --icon-padding: 7px;
     --nav-size: calc(var(--icon-size) + 2*var(--icon-padding));
     --central-div: 55%;
-    --font-size: 1.4vw;
+    --font-size: 1.4vmax;
     --font-color: white;
 }
 a {

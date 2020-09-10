@@ -11,6 +11,15 @@
 ::-webkit-scrollbar {
     width: 0;
 }
+html, body {
+    height: 100%;
+}
+section {
+    display: block;
+    height: 100%;
+    width: 100vw - var(--nav-size); 
+    margin-left: var(--nav-size);
+}
 body {
     background-color: #000000;
     -webkit-font-smoothing: antialiased;
@@ -53,8 +62,8 @@ section p {
     position: absolute;
     right: 10%;
     top: 0;
-    min-height: 600px;
-    max-height: 100vmin;
+    min-height: 60%;
+    max-height: 100%;
 }
 /* =======================================
                 CONTACT
