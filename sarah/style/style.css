@@ -1,5 +1,9 @@
 /* GERAL */
 
+:root {
+    font-size: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,22 +20,22 @@ body {
 
 .menu-navegacao {
     width: 100vw;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background: #000;
+    position: fixed;
+    z-index: 10;
 }
 
-.menu-navegacao nav {
-    margin-right: 105px;
-}
 
 .menu-navegacao a {
     color: #FFF;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
-    margin-right: 70px;
+    margin-right: 80px;
 }
 
 .menu-navegacao a:hover {
@@ -50,12 +54,12 @@ body {
 }
 
 .introducao h1 {
-    font-size: 36px;
+    font-size: 3.25rem;
     font-weight: normal; 
 }
 
 .introducao span {
-    font-size: 50px;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -89,7 +93,7 @@ body {
 
 .next {
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
 }
 
 /* SOBRE */
@@ -118,13 +122,12 @@ body {
     text-align: justify;
     color: #FF5E84;
     font-weight: bold;
-    font-size: 36px;
-
+    font-size: 2.25rem;
 }
 
 .sobre-texto p {
     padding-right: 80px;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-indent: 70px;
     text-align: justify;
     line-height: 25px;
