@@ -1,9 +1,3 @@
-section {
-    display: block;
-    height: 100vh;
-    width: 100vw - var(--nav-size); 
-    margin-left: var(--nav-size);
-}
 .white-text {
     color: white;
 }
@@ -14,26 +8,30 @@ section {
     position: relative;
     left: 10%;
     top: 15%;
-    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .intro-text {
     font-size: 4.5em;
-    display: block;
     font-weight: bold;
+    display: inline-block;
+    transition: all .4s ease-out;
 }
-#about-text:hover {
-    content: "SOBRE";
+.intro-text:hover {
+    transform: translateX(10%);
 }
-.intro #about-text::after {
+#about-text::after {
     content: "OLÁ.";
 }
 .intro #about-text:hover::after {
     content: "SOBRE";
 }
-.intro #work-text::after {
+
+.intro #project-text::after {
     content: "SOU O";
 }
-.intro #work-text:hover::after {
+.intro #project-text:hover::after {
     content: "PROJETOS";
 }
 .intro #contact-text::after {
@@ -41,12 +39,4 @@ section {
 }
 .intro #contact-text:hover::after {
     content: "CONTATO";
-}
-.tooltip .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-}
-.tooltip:hover .tooltip-text {
-    visibility: visible;
 }

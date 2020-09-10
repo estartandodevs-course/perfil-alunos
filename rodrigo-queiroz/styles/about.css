@@ -34,3 +34,16 @@
 .contact svg:hover {
     fill: #10ff10;
 }
+.img-tooltip + .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    background-color: gray;
+    border-radius: 5px;
+    border: 1px solid #8eea94a8;
+    padding: 5px;
+}
+.img-tooltip:hover + .tooltip-text, .img-tooltip + .tooltip-text:hover {
+    visibility: visible;
+    /* padding: 5px; */
+}
