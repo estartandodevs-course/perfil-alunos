@@ -15,21 +15,21 @@ body {
 
 .about-me img {
     width: 20%;
-    padding-left: 80px;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-left: 80px;
 }
 
 .navigation a {
     font-weight: bold;
 }
-  
-.navigation  {
-    height: 40px;
-}
 
 .navigation a:hover {
-    color:rgba(226, 221, 230, 0.616);
-    background-color: #5a010193;
+    color:rgba(0, 0, 0, 0.877);
+    background-color: #59326bd0;
     padding: 20px;
+    font-weight: bold;
 }
 
 .projects {  
@@ -44,7 +44,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: rgb(44, 15, 39);
     min-width: 160px;
 }
   
@@ -57,7 +57,7 @@ body {
 }
   
 .dropdown-content a:hover {
-    background-color: #5a010193;
+    background-color: #59326bd0;
 }
   
 .dropdown:hover .dropdown-content {
@@ -65,7 +65,7 @@ body {
 }
   
 .dropdown:hover .projects {
-    background-color: #5a010193;
+    background-color: #59326bd0;
 }
 
 .about-me {
@@ -73,7 +73,7 @@ body {
     align-items: center;
     text-align: justify;
     margin-bottom: 50px;
-    padding-left: 80px;
+    margin-left: 80px;
 }
 
 .text {
@@ -97,7 +97,7 @@ h1 {
     right: 10px;
     width: 50px;
     height: 50px;
-    background-color:#0c06099c;
+    background-color:#4b0f2d9c;
     text-decoration: none;
 }
 .btn::after {
@@ -116,7 +116,7 @@ h1, h2 {
 }
 
 .menu-item {
-    background-color: #0c06099c;
+    background-color: #531d389c;
     padding: 20px;
     margin-bottom: 3px;
 }
@@ -132,7 +132,7 @@ h1, h2 {
 }
   
 .side-menu {
-    background-color: #a84141;
+    background-color: #431944;
     width: 20%;
     height: 100%;
     transform: translateX(-100%);
@@ -147,7 +147,7 @@ h1, h2 {
   
 #toggle:checked + .side-menu {
     transform: translateX(0px);
-    background-color: #301313;
+    background-color: #4d2349d3;
 }
   
 #toggle {
@@ -162,4 +162,20 @@ h1, h2 {
 
 #contact {
     margin-top: 450px;
+}
+
+div .welcome { 
+    width: 50%;
+    justify-content: center;
+    position: relative;
+    float: right;
+    margin-right: 20rem;
+    margin-top: 20%;
+    font-size: 70px;
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 2; }
 }
