@@ -3,14 +3,17 @@
     --bg-gradient1: #355C7D;
     --bg-gradient2: #6C5B7B;
     --bg-gradient3: #C06C84;
-
 }
 
-
+@font-face {
+    font-family: 'Kufam';
+    src: url("./assets/fonts/Kufam/static/Kufam-Medium.ttf");
+}
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: "Kufam";
 }
 body {
     background-image: linear-gradient(to top right, var(--bg-gradient1), var(--bg-gradient2), var(--bg-gradient3));
@@ -56,6 +59,7 @@ a {
     height: 100vh;
     position: fixed;
     top: 0;
+    transition: width 200ms ease;
 }
 
 .nav-link{
