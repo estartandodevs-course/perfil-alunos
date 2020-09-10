@@ -10,13 +10,6 @@
 
 /*MAIN CSS*/
 
-body {
-    background-image: url(../assets/img/bg.jpg);
-    background-repeat: no-repeat;
-    background-color: #101010;
-    color: white;
-}
-
 header h1 {
     font-size: 4rem;
     letter-spacing: 1rem;
@@ -29,7 +22,7 @@ header h1:hover {
 }
 
 section#home {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -55,6 +48,10 @@ div.welcome h1:hover {
 div.welcome h2 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
+}
+
+div.btnSobre {
+    margin-bottom: 2rem;
 }
 
 div.btnSobre a:hover {

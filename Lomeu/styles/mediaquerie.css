@@ -1,5 +1,9 @@
-    @media (min-width: 481px) {
-        body {
+    @media (min-width: 481px) and (max-width: 768px) {
+        /* DEFAULT */
+        section#home,
+        section#sobre,
+        section#projetos,
+        section#contato {
             margin: 0 1rem;
         }
     }
@@ -10,11 +14,12 @@
             font-size: 2rem;
             margin: 2rem 0;
         }
-        /* INDEX PRINCIPAL */
+        /* NAVBAR */
         section#home nav {
             font-size: 1.5rem;
             margin-top: 1rem;
         }
+        /* INDEX PRINCIPAL */
         section#home div.welcome p {
             font-size: 1.3rem;
         }
