@@ -43,6 +43,10 @@ a{
         margin: 181px auto 50px auto;
     }
 
+    #menu, .menu{
+        display: none;
+    }
+
     .cor{
         color: #919191 !important;
     }
@@ -57,9 +61,54 @@ a{
 
     @media (max-width:1090px){
 
+        nav{
+            display: none;
+        }
+
+        #menu:checked ~ nav {
+            display: block;
+            animation: nav .5s ease-in 0s alternate;
+        }
+
+        @keyframes nav {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        .menu{
+            display: block;
+            background: rgb(233, 233, 162) ;
+            width: 30px;
+            height: 30px;
+            border: 5px solid #840D0D;
+            border-radius: 50%;
+            margin: 50px auto;
+        }
+
+        .menu::after {
+            content: '→';
+            position: relative;
+            top: 5px;
+            color: rgba(0,0,0,.3);
+            animation: seta .5s ease-in 0s infinite alternate;
+        }
+
+        @keyframes seta {
+            from{
+                right: 30px;
+            }
+            to{
+                right: 20px;
+            }
+        }
+
         .perfil{
             min-width: 302px;
-            padding: 0 2%;
+            padding: 0 0;
             height: 500px;
         }
 
@@ -68,24 +117,25 @@ a{
             padding-top: 100px;
         }
 
+        .perfil  ul{
+            flex-direction: column;
+            align-items: center;
+            margin-top: -40px;
+            padding-bottom: 15px ;
+            background-color:#840D0D ;
+            width: 100%;
+        }
+
+        .perfil ul li{
+            margin: 15px auto 0 auto !important;
+        }
+
         .perfil ul li a{
             font-weight: bold;
             font-size: 23px;
             color: #FFFFFF;
             margin-left: 0px;
             line-height: 0px;
-            
-        }
-
-        .perfil ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 80px;
-        }
-
-        .perfil ul li + li{
-            margin-left: 20px;
         }
 
         h1{
