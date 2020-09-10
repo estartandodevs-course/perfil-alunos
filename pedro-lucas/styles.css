@@ -21,7 +21,7 @@ a {
 }
 
 .navBar {
-    background-color: black;
+    background-image: linear-gradient(to top, #c31432, #240b36);
     color: white;
     width: 5rem;
     height: 100vh;
@@ -40,13 +40,19 @@ a {
     padding: 0;
 }
 
-.navHeader {
-    padding-bottom: 2rem;
-    background-color: #48494B; 
+#home-logo {
+    width: 3rem;
+    padding: 0.5rem;
+    
+}   
+
+#home-logo:hover {
+    fill: #f4791f;
+    
 }
 
 .navItem {
-    padding-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 .profilePicture {
