@@ -1,25 +1,26 @@
 nav {
     position: fixed;
     left: 0;
-    background-color: #3c423c36;
     width: var(--icon-size);
     height: 100vh;
     padding: 0 var(--icon-padding);
 }
 .nav-icon {
-    position: absolute;
-    /* top: 0;
-    left: 0; */
+    fill: white;
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+.nav-icon input {
+    display: none;
 }
 .nav-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    top: calc(var(--icon-size) + 0.1em);
 }
 .nav {
     position: relative;
-    height: calc(5*var(--icon-size));
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,5 +31,6 @@ nav svg {
     stroke: white;
 }
 nav svg:hover {
+    transition: stroke .4s ease-out;
     stroke: #10ff10;
 }

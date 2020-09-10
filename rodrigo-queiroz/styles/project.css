@@ -9,7 +9,7 @@
     color: var(--font-color);
 }
 figure {
-    width: 35vw;
+    width: 33vw;
     height: 35vh;
     box-sizing: border-box;
     background-color: #0a1707;
@@ -24,11 +24,11 @@ figure:hover {
     border: 5px solid #15e01ce0;
 }
 figure:hover img {
-    transform: translateY(-20%);
+    transform: translateY(-4vw);
     transition: all .5s cubic-bezier(0.6, 0.5);
 }
 figure:hover #three-lines-description {
-    transform: translateY(-30%);
+    transform: translateY(-6vw);
 }
 figure img {
     min-height: 30vh;

@@ -27,13 +27,6 @@
     min-height: 5em;
     max-height: 7em;
 }
-.contact svg {
-    margin: 0 20px;
-    fill: white;
-}
-.contact svg:hover {
-    fill: #10ff10;
-}
 .img-tooltip + .tooltip-text {
     visibility: hidden;
     position: absolute;
