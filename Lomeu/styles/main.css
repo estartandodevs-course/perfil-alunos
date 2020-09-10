@@ -11,8 +11,9 @@
 /*MAIN CSS*/
 
 body {
-    background-image: url(../assets/img/bg.png);
-    background-size: cover;
+    background-image: url(../assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #101010;
     color: white;
 }
 
