@@ -50,16 +50,28 @@ main{
   display: flex;
   grid-area: main;
 
+
+  justify-content: center;
+}
+.containerMain{
+  display: flex;
+  width: 70%;
   flex-wrap: wrap;
-  justify-content: stretch;
+
+
+  background-color: gray;
+
 }
 .titulo{
   font-size: 1.5rem;
 }
 .blocoTexto{
   display: block;
-  width: 40vw;
-  height: 30vh;
+  width: 40%;
+
+  margin: 3%;
+  padding: 1%;
+
   
   font-size: 1.3rem;
 }
