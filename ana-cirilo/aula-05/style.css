@@ -74,14 +74,9 @@ html, body {
     background-color: #0d0625;
 }
 
-ul a {
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-
 .fotos{
     display: flex;
+    justify-content: space-between;
 }
 
 #contato{
@@ -133,7 +128,10 @@ ul a {
 
 .page{
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
     padding-top:70px;
     padding-left:70px;
 }
