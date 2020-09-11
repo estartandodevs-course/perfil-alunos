@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Trade Winds", cursive;
 }
 
 html,
@@ -10,49 +9,35 @@ body {
   /* scroll-behavior: smooth; */
 }
 
-/* .container {
-  max-width: 1400px;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-} */
-
-/* menu */
-
-.side-menu {
-  display: flex;
-  position: fixed;
-  height: 100%;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-out, background-color 1s ease-out;
 }
+
+/* menu-mobile */
 
 .menu {
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   text-align: center;
-  background: #000207;
-}
+  padding: 20px 0;
+  background: #000;
 
-.menu-mobile {
-  position: absolute;
-  right: -37px;
-  font-size: 30px;
-  color: #230720;
-  cursor: pointer;
 }
 
 .menu img {
   width: 40px;
+  margin-right: 50px;
   padding: 10px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  transition: 0.8s;
+  transition: .8s;
+
 }
+
 .menu img:hover {
   border-radius: 20px;
   background: #C1C1C1;
-}
-
-#toggle:checked + .side-menu {
-  transform: translateX(0px);
 }
 
 #toggle {
