@@ -1,36 +1,64 @@
 nav {
     position: fixed;
     left: 0;
-    width: var(--icon-size);
-    height: 100vh;
-    padding: 0 var(--icon-padding);
+    height: 100%;
+    transition: all .6s ease-out;
+    z-index: 1;
 }
-.nav-icon {
+.icon-fill {
     fill: white;
-    width: var(--icon-size);
-    height: var(--icon-size);
 }
-.nav-icon input {
+input.toggle-sidemenu {
     display: none;
+}
+.toggle-sidemenu {
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+}
+#toggle-sidemenu:checked + label svg {
+    transform: rotate(180deg);
+}
+#toggle-sidemenu:checked ~ .nav-container {
+    width: 15vw;
+    background-color: #cccccccc;
+}
+.nav-text, .icon-fill {
+    display: none;
+}
+#toggle-sidemenu:checked ~ .nav-container .nav-text {
+    display: block;
 }
 .nav-container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    top: calc(var(--icon-size) + 0.1em);
+    background-color: #cccccc00;
 }
 .nav {
     position: relative;
+    top: calc(var(--icon-size) + 1vmin);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    align-items: flex-start;
 }
 nav svg {
     width: var(--icon-size);
     height: var(--icon-size);
     stroke: white;
+    transition: all .6s ease-out;
 }
 nav svg:hover {
-    transition: stroke .4s ease-out;
     stroke: #10ff10;
+}
+.icon-fill:hover {
+    fill: #10ff10;
+}
+nav a {
+    color: white;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 100%; */
 }
