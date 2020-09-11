@@ -50,9 +50,8 @@ body{
     justify-content: center;
 }
 .header-org {
-    background-image: url(./images/pexels-felix-mittermeier-956999.jpg);
+    background-image: url(./imageS/pexels-felix-mittermeier-956999.jpg);
     background-position-x: center;
-    background-repeat: no-repeat;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -113,7 +112,8 @@ h1 {
 main div{
     background-image: url(./images/Polka-Dots.svg);
     background-color: rgb(36, 36, 36);
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     display: flex;
     justify-content: center;
 }
@@ -133,7 +133,7 @@ main div{
 .text {
     color: white;
     margin: 10px 0 0 0;
-    width: 600px;
+    width: 550px;
 }
 .title{
     color: white;
@@ -145,7 +145,8 @@ main div{
     justify-content: space-evenly;
 }
 .previus-pages-org {
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     background-color: teal;
     margin-top: 40px;
 }
@@ -158,6 +159,10 @@ main div{
     color: white;
     text-align: center;
     margin-bottom: 2px;
+}
+.previus-image-org {
+    display: flex;
+    justify-content: space-evenly;
 }
 .previus-pages-image {
     height: 300px;
@@ -189,5 +194,79 @@ footer h2{
 .icon:hover {
     color: teal;
 }
-
-
+@media (max-width: 1024px) {
+    .previus-pages-image {
+        height: 240px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1023px) {
+    .about-me-image {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .me{
+        width: 300px;
+        height: 300px;
+        margin-right: 40px;
+    }
+    .text {
+        color: white;
+        margin: 10px 0 0 0;
+        width: 390px;
+    }
+    .previus-image-org {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 50px;
+        }
+        main div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-me-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .me{
+            width: 200px;
+            height: 200px;
+            margin-right: 5px;
+        }
+        .text {
+            color: white;
+            margin: 10px 0 0 0;
+            width: 300px;
+            text-align: center;
+        }
+        .previus-pages-image {
+            height: 200px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 40px;
+        }
+        .previus-pages-image {
+            height: 150px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 320px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
