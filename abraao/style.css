@@ -99,6 +99,11 @@ main{
   
   font-size: 1.4rem;
 }
+.texto{
+  text-justify: inter-word;
+  text-align: justify;
+  
+}
 .barraFotos{
   display: flex;
   grid-area: barra1;
@@ -142,17 +147,45 @@ footer{
   grid-area: foote;
 
   background-color:#8f5437;
+  font-family: 'Fira Sans', sans-serif;
 
   border-top: 2px solid black;
-  height: 15vh;
+  height: 25vh;
   
 
 }
+
+.blocoFooter{
+  font-size: 1.3rem;
+}
+.logo{
+  font-family: 'Lobster';
+  font-size: 4rem;
+  text-shadow: 3px 3px #333;
+  text-justify: center;
+
+}
+.block{
+  display:block;
+  margin: 1% 4vw;
+}
+.tituloFooter{
+  font-size: 1.7rem;
+  
+  
+}
 .footerContent{
-  font-family: 'Fira Sans';
-  margin: 3% 15%;
-  font: 1.5rem solid white;
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  
+  margin-left: 15%;
+  
   color: white;
+}
+p :a {
+  text-decoration: none;
 }
 
 @font-face {
