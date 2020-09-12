@@ -1,6 +1,7 @@
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Fira Sans', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,33 +16,41 @@ header{
   display: flex;
   grid-area: capa;
   width: 99vw;
-  height: 100vh;  
+  height: 90vh;  
 
-  background: url(./img/IMG-20190212-WA0130.jpg);
+  background: url(./img/back.jpg);
+  background-position: center; 
   background-repeat: round;
+  background-color:#ffe8c0;
   
   font-size: 8em;
   color: white;
  
   text-align: center; 
   align-items: center;
-  justify-content: center;
- 
-  
-  
-  
+  justify-content: center; 
+}
+.fraseDeEfeito{
+  font-family: 'Lobster';
+
+  color:#ffe8c0;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color:#9b5d3f;
+  text-shadow: 5px 3px #333;
 }
 .barraSobre{
   display: flex;
   grid-area: barra1;
   height: 8vh; 
+  padding-left: 18%;
 
   align-content: center;
   align-items: center;
-  background-color:blue; 
+  background-color: #8f5437; 
    
-
-  font-size: clamp(2em, 2.7em, 4em);  
+  font-family: 'Lobster';
+  font-size: 3em;  
+  
   color: white;
 
   
@@ -51,38 +60,74 @@ main{
   grid-area: main;
 
 
+
   justify-content: center;
 }
-.containerMain{
+.containerConteudo{
   display: flex;
   width: 70%;
   flex-wrap: wrap;
 
 
-  background-color: gray;
+  background-color: #ffe8c0;
 
 }
 .titulo{
-  font-size: 1.5rem;
+  display: block;
+
+  
+  font-size: 2rem;
+  margin: 1.5% 0 4% 0;
+  
 }
 .blocoTexto{
   display: block;
   width: 40%;
 
+  text-justify: inter-word;
+
   margin: 3%;
   padding: 1%;
 
   
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .barraFotos{
-  grid-area: barra2;
-  height: 50vh ;
+  display: flex;
+  grid-area: barra1;
+  height: 8vh; 
+  padding-left: 18%;
+
+  align-content: center;
+  align-items: center;
+  background-color: #8f5437; 
+   
+  font-family: 'Lobster';
+  font-size: 3em;  
+  color: white;
+
 }
-.containterFotos{
+.containerDeFotos{
+  display: flex;
   grid-area: image;
-  height: 50vh ;
+
+  justify-content: center;
+
+  
+  
 }
+.fotoHorizontal{
+  width: 30%;
+}
+.fotoVertical{
+  width: 20%;
+}
+
 footer{
   grid-area: foote;
+}
+
+@font-face {
+  font-family: Lobster;
+  src: url(./font/Lobster.otf);
 }
