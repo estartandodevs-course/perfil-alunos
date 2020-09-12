@@ -64,9 +64,11 @@ html, body {
 
 .body-home{
     background-color: #0d0625;
-    background-image: url(./img/DFFpng.png);
+    background-image: url(./img/DFF.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 45%;
+
 }
 /* styles contato */
 
@@ -132,6 +134,5 @@ html, body {
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding-top:70px;
-    padding-left:70px;
+    margin:40px 40px;
 }
