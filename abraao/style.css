@@ -81,6 +81,11 @@ main{
   margin: 1.5% 0 4% 0;
   
 }
+.cartaoVisita{
+  display: flex;
+
+  justify-content: center;
+}
 .blocoTexto{
   
   display: block;
@@ -120,14 +125,34 @@ main{
   
 }
 .fotoHorizontal{
-  width: 30%;
+  width: 40%;
+  height: 1fr;
 }
 .fotoVertical{
   width: 20%;
 }
+.fotoPerfil{
+  margin: 3% 4%;
+
+  width: 25%;
+  border-radius: 30px;
+}
 
 footer{
   grid-area: foote;
+
+  background-color:#8f5437;
+
+  border-top: 2px solid black;
+  height: 15vh;
+  
+
+}
+.footerContent{
+  font-family: 'Fira Sans';
+  margin: 3% 15%;
+  font: 1.5rem solid white;
+  color: white;
 }
 
 @font-face {
