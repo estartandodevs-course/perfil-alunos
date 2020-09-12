@@ -49,6 +49,7 @@ header{
   background-color: #8f5437; 
    
   font-family: 'Lobster';
+  text-shadow: 3px 3px #333;
   font-size: 3em;  
   
   color: white;
@@ -81,6 +82,7 @@ main{
   
 }
 .blocoTexto{
+  
   display: block;
   width: 40%;
 
@@ -103,6 +105,7 @@ main{
   background-color: #8f5437; 
    
   font-family: 'Lobster';
+  text-shadow: 3px 3px #333;
   font-size: 3em;  
   color: white;
 
