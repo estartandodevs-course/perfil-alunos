@@ -2,16 +2,14 @@
     font-family: "pacifico";
     src: url(./fonts/Pacifico-Regular.ttf);
 }
-body {
-    padding: 0;
-    margin: 0;
-}
 html,
 body{
     height: 100%;
     width: 100%;
 }
 body{
+    padding: 0;
+    margin: 0;
     background-color: black;
 }
 /*top-page*/
@@ -27,20 +25,16 @@ body{
 #menu-switch:checked + .mobile-menu{
     transform: translatex(100%);
 }
-.work {
-    height: 100px;
-    width: 200px;
-}
-.work:hover{
-    background-color: rgb(15, 48, 48);
-    padding: 5px;
-}
-#work-nav {
+#mobile-nav {
     display: flex;
     flex-direction: column;
-
     justify-content: space-evenly;
 }
+.mobile-nav-list  {
+    padding: 10px;
+    margin: 3px 0 0 4px;
+    background-color: rgb(15, 48, 48);
+ }
 #menu-switch{
     display: none;
 }
@@ -60,7 +54,7 @@ body{
    left: 450px;
    top: 5px;
 }
-#main-header {
+.main-header {
     height: 100%;
     width: 100%;
     display: flex;
@@ -85,20 +79,20 @@ h1 {
     margin:0 0 5px 0;
     text-decoration: underline white;
 }
-#main-header h2{
+.main-header h2{
     margin: 0 0 40px 0;
     color: white;
 }
-#main-header a {
+.main-header a {
     color: white;
     font-size: 20px;
-    margin: 10px;
+    margin-right: 10px;
     text-decoration: none;
 }
-#main-header a:hover {
+.main-header a:hover {
     color: teal;
 }
-#main-header nav {
+.main-header nav {
     display: flex;
     justify-content: center;
 }

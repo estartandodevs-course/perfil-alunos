@@ -1,12 +1,16 @@
+html{
+    width: 100%;
+}
 body{
     background-color: #d9e7ff;
     width: 100%;
+    height: 100%;
     margin: 0;
 }
 .portfolio{
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -17,6 +21,7 @@ body{
 }
 #orkut{
     background-color: rgb(105, 144, 252);
+    width: 100%;
 }
 #orkut-organization{
     display: flex;
@@ -143,6 +148,7 @@ button{
 .page-organization{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 #left-side{
     background-color: white;
@@ -248,4 +254,54 @@ button{
     color: rgb(64, 109, 233);
     text-decoration: rgb(64, 109, 233) underline;
     margin: 0 0 0 5px;
+}
+@media (max-width: 1023px) {
+    #orkut-organization{
+        display: none;
+    }
+    .page-organization{
+        flex-direction: column;
+        align-items: center;
+    }
+    #left-side {
+        display: flex;
+    }
+    #right-side{
+        display: flex;
+    }
+    #friends {
+        margin-right: 10px;
+    }
+    #profile-picture{
+        height: 100px;
+        width: 90px;
+        padding: 0 0 0 10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    #right-side{
+        flex-direction: column;
+        align-items: center;
+    }
+    #friends {
+        margin-right: 0;
+    }
+    .menu2 {
+        margin: 2px 2px 2px 2px;
+    }
+    #left-side {
+        margin: 0;
+    }
+    .perfil{
+        padding: 3px;
+    }
+}
+@media (max-width: 424px){
+    #menu1{
+        margin: 0;
+    }
+    #profile-right{
+        margin-right: 0;
+    }
 }
