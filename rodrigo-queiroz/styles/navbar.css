@@ -5,9 +5,6 @@ nav {
     transition: all .6s ease-out;
     z-index: 1;
 }
-.icon-fill {
-    fill: white;
-}
 input.toggle-sidemenu {
     display: none;
 }
@@ -15,43 +12,58 @@ input.toggle-sidemenu {
     cursor: pointer;
     position: absolute;
     right: 10%;
+    z-index: 2;
 }
 #toggle-sidemenu:checked + label svg {
     transform: rotate(180deg);
 }
-#toggle-sidemenu:checked ~ .nav-container {
-    width: 15vw;
-    background-color: #cccccccc;
-}
-.nav-text, .icon-fill {
-    display: none;
-}
-#toggle-sidemenu:checked ~ .nav-container .nav-text {
-    display: block;
-}
 .nav-container {
     height: 100%;
-    background-color: #cccccc00;
+    visibility: hidden;
+    transition: all .6s ease-out;
 }
-.nav {
+#toggle-sidemenu:checked ~ .nav-container {
+    visibility: visible;
+    width: 10vw;
+    transition: all .6s ease-out;
+    background-image: linear-gradient(180deg, #e4171736, #000)
+}
+.nav-links {
     position: relative;
     top: calc(var(--icon-size) + 1vmin);
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: flex-start;
+    align-items: space-between;
+    z-index: 2;
 }
-nav svg {
-    width: var(--icon-size);
-    height: var(--icon-size);
-    stroke: white;
+.nav-text {
+    display: none;
+}
+#toggle-sidemenu:checked ~ .nav-container .nav-text {
+    display: block;
     transition: all .6s ease-out;
 }
-nav svg:hover {
+nav .nav-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: all .6s ease-in-out;
+}
+.icon-fill {
+    fill: #fff;
+}
+.icon-stroke {
+    stroke: #fff;
+}
+.nav-link:hover .icon-fill {
+    fill: #10ff10;
+}
+.nav-link:hover .icon-stroke {
     stroke: #10ff10;
 }
-.icon-fill:hover {
-    fill: #10ff10;
+.nav-link:hover .nav-text {
+    color: #10ff10;
+    transition: all .6s ease-in-out;
 }
 nav a {
     color: white;
@@ -60,5 +72,4 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* width: 100%; */
 }

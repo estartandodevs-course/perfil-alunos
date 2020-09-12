@@ -28,7 +28,7 @@ figure:hover img {
     transition: all .5s cubic-bezier(0.6, 0.5);
 }
 figure:hover #three-lines-description {
-    transform: translateY(-6vw);
+    transform: translateY(-35%);
 }
 figure img {
     min-height: 30vh;
