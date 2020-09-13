@@ -22,7 +22,13 @@ body {
     color: white;
     text-align: center;
 }
-
+header {
+    margin-bottom: 45rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
 a {
     text-decoration: none;
     color: #f9eac3;
@@ -106,3 +112,4 @@ a {
     display: none;
     margin-left: 1rem;
 }
+
