@@ -24,22 +24,48 @@ body {
   text-align: center;
   padding: 20px 0;
   background: #000;
-
 }
 
 .menu img {
   width: 40px;
   margin-right: 50px;
   padding: 10px;
-  transition: .8s;
-
+  transition: 0.8s;
 }
 
 .menu img:hover {
   border-radius: 20px;
-  background: #C1C1C1;
+  background: #c1c1c1;
 }
 
-#toggle {
-  display: none;
+.banner {
+  width: 100%;
+  background-image: url("./img/bg3.jpg");
+}
+
+.cont-banner {
+  background-color: rgba(5, 1, 26, 0.9);
+  padding: 120px 0;
+}
+
+.cont-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.color-banner h1, h2 {
+  font-family: 'Fredericka the Great', cursive;
+  color:rgb(188, 197, 245);
+}
+
+.color-banner h1{
+  margin-bottom: 30px;
+  font-size:56px;
+ 
+}
+.icon img{
+  padding-top: 60px;
+  width: 200px;
 }
