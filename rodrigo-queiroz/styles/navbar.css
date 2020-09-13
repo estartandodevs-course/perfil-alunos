@@ -35,20 +35,20 @@ input.toggle-sidemenu {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* align-items: space-between; */
     z-index: 2;
 }
 .nav-text {
     display: none;
 }
 #toggle-sidemenu:checked ~ .nav-container .nav-text {
-    display: block;
+    display: inline-block;
     transition: all .6s ease-out;
 }
 nav .nav-icon {
     width: var(--icon-size);
     height: var(--icon-size);
     transition: all .6s ease-in-out;
+    margin: 0 1px 0 0;
 }
 .icon-fill {
     fill: #fff;
@@ -56,7 +56,7 @@ nav .nav-icon {
 .icon-stroke {
     stroke: #fff;
 }
-.nav-link:hover .icon-fill {
+.nav-link:hover .icon-fill, .toggle-sidemenu:hover svg {
     fill: #10ff10;
 }
 .nav-link:hover .icon-stroke {
@@ -73,4 +73,5 @@ nav a {
     display: flex;
     justify-content: flex-start;
     margin: 1vmin;
+    align-items: center;
 }
