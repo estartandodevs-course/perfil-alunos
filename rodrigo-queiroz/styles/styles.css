@@ -18,6 +18,7 @@ html, body {
 }
 section {
     display: block;
+    position: relative;
     height: 100%;
     width: 100vw - var(--nav-size); 
     margin-left: var(--nav-size);
@@ -43,6 +44,16 @@ section p {
 .right {
     right: 0;
 }
+.blue {
+    color: #325cf3;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+    text-shadow: 0.5px 0.5px white;
+}
 .italic {
     font-style: italic;
 }
@@ -67,7 +78,12 @@ section p {
     min-height: 60vh;
     max-height: 100vh;
 }
+
+
 @media (max-width: 760px) {
+/* =======================================
+                NAVBAR/BG
+======================================= */
     .bg-photo {
         right: -10%;
     }
@@ -110,14 +126,36 @@ section p {
     }
     .nav-icon {
         margin: 0 0 1px 0;
-
+    }
+/* =======================================
+                ABOUT
+======================================= */
+    .img-about {
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        position: relative;
+        top: 10%;
+    }
+    :root {
+        --central-div: 70%;
     }
 } 
-/* @media (max-width: 580px) {
-
-}
-@media (max-width: 500px) {
-    .intro-container {
-
+@media (min-width: 760px) {
+    figure:hover {
+        border: 5px solid #15e01ce0;
     }
-} */
+    figure:hover img {
+        transform: translateY(-4vw);
+        transition: all .5s cubic-bezier(0.6, 0.5);
+    }
+    figure:hover #three-lines-description {
+        transform: translateY(-35%);
+    }
+    figcaption {
+        display: none;
+    }
+    figure:hover figcaption {
+        display: block;
+    }    
+}
