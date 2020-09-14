@@ -18,8 +18,37 @@ body {
   background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
 }
 
-/* Estilização MENU */
 
+.menu nav {
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  background-color: #000;
+  align-items: center;
+}
+
+#toggle {
+  display: none;
+}
+
+ul li {
+  padding: 10px 16px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+li a:hover{
+  color: rgba(231,133,217,1)
+}
+
+/* Estilização MENU */
+/*
 .menu nav {
   display: block;
   position: relative;
@@ -64,7 +93,7 @@ li a:hover{
 
 #toggle {
   display: none;
-}
+}*/
 
 .name {
   text-align: center;
