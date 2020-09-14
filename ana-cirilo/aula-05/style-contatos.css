@@ -78,6 +78,7 @@ html, body {
 #p{
     color: white;
     display: flex;
+    font-size: larger;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -106,10 +107,4 @@ html, body {
     align-items: center;
     padding:0;
     margin-right:0;
-}
-
-#photo{
-    float: left;
-    border-radius: 50%;
-    shape-outside: circle(50% at 110px 100px);
 }
