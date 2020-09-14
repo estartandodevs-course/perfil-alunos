@@ -135,6 +135,10 @@ a{
         margin-top: 102px;
     }
 
+    .paragrafo-dois{
+        display: none;
+    }
+
     @media (max-width:790px){
 
         .sobre{
@@ -156,6 +160,30 @@ a{
         .sobre p{
             text-align: justify;
             font-size: 18px;
+        }
+
+        
+    }
+
+    @media (max-width:550px){
+
+        .paragrafo-um{
+            display: none;
+        }
+
+        .paragrafo-dois {
+            display: block;
+            font-size: 17px !important;
+            text-align: center;
+            word-wrap: break-word;
+            padding: 0 10px;
+        }
+
+        @media (max-width:350px){
+
+            .paragrafo-dois {
+                font-size: 15px !important;
+            }
         }
     }
 
