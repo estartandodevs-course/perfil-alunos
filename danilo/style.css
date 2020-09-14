@@ -80,14 +80,16 @@ body {
   font-size: 16px;
   margin-top: 20px;
 }
+.text-img img{
+  width: 300px;
+  margin: 0 0 60px 20px;
+}
 
-.text-img img,
+
+
 .text-img p {
   margin: 0 0 60px 20px;
   width: 400px;
-}
-
-.text-img p {
   font-size: 24px;
   padding-left: 30px;
 }
@@ -107,9 +109,67 @@ body {
 }
 
 .text-img .team {
-  width: 15%;
+  width: 130px;
   border-radius: 30%;
 }
 .text-img .icon{
   width: 40px;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .mobile-menu {
+  transform: translateX(0px);
+}
+
+.team-img{
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* media */
+
+@media(max-width: 700px) {
+  .menu{
+    text-align: center;
+    display: inline-block;
+  }
+  .mobile-menu {
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+  }
+  .mobile {
+    position: absolute;
+    right: -37px;
+    font-size: 30px;
+    color: rgb(7, 193, 250);
+    cursor: pointer;
+  } 
+  .menu img{
+    margin:0px;
+  }
+  
+  .color-banner h1{
+    padding: 0 20px;
+  }
+  .icon img{
+    width: 100px;
+  }
+  .text-img img, .text-img p{
+    margin-left: 0;
+  }
+  .title h3 {
+    padding: 20px;
+    text-align: center;
+  }
+  .text-img .icon{
+    margin: 0 20px 20px 0;
+  }
 }
