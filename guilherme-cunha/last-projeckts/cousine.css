@@ -1,7 +1,7 @@
 .portfolio{
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -10,14 +10,17 @@
 .portfolio:hover{
     color: teal;
 }
+/*Cabeçalho*/
 .title{
     background-image: url(./images/Large-Triangles.svg);
     background-color: rgb(12, 12, 75) ;
     margin: 0px 0px 0px;
-    padding: 0 40%;
+    display: flex;
+    justify-content: center;
 }
-#homeBotton{
-    background-color: rgb(58, 58, 121) ;
+/*Barra de navegação entre paginas de assuntos*/
+#home-botton{
+    background-color:rgb(58, 58, 121) ;
     color: #ffffff; 
     margin: 0px 0 20px;
     padding: 0 60px;
@@ -33,15 +36,17 @@
     padding: 0 60px;
 }
 #cousine{
-    background-color: rgb(12, 12, 75) ;
+    background-color:rgb(12, 12, 75) ;
     color: #ffffff;
     text-decoration: unset;
     font-size: 20px;
     margin: 0px 0px 20px;
     padding: 0 60px;
 }
-.upNav{
-    margin: 0px 40% 0px;
+.up-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 /*Body color*/
 body{
@@ -51,51 +56,117 @@ body{
     width: 100%;
 }
 /*Noticias principais*/
-.mainNews1{
+.org p{
+    max-width: 680px;
+}
+h2{
+    max-width: 680px;
+}
+.main-news1{
     text-align: center;
     color: #000000;
     text-decoration: unset;
     margin: 0 10px 5px 0;
 }
-.imgN{
+.img-n{
     width: 680px;
     height: 381px;
     margin-bottom: 15%;
 }
-.textNews{
+.text-news{
     color: black;
     text-decoration: unset;
     margin-right: 10%;
 }
 /*Patrocinadores*/
-.Rside{
+.r-side{
     text-align: center;
-    margin-left: 10px;
     border-top: 1px dashed rgb(12, 12, 75) ;
 }
 /*Melhor maneira que eu descobri pra botar as paradas lado a lado (dependendo do tamanho da tela não funciona)*/
-div{
-    display: inline-block;
-   text-align: center;
+.org{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }
 /*Noticias secundarias*/
-.SNews{
-    margin: 10px 10px 0 10px;
+.s-news{
+    margin: 10px 0 0 40px;
     padding-top: 40px;
 }
-.StextNews{
+.s-text-news{
     color: black;
     text-decoration: unset;
     font-size: small;
 }
-.Spicture{
+.s-picture{
     padding-left: 5%;
 }
 /*Rodapé*/
 .disclaimer{
     text-align: center;
+    width: 100%;
     font-size: small;
     border-top: 1px dashed white;
     background: url(./images/Large-Triangles.svg) rgb(12, 12, 75) 2px 2px;
     color: white;
 }
+@media (max-width: 1440px) {
+    .img-n{
+        width: 400px;
+        height: 220px;
+    }
+    .s-picture {
+        max-width: 400px;
+        height: 220px;
+    }
+}
+@media (max-width: 1023px) {
+    .org{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s-news{
+        margin: 0;
+    }
+    .img-n{
+        margin-bottom: 2px;
+}
+.main-news1 {
+    margin: 0;
+}
+}
+@media (max-width: 767px) {
+    #home-botton{
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    #sports{
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    #cousine{
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    .image-p{
+        width: 200px;
+        height: 100px;
+    }
+    .logo {
+        width: 300px;
+        height: 180px;
+    }
+}
+@media (max-width: 424px) {
+    .img-n{
+        width: 300px;
+        height: 215px;
+    }
+    .s-picture {
+        max-width: 300px;
+        height: 215px;
+    }
+ 
+}
+

@@ -213,7 +213,7 @@ footer h2{
     .mobile-menu {
         display: block;
         position: absolute;
-        background-color: teal;
+        background-color: rgba(0, 128, 128, 0.74);
         right: 100%;
         top: 0;
         width: 70%;
