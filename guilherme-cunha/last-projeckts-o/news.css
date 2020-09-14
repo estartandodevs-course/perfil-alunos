@@ -1,0 +1,54 @@
+.title{
+    background-image: url(./images/Large-Triangles.svg);
+    background-color: rgb(12, 12, 75) ;
+    margin: 0px 0px 0px;
+    padding: 0 40%;
+}
+#homeBotton{
+    background-color: rgb(58, 58, 121)  ;
+    color: #ffffff; 
+    margin: 0px 0 20px;
+    padding: 0 60px;
+    font-size: 20px;
+   text-decoration: unset;
+}
+#sports{
+    background-color: rgb(58, 58, 121) ;
+    color: #ffffff;
+    text-decoration: unset;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    padding: 0 60px;
+}
+#cousine{
+    background-color: rgb(58, 58, 121) ;
+    color: #ffffff;
+    text-decoration: unset;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    padding: 0 60px;
+}
+.upNav{
+    margin: 0px 40% 0px;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+.news{
+    text-align: center;
+}
+ol{
+    text-align: left;
+    margin-left: 32%;
+}
+ul{
+    text-align: left;
+    margin-left: 32%;
+}
+.disclaimer{
+    text-align: center;
+    font-size: small;
+    border-top: 1px dashed white;
+    background: url(./images/Large-Triangles.svg) rgb(12, 12, 75) 2px 2px;
+    color: white;
+}

@@ -1,0 +1,101 @@
+.portfolio{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.portfolio:hover{
+    color: teal;
+}
+.title{
+    background-image: url(./images/Large-Triangles.svg);
+    background-color: rgb(12, 12, 75) ;
+    margin: 0px 0px 0px;
+    padding: 0 40%;
+}
+#homeBotton{
+    background-color: rgb(58, 58, 121) ;
+    color: #ffffff; 
+    margin: 0px 0 20px;
+    padding: 0 60px;
+    font-size: 20px;
+   text-decoration: unset;
+}
+#sports{
+    background-color: rgb(58, 58, 121) ;
+    color: #ffffff;
+    text-decoration: unset;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    padding: 0 60px;
+}
+#cousine{
+    background-color: rgb(12, 12, 75) ;
+    color: #ffffff;
+    text-decoration: unset;
+    font-size: 20px;
+    margin: 0px 0px 20px;
+    padding: 0 60px;
+}
+.upNav{
+    margin: 0px 40% 0px;
+}
+/*Body color*/
+body{
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+}
+/*Noticias principais*/
+.mainNews1{
+    text-align: center;
+    color: #000000;
+    text-decoration: unset;
+    margin: 0 10px 5px 0;
+}
+.imgN{
+    width: 680px;
+    height: 381px;
+    margin-bottom: 15%;
+}
+.textNews{
+    color: black;
+    text-decoration: unset;
+    margin-right: 10%;
+}
+/*Patrocinadores*/
+.Rside{
+    text-align: center;
+    margin-left: 10px;
+    border-top: 1px dashed rgb(12, 12, 75) ;
+}
+/*Melhor maneira que eu descobri pra botar as paradas lado a lado (dependendo do tamanho da tela não funciona)*/
+div{
+    display: inline-block;
+   text-align: center;
+}
+/*Noticias secundarias*/
+.SNews{
+    margin: 10px 10px 0 10px;
+    padding-top: 40px;
+}
+.StextNews{
+    color: black;
+    text-decoration: unset;
+    font-size: small;
+}
+.Spicture{
+    padding-left: 5%;
+}
+/*Rodapé*/
+.disclaimer{
+    text-align: center;
+    font-size: small;
+    border-top: 1px dashed white;
+    background: url(./images/Large-Triangles.svg) rgb(12, 12, 75) 2px 2px;
+    color: white;
+}
