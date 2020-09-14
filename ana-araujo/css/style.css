@@ -15,14 +15,15 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
+  height: 100vh;
+  
 }
 
 
 .menu nav {
   display: flex;
   justify-content: center;
-  height: 70px;
+  height: 13vh;
   background-color: #000;
   align-items: center;
 }
@@ -95,34 +96,42 @@ li a:hover{
   display: none;
 }*/
 
+.container-index  {
+  background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
+  height: 74vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .name {
-  text-align: center;
+  margin-top: 100px;
   text-transform: uppercase;
-  font-size: 110px;
+  font-size: 130px;
   font-weight: 700;
-  margin-top: 150px;
   font-family: 'Ubuntu', sans-serif;
 }
 
-  .description {
-    text-align: center;
-    margin-top: 30px;
-    font-size: 28px;
-    font-weight: 300;
+ .description {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 300;
   }
 
   .footer {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #000;
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 
  .footer img {
     width: 60px;
     height: 60px;
     padding: 10px 12px;
-    margin-top: 150px;
+    
     transition: all .2s ease-in-out;
  }
 
