@@ -171,4 +171,56 @@ a:visited{
     .navbar{
         display: none;
     }
+
+    /* Adicionando a navbar */
+
+    .menu-item {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 3px;
+      }
+      
+      .menu-item a {
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+      }
+      
+      .side-menu nav {
+        display: block;
+        position: relative;
+      }
+      
+      .side-menu {
+        background-color: #fff;
+        width: 70%;
+        height: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-out, background-color 1s ease-out;
+      }
+      
+      .menu-icon {
+        position: absolute;
+        right: -50px;
+        font-size: 30px;
+      }
+      
+      #toggle:checked + .side-menu {
+        transform: translateX(0px);
+        background-color: #301313;
+      }
+      
+      #toggle {
+        display: none;
+      }
+
+      label {
+          color: white;
+      }
+}
+
+@media (min-width: 768px){
+    .navbar-mobile {
+        display: none;
+    }
 }
