@@ -18,17 +18,16 @@ body {
 
 /* INTRODUAÇÃO */
 
-.menu-navegacao {
+.menu-navegacao nav {
     width: 100vw;
     height: 80px;
+    background: #000;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #000;
     position: fixed;
     z-index: 10;
 }
-
 
 .menu-navegacao a {
     color: #FFF;
@@ -42,13 +41,18 @@ body {
     color: #FF5E84;
 }
 
+@media (max-width: 768px) {
+    .menu-navegacao a {
+        margin-right: 50px;  
+    }
+}
+
 /* INTRODUÇÃO */
 
 .intro-container {
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -75,10 +79,10 @@ body {
     font-weight: bold;
 }
 
-
 .introducao ul li {
-    margin: 20px 5px;
     display: inline-block;
+    margin: 20px 5px;
+
 }
 
 .introducao svg, .next svg {
@@ -102,45 +106,61 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.sobre-foto {
-    width: 50%;
+.sobre-conteudo {
+    max-width: 1200px;
+    margin: 0 80px;
 }
 
-.sobre-foto img {
-    width: 450px;
+
+.sobre-conteudo img {
+    width: 40%;
+    max-width: 450px;
+    margin-left: 60px;
+    float: right;
+    border: 1px solid yellow; 
 }
 
-.sobre-texto {
-    width: 50%;
-}
 
-.sobre-texto h1 {
-    padding: 40px 0;
+.sobre-conteudo h1 {
+    padding-bottom: 15px;
     text-align: justify;
     color: #FF5E84;
     font-weight: bold;
     font-size: 2.25rem;
 }
 
-.sobre-texto p {
-    padding-right: 80px;
+.sobre-conteudo p {
+    border: 1px solid blue;
     font-size: 1.25rem;
-    text-indent: 70px;
+    text-indent: 4rem;
     text-align: justify;
-    line-height: 25px;
+    line-height: 1.5rem;
 }
 
 
-.sobre-texto span:hover {
+.sobre-conteudo span:hover {
     color: #FA9EBA;
 }
 
-.sobre-texto h3 {
-    padding: 20px 0;
+.sobre-conteudo h3 {
     text-align: justify;
+    border: 1px solid blue;
+}
+
+@media (max-width: 1025px) {
+    .sobre-conteudo img {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 769px) {
+    .sobre-conteudo {
+        margin: 0 50px;  
+    }
 }
 
 
