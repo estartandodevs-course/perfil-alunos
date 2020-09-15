@@ -152,6 +152,60 @@ header .menu ul li a {
     font-weight: 500
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #DFDFDF;
+    padding: 30px 30px 0 30px;
+
+}
+
+footer a {
+    color: #585B5E;
+}
+
+footer a:hover {
+    color: #404142;
+}
+
+footer .grid {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+footer .grid .one {
+    flex-basis: 33.3333333333%;
+    text-align: left;
+}
+
+footer .grid .two {
+    flex-basis: 33.3333333333%;
+    text-align: center;
+}
+
+footer .grid .three {
+    flex-basis: 33.3333333333%;
+    text-align: right;
+}
+
+footer .grid p {
+    font-size: 14px;
+}
+
+footer .grid .two a {
+    margin-right: 15px;
+}
+
+footer .grid .two i:hover {
+    color: #000000;
+}
+
+footer .grid .two a i {
+    font-size: 1.8rem;
+    color: #585B5E;
+}
+
 
 /* ===== MEDIA QUERY ==== */
 
