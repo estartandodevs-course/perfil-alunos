@@ -28,6 +28,10 @@ header {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 a {
     text-decoration: none;
@@ -58,7 +62,6 @@ a {
 .main-content p {
     margin-left: auto;
     margin-right: auto;
-    width: 100rem;
 }
 
 .nav-item {
@@ -75,7 +78,6 @@ a {
     width: 5rem;
     height: 100vh;
     position: fixed;
-    top: 0;
     transition: width 200ms ease;
 }
 
@@ -113,3 +115,21 @@ a {
     margin-left: 1rem;
 }
 
+
+@media (max-width: 350px) {
+    header {
+        text-align: left;
+        display: block;
+        padding: 0;
+    }
+    .nav-bar {
+        width: 3rem;
+    }
+    .nav-link svg {
+        min-width: 1.5rem;
+        margin: 0 0.8rem;
+    }
+    .nav-bar:hover {
+        width: 12rem;
+    }
+}
