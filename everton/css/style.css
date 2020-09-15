@@ -37,7 +37,7 @@ header .menu ul li a {
             rgba(0, 0, 0, 0.6)),
         url('../img/background-hero.jpg') fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,28 @@ header .menu ul li a {
 
 .fadeInUp {
     animation: fadeInUp 2.5s;
+}
+
+
+/* SOBRE MIM */
+.sobre {
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+}
+
+.sobre h4 {
+    font-size: 2rem;
+    color: #585B5E;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sobre p{
+    color: #322C28;
+    text-align: left;
+    font-size: 1.1rem;
 }
 
 /* ===== MEDIA QUERY ==== */
