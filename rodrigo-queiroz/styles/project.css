@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.whole-screen a{
+.card a{
     color: var(--font-color);
 }
 figure {

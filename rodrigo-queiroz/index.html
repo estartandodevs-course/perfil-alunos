@@ -20,7 +20,7 @@
         <input type="checkbox" id="toggle-sidemenu" class="toggle-sidemenu">
         <label for="toggle-sidemenu" class="toggle-sidemenu">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon icon-fill">
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon icon-fill" id="toggle-icon">
                 <path
                     d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
                 </path>
@@ -121,23 +121,25 @@
             <h1>PROJETOS</h1>
         </div>
         <div class="whole-screen">
-            <a href="https://github.com/teddiur/mortality-simulation">
-                <figure class="card">
+            <figure class="card">
+                <a href="https://github.com/teddiur/mortality-simulation">
                     <img src="./assets/python-project.png" alt="python project" id="three-lines-description">
                     <figcaption>Simulação usando um <span class="italic">toymodel</span> em Python sobre contagio em uma
                         pandemia. Estão representadors <span class="blue">individuos infectáveis</span>, <span
                             class="red">infectados</span> e <span class="black">mortos</span>.
                     </figcaption>
-                </figure>
-            </a>
-            <a href="https://teddiur.github.io/estartando-devs/">
-                <figure class="card">
+                </a>
+            </figure>
+
+            <figure class="card">
+                <a href="https://teddiur.github.io/estartando-devs/">
                     <img src="./assets/page-project.png" alt="project page">
                     <figcaption>Projeto desenvolvido para treinar HTML e CSS. É uma wiki do curso <span
                             class="italic">estartando devs.</span>
                     </figcaption>
-                </figure>
-            </a>
+                </a>
+            </figure>
+
             <figure class="card">
                 <img src="./assets/devtools-project.jpeg" alt="devtools project">
                 <figcaption>Edição de um site para treinar DevTools e entedimento da estrutura HTML.</figcaption>
