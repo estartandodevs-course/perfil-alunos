@@ -150,6 +150,7 @@ footer{
   font-family: 'Fira Sans', sans-serif;
 
   border-top: 2px solid black;
+  
   height: 25vh;
   
 
@@ -159,6 +160,8 @@ footer{
   font-size: 1.3rem;
 }
 .logo{
+  color:#ffe8c0 ;
+
   font-family: 'Lobster';
   font-size: 4rem;
   text-shadow: 3px 3px #333;
@@ -182,11 +185,17 @@ footer{
   
   margin-left: 15%;
   
-  color: white;
+  color:#ffe8c0;
 }
-p :a {
+p :link {
   text-decoration: none;
+  color: black;
 }
+p :visited{
+  color:black;
+}
+.logo :link {color:#ffe8c0}
+.logo :visited {color:#ffe8c0}
 
 @font-face {
   font-family: Lobster;
