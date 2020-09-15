@@ -27,9 +27,6 @@ body {
   align-items: center;
 }
 
-#toggle {
-  display: none;
-}
 
 ul li {
   padding: 10px 16px;
@@ -106,8 +103,9 @@ li a:hover{
 .name {
     margin-top: 150px;
     text-transform: uppercase;
-    font-size: 130px;
+    font-size: 150px;
     font-weight: 700;
+    text-align: center;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -163,5 +161,57 @@ li a:hover{
   color: rgba(0, 0,0, 1);
  }
   
-
+  @media (max-width: 400px){
   
+    body {
+      background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
+    }
+    
+    .container{
+      background-color: #fff;
+    }
+    .menu nav {
+      height: 15vh;
+    }
+
+    ul li {
+      font-size: 30px;
+    }
+
+    .footer {
+      text-align: center;
+      height: 15vh;
+    }
+
+    .footer img {
+      text-align: center;
+      width: 50px;
+      height: 50px;
+   }
+
+   .name {
+    margin-top: 100px;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .about-text {
+    margin-top: -100px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+    width: 300px;
+    transition: 0.5s;
+    color: rgba(0, 0,0, .6);
+ }
+
+  }
+   
+ 
+ 
