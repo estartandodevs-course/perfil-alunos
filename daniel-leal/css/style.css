@@ -1,4 +1,45 @@
-#foto {
-    width: 250px;
-    margin-left: 25vh;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #feceab;
+}
+
+section {
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tela-principal {
+    display: flex;
+    flex-direction: line;
+}
+
+#perfil-container {
+    background-color: #e84a5f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+#foto-perfil{
+    height: 30vh;
+    align-content: center;
+    border-radius: 20vh;
+    margin: 25px;
+    border: 5px solid #850E0E;
+}
+
+#descricao-perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
