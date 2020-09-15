@@ -61,7 +61,7 @@ input.toggle{
 }
 
 .menu-mobile ul{
-    padding: 0.625rem 0.5rem;
+    padding: 0.625rem 0.5rem; 
 }
 
 .menu-mobile ul a{
@@ -73,14 +73,18 @@ input.toggle{
     margin-right: 0.625rem;
 }
 
+.menu-mobile ul li{
+    border-bottom:1px solid rgb(156, 142, 89);
+}
+
 .menu-mobile ul a:hover{
     color: var(--color-black-opaque);
 }
 
 .menu-icon{
     position: absolute;
-    top:0.5rem;
-    right: -1.6rem;
+    top:0.9rem;
+    right: -4.5rem;
 }
 
 .menu-mobile ul a img:hover,
