@@ -114,6 +114,45 @@ header .menu ul li a {
     font-size: 1.1rem;
 }
 
+/* PROJECT */
+
+.project {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../img/background-projetos.jpg') fixed;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(197, 197, 197);
+    padding: 80px 100px;
+}
+
+.project .grid {
+    display: flex;
+}
+
+.project .grid li {
+    text-align: center;
+    margin: 0 80px;
+}
+
+.project .grid li h4 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.project .grid li h5 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500
+}
+
+
 /* ===== MEDIA QUERY ==== */
 
 @media (max-width: 900px) {
