@@ -128,7 +128,7 @@ html, body {
 }
 
 #toggle:checked + .side-menu-contato {
-    transform:translateX(0px)
+    transform:translateX(0px);
 
 }
 
@@ -139,4 +139,61 @@ html, body {
     justify-content:center;
     align-items: center;
     margin:40px 40px;
+}
+
+.query{
+    display: flex;
+    margin: 10px;
+    margin-top: 30px;
+
+}
+
+.query a{
+    color: white;
+    text-decoration: none;
+    font-family: "Alegreya";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width:915px)
+{
+    .side-menu {
+        display: none;
+    }
+    .menu-icon{
+        display: none;
+    }
+    #toggle {
+        display:none;
+    }
+    .side-menu-contato {
+        display: none;
+    }
+    .menu-icon-contato{
+        display: none;
+    }
+    #toggle {
+        display:none;
+    }
+    
+    .page{
+        display: flex;
+        flex-direction: row;
+    }
+    .fotos {
+        display: block;
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media (min-width:916px)
+{
+    .query{
+        display: none;
+    }
 }
