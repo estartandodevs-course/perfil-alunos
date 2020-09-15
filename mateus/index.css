@@ -127,7 +127,7 @@ a:visited{
     margin: 0 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
     *{
         padding: 0;
@@ -219,7 +219,7 @@ a:visited{
       }
 }
 
-@media (min-width: 768px){
+@media (min-width: 1000px){
     .navbar-mobile {
         display: none;
     }
