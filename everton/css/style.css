@@ -152,6 +152,80 @@ header .menu ul li a {
     font-weight: 500
 }
 
+
+/* CONTATO */
+
+.contato {
+    padding: 80px 100px;
+}
+
+.contato .grid {
+    width: 100%;
+    display: flex;
+}
+
+.contato .grid li {
+    margin: 0 30px;
+    text-align: left;
+}
+
+.contato .grid li.grid-one {
+    flex-basis: 50%
+}
+
+.contato .grid li.grid-two {
+    flex-basis: 50%
+}
+
+.contato .grid li h4 {
+    text-transform: uppercase;
+    color: #585B5E;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contato .grid li p {
+    color: #322C28;
+    margin-bottom: 1rem;
+}
+
+.contato .grid li hr {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(50, 44, 40, 0.5);
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contato .grid li i {
+    color: #322C28;
+    margin-right: 5px;
+}
+
+.contato .form{
+    width: 100%;
+    padding: .375rem .75rem;
+    margin: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.contato button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #322C28;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    margin-left: 7px;
+}
+
 /* FOOTER */
 
 footer {
