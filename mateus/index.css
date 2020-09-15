@@ -219,8 +219,3 @@ a:visited{
       }
 }
 
-@media (min-width: 768px){
-    .navbar-mobile {
-        display: none;
-    }
-}
