@@ -85,7 +85,7 @@ html, body {
     justify-content: center;
     text-align: center;
     background-color: #0f123b ;
-    padding: 80px;
+    padding: 40px;
     margin-left: 70px;
 }
 
@@ -109,71 +109,7 @@ html, body {
     padding:0;
     margin-right:0;
 }
-/* 
-.query{
-    display: flex;
-    margin: 10px;
-    margin-top: 30px;
-}
 
-.query a{
-    color: white;
-    text-decoration: none;
-    font-family: "Alegreya";
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-@media (max-width:630px)
-{
-    .side-menu {
-        display: none;
-    }
-    .menu-icon{
-        display: none;
-    }
-    #toggle {
-        display:none;
-    }
-    
-}
-
-@media (min-width:631px)
-{
-    .query{
-        display: none;
-    }
-} */
-/* 
-@media screen and (max-width:915px)
-{
-    .menu-item{
-    background-color: transparent;
-    }
-    .menu-icon{
-    display: none;
-    }
-    
-    .side-menu {
-        height: auto;
-        width: 100%;
-        transform: translateX(0px);
-    } 
-
-    .side-menu nav {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    }
-
-    .page{
-    display: flex;
-    flex-direction: row;
-    }
-} */
 @media screen and (max-width:915px)
 {
     .body-home{
@@ -206,7 +142,7 @@ html, body {
 
     .page{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     }
 
     .fotos {
@@ -222,5 +158,10 @@ html, body {
     }
     .menu-item a {
         font-size: 10px;
+    }
+
+    #icons {
+        display:flex;
+        flex-direction: row;
     }
 }

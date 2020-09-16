@@ -89,49 +89,6 @@ html, body {
     width: 100%;
     height:100%;
 }
-/* .side-menu-contato {
-    height: 100%;
-    width: 15%;
-    background-color: #0f123b;
-    transform: translatex(100%);
-    transition: transform 0.3s ease-out, background-color 1s ease-out;
-
-}
-
-.menu-item-contato{
-    background-color: #0d0625;
-    padding:20px;
-    margin-bottom:3px;
-    transition: transform 0.3 ease-out;
-
-}
-
-.menu-item-contato:hover{
-    background-color: #0f123b;
-}
-
-.side-menu-contato nav{
-    display:block;
-    position: relative;
-}
-
-.menu-item-contato a{
-    text-decoration: none;
-    color: #fff;
-    font-family:"Alegreya";
-}
-
-.menu-icon-contato {
-    position:absolute;
-    left:-37px;
-    font-size:30px;
-    color: white;
-}
-
-#toggle:checked + .side-menu-contato {
-    transform:translateX(0px);
- */
-/* } */
 
 .page{
     width: auto;
@@ -140,63 +97,6 @@ html, body {
     justify-content:center;
     align-items: center;
 }
-/* 
-.query{
-    display: flex;
-    margin: 10px;
-    margin-top: 30px;
-
-}
-
-.query a{
-    color: white;
-    text-decoration: none;
-    font-family: "Alegreya";
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-@media (max-width:915px)
-{
-    .side-menu {
-        display: none;
-    }
-    .menu-icon{
-        display: none;
-    }
-    #toggle {
-        display:none;
-    }
-    .side-menu-contato {
-        display: none;
-    }
-    .menu-icon-contato{
-        display: none;
-    }
-    #toggle {
-        display:none;
-    }
-    
-    .page{
-        display: flex;
-        flex-direction: row;
-    }
-    .fotos {
-        display: block;
-        width: 30%;
-        height: 30%;
-    }
-}
-
-@media (min-width:916px)
-{
-    .query{
-        display: none;
-    }
-} */
 
 @media screen and (max-width:915px)
 {
@@ -247,24 +147,4 @@ html, body {
     .menu-item a {
         font-size: 10px;
     }
-
-/*     .menu-item-contato{
-        background-color: transparent;
-        }
-
-        .menu-icon-icon{
-        display: none;
-        }
-        
-        .side-menu-contato {
-            height: auto;
-            width: 100%;
-            transform: translateX(0px);
-        } 
-    
-        .side-menu-contato nav {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
-        } */
 }
