@@ -12,7 +12,7 @@
 }
 /*Cabeçalho*/
 .title{
-    background-image: url(./images/Large-Triangles.svg);
+    background-image: url(../../images/Large-Triangles.svg);
     background-color: rgb(12, 12, 75) ;
     margin: 0px 0px 0px;
     display: flex;
@@ -70,7 +70,7 @@ ul{
     text-align: center;
     font-size: small;
     border-top: 1px dashed white;
-    background: url(./images/Large-Triangles.svg) rgb(12, 12, 75) 2px 2px;
+    background: url(../../images/Large-Triangles.svg) rgb(12, 12, 75) 2px 2px;
     color: white;
 }
 .n-picture{
