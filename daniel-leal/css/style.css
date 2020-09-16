@@ -49,4 +49,9 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 50px;
+}
+
+.redes-sociais-logo {
+    height: 25px;
 }
