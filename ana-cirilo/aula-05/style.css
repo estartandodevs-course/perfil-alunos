@@ -74,6 +74,7 @@ html, body {
 
 .body-contato{
     background-color: #0d0625;
+    display: flex;
 }
 
 .fotos{
@@ -88,7 +89,7 @@ html, body {
     width: 100%;
     height:100%;
 }
-.side-menu-contato {
+/* .side-menu-contato {
     height: 100%;
     width: 15%;
     background-color: #0f123b;
@@ -129,18 +130,17 @@ html, body {
 
 #toggle:checked + .side-menu-contato {
     transform:translateX(0px);
-
-}
+ */
+/* } */
 
 .page{
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    margin:40px 40px;
 }
-
+/* 
 .query{
     display: flex;
     margin: 10px;
@@ -196,4 +196,75 @@ html, body {
     .query{
         display: none;
     }
+} */
+
+@media screen and (max-width:915px)
+{
+    .body-contato{
+        background-color: #0d0625;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item{
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    }
+    .menu-icon{
+    display: none;
+    }
+    
+    .side-menu {
+        height: 10%;
+        width: 100%;
+        transform: translateX(0px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+
+    .side-menu nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .fotos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        height: 50%;
+        margin:10px;
+    }
+
+    .menu-item a {
+        font-size: 10px;
+    }
+
+/*     .menu-item-contato{
+        background-color: transparent;
+        }
+
+        .menu-icon-icon{
+        display: none;
+        }
+        
+        .side-menu-contato {
+            height: auto;
+            width: 100%;
+            transform: translateX(0px);
+        } 
+    
+        .side-menu-contato nav {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        } */
 }

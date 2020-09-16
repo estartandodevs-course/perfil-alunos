@@ -16,7 +16,7 @@ html, body {
 
 .side-menu {
     height: 100%;
-    width: 50%;
+    width: 15%;
     background-color: #0f123b;
     transform: translatex(-100%);
     transition: transform 0.3s ease-out, background-color 1s ease-out;
@@ -64,7 +64,7 @@ html, body {
 
 .body-home{
     background-color: #0d0625;
-
+    display: flex;
 }
 
 .page{
@@ -109,7 +109,7 @@ html, body {
     padding:0;
     margin-right:0;
 }
-
+/* 
 .query{
     display: flex;
     margin: 10px;
@@ -145,5 +145,82 @@ html, body {
 {
     .query{
         display: none;
+    }
+} */
+/* 
+@media screen and (max-width:915px)
+{
+    .menu-item{
+    background-color: transparent;
+    }
+    .menu-icon{
+    display: none;
+    }
+    
+    .side-menu {
+        height: auto;
+        width: 100%;
+        transform: translateX(0px);
+    } 
+
+    .side-menu nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .page{
+    display: flex;
+    flex-direction: row;
+    }
+} */
+@media screen and (max-width:915px)
+{
+    .body-home{
+        background-color: #0d0625;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item{
+    background-color: transparent;
+    margin:auto;
+    }
+    .menu-icon{
+    display: none;
+    }
+    
+    .side-menu {
+        height: 10%;
+        width: 100%;
+        transform: translateX(0px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+
+    .side-menu nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .page{
+    display: flex;
+    flex-direction: row;
+    }
+
+    .fotos {
+        display: block;
+        width: 40%;
+        height: 40%;
+    }
+
+    #p{
+        font-size: 14px;
+        margin: 0;
+        padding: 20px;
+    }
+    .menu-item a {
+        font-size: 10px;
     }
 }
