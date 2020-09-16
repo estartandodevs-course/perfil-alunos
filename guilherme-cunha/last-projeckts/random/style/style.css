@@ -1,6 +1,6 @@
 @font-face {
     font-family: "pacifico";
-    src: url(../fonts/Pacifico-Regular.ttf);
+    src: url(../../../fonts/Pacifico-Regular.ttf);
 }
 .portfolio{
     background-color: black;
@@ -26,7 +26,7 @@ body{
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.5), rgba(0,0,255,0.5)),
-    url(./images/Large-Triangles.svg);
+    url(../images/Large-Triangles.svg);
     background-color: rgb(10, 10, 71);
     width: 100%;
 }
