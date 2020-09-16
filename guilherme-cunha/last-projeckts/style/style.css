@@ -20,15 +20,15 @@
     justify-content: center;
 }
 /*Barra de navegação entre paginas de assuntos*/
-#home-botton{
-    background-color: rgb(12, 12, 75) ;
+.home-botton{
+    background-color:rgb(58, 58, 121) ;
     color: #ffffff; 
     margin: 0px 0 20px;
     padding: 0 60px;
     font-size: 20px;
    text-decoration: unset;
 }
-#sports{
+.sports{
     background-color: rgb(58, 58, 121) ;
     color: #ffffff;
     text-decoration: unset;
@@ -36,13 +36,16 @@
     margin: 0px 0px 20px;
     padding: 0 60px;
 }
-#cousine{
+.cousine{
     background-color: rgb(58, 58, 121) ;
     color: #ffffff;
     text-decoration: unset;
     font-size: 20px;
     margin: 0px 0px 20px;
     padding: 0 60px;
+}
+.current-page {
+    background-color: rgb(12, 12, 75)
 }
 .up-nav{
     width: 100%;
@@ -138,15 +141,15 @@ h2{
 }
 }
 @media (max-width: 767px) {
-    #home-botton{
+    .home-botton{
         padding: 0 20px;
         font-size: 20px;
     }
-    #sports{
+    .sports{
         padding: 0 20px;
         font-size: 20px;
     }
-    #cousine{
+    .cousine{
         padding: 0 20px;
         font-size: 20px;
     }

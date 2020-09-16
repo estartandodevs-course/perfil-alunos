@@ -1,6 +1,6 @@
 @font-face {
     font-family: "pacifico";
-    src: url(./fonts/Pacifico-Regular.ttf);
+    src: url(../fonts/Pacifico-Regular.ttf);
 }
 html,
 body{
@@ -13,26 +13,32 @@ body{
     background-color: black;
 }
 /*top-page*/
-.mobile-menu {
-    display: none;
-    background-color: teal;
+.menu {
+    position: fixed;
+    align-self: flex-start;
     width: 70%;
     height: 100%;
-    z-index: 1;
-    transform: translatex(0);
+    transform: translatex(-100%);
     transition: all 0.4s ease-out;
+    background-color: rgba(0, 128, 128, 0.74);
 }
-#menu-switch:checked + .mobile-menu{
-    transform: translatex(100%);
+.menu h2{
+    color: white;
+    font-size: medium;
+    margin: 10px;
 }
-#mobile-nav {
+#menu-switch:checked + .menu{
+    transform: translatex(0px);
+}
+#menu-nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
-.mobile-nav-list  {
+.menu-nav-list  {
     padding: 10px;
     margin: 3px 0 0 4px;
+    color: white;
+    text-decoration: none;
     background-color: rgb(15, 48, 48);
  }
 #menu-switch{
@@ -48,12 +54,6 @@ body{
 .menu-icon:hover{
     color: teal;
 }
-.pc-menu {
-   display: flex; 
-   position: absolute;
-   left: 450px;
-   top: 5px;
-}
 .main-header {
     height: 100%;
     width: 100%;
@@ -61,7 +61,7 @@ body{
     justify-content: center;
 }
 .header-org {
-    background-image: url(./imageS/pexels-felix-mittermeier-956999.jpg);
+    background-image: url(../images/pexels-felix-mittermeier-956999.jpg);
     background-position-x: center;
     background-color: black;
     display: flex;
@@ -188,40 +188,14 @@ footer h2{
 .icon:hover {
     color: teal;
 }
-@media (max-width: 1440px) {
-    .pc-menu {
-        position: absolute;
-        left: 2px;
-        top: 5px;
-     }
-}
 @media (max-width: 1024px) {
     .previus-pages-image {
         height: 240px;
         width: 500px;
         margin-bottom: 20px;
     }
-    .pc-menu {
-        position: absolute;
-        left: 2px;
-        top: 5px;
-     }
 }
 @media (max-width: 1023px) {
-    .pc-menu {
-        display: none;
-    }
-    .mobile-menu {
-        display: block;
-        position: absolute;
-        background-color: rgba(0, 128, 128, 0.74);
-        right: 100%;
-        top: 0;
-        width: 70%;
-        height: 100%;
-        transform: translateX(0);
-        transition: all 0.4s ease-out;
-    }
     .menu-icon{
         color: white;
         font-size: 30px;
@@ -250,6 +224,38 @@ footer h2{
         justify-content: space-evenly;
         align-items: center;
     }
+}
+@media (min-width: 1933px) {
+    .menu {
+        position: absolute;
+        left: 320px;
+    }
+}
+@media (min-width: 770px) {
+    .menu-icon{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+        transform: translatex(0px);
+        background-color: transparent;
+    }
+    #menu-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-nav-list  {
+        padding: 0;
+        margin: 10px;
+        font-size: medium;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+     }
+
 }
     @media (max-width: 767px) {
         h1 {

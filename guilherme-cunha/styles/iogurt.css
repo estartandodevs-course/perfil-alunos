@@ -20,26 +20,31 @@ body{
 .portfolio:hover{
     color: teal;
 }
-.mobile-menu {
-    display: none;
-    background-color: rgba(128, 0, 122, 0.24);
+ .menu {
+    position: fixed;
     width: 70%;
     height: 100%;
-    z-index: 1;
-    transform: translatex(0);
+    transform: translatex(-100%);
     transition: all 0.4s ease-out;
+    background-color: rgba(128, 0, 122, 0.24);;
 }
-#menu-switch:checked + .mobile-menu{
-    transform: translatex(100%);
+.menu h2{
+    color: white;
+    font-size: medium;
+    margin: 10px;
 }
-#mobile-nav {
+#menu-switch:checked + .menu{
+    transform: translatex(0px);
+}
+#menu-nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
-.mobile-nav-list  {
+.menu-nav-list  {
     padding: 10px;
     margin: 3px 0 0 4px;
+    color: white;
+    text-decoration: none;
     background-color: rgb(15, 48, 48);
  }
 #menu-switch{
@@ -49,7 +54,7 @@ body{
     color: white;
     font-size: 30px;
     position: absolute;
-    left: 72%;
+    left: 100%;
     top: 3px;
 }
 .menu-icon:hover{
@@ -289,6 +294,39 @@ button{
     text-decoration: rgb(64, 109, 233) underline;
     margin: 0 0 0 5px;
 }
+
+@media (min-width: 770px) {
+    .menu-icon{
+        display: none;
+    }
+    #menu1-mobile{
+        display: none;
+    }
+    .menu2-mobile{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        position: relative;
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+        transform: translatex(0px);
+        background-color: rgb(26, 125, 238);
+    }
+    #menu-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-nav-list  {
+        padding: 0;
+        margin: 10px;
+        font-size: medium;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+     }
+}
 @media (max-width: 1244px){
     #profile-picture{
         height: 120px;
@@ -317,23 +355,8 @@ button{
     }
 }
 @media (max-width: 1023px) {
-    .mobile-menu {
-        display: block;
-        position: absolute;
-        background-color: rgba(26, 127, 173, 0.63);
-        right: 100%;
-        top: 0;
-        width: 70%;
-        height: 100%;
-        transform: translateX(0);
-        transition: all 0.4s ease-out;
-    }
-    .menu-icon{
-        color: white;
-        font-size: 30px;
-        position: absolute;
-        left: 100%;
-        top: 3px;
+    .r-top {
+        display: none;
     }
     .font-menu{
         color:white;
