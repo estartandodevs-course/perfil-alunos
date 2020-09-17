@@ -62,3 +62,15 @@ body {
     background-color:purple;
 }
 
+@media (max-width: 679px){
+    .titulo {
+        background-color: #fff !important;
+        color: green;    
+        transition: all 7s;  
+    }
+
+    h1 {
+        font-size: 1em !important;
+    }
+
+}
