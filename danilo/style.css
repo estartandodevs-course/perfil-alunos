@@ -5,8 +5,53 @@
 
 html,
 body {
-  height: 100%;
   font-family: "Fredericka the Great", cursive;
   /* scroll-behavior: smooth; */
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MENU */
+
+.header {
+  background-color: #000;
+}
+
+.logo {
+  font-size: 1.6rem;
+  align-self: center;
+  text-align: center;
+  margin-left: 30px;
+  color: #fff;
+}
+
+.menu {
+  flex: 1;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul li {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.menu li img {
+  width: 50px;
+  padding: 5px;
+}
+
+.menu ul li a img:hover {
+  background-color: #fff;
+  border-radius: 30%;
+  transition: 0.5s;
+}
