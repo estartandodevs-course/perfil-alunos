@@ -134,3 +134,9 @@ body {
   color: #000;
 }
 
+.content-port img {
+  width: 400px;
+  margin: 20px;
+  flex: 1;
+  border: 1px solid #fff;
+}
