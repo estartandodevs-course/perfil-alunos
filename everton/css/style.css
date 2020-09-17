@@ -53,7 +53,7 @@ header .menu ul li {
             rgba(0, 0, 0, 0.6)),
         url('../img/background-hero.jpg') fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 82vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +107,197 @@ header .menu ul li {
 .fadeInUp {
     animation: fadeInUp 2.5s;
 }
+
+
+/* SOBRE MIM */
+.sobre {
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+}
+
+.sobre h4 {
+    font-size: 2rem;
+    color: #585B5E;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.sobre p{
+    color: #322C28;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+/* PROJECT */
+
+.project {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../img/background-projetos.jpg') fixed;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(197, 197, 197);
+    padding: 80px 100px;
+}
+
+.project .grid {
+    display: flex;
+}
+
+.project .grid li {
+    text-align: center;
+    margin: 0 80px;
+}
+
+.project .grid li h4 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.project .grid li h5 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding: 80px 100px;
+}
+
+.contato .grid {
+    width: 100%;
+    display: flex;
+}
+
+.contato .grid li {
+    margin: 0 30px;
+    text-align: left;
+}
+
+.contato .grid li.grid-one {
+    flex-basis: 50%
+}
+
+.contato .grid li.grid-two {
+    flex-basis: 50%
+}
+
+.contato .grid li h4 {
+    text-transform: uppercase;
+    color: #585B5E;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contato .grid li p {
+    color: #322C28;
+    margin-bottom: 1rem;
+}
+
+.contato .grid li hr {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(50, 44, 40, 0.5);
+    border: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contato .grid li i {
+    color: #322C28;
+    margin-right: 5px;
+}
+
+.contato .form{
+    width: 100%;
+    padding: .375rem .75rem;
+    margin: 8px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.contato button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #322C28;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    margin-left: 7px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #DFDFDF;
+    padding: 30px 30px 0 30px;
+
+}
+
+footer a {
+    color: #585B5E;
+}
+
+footer a:hover {
+    color: #404142;
+}
+
+footer .grid {
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+footer .grid .one {
+    flex-basis: 33.3333333333%;
+    text-align: left;
+}
+
+footer .grid .two {
+    flex-basis: 33.3333333333%;
+    text-align: center;
+}
+
+footer .grid .three {
+    flex-basis: 33.3333333333%;
+    text-align: right;
+}
+
+footer .grid p {
+    font-size: 14px;
+}
+
+footer .grid .two a {
+    margin-right: 15px;
+}
+
+footer .grid .two i:hover {
+    color: #000000;
+}
+
+footer .grid .two a i {
+    font-size: 1.8rem;
+    color: #585B5E;
+}
+
 
 /* ===== MEDIA QUERY ==== */
 
