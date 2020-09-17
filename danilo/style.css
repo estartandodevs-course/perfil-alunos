@@ -22,7 +22,8 @@ body {
   background: #000;
 }
 
-.logo, .logo h3 {
+.logo,
+.logo h3 {
   font-size: 1.6rem;
   margin-left: 30px;
   color: #fff;
@@ -57,20 +58,21 @@ body {
 
 /* benner */
 
-.banner{
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 80px 0;
 }
 
-.banner-title h1, .banner-title h3{
+.banner-title h1,
+.banner-title h3 {
   text-align: center;
   margin-bottom: 20px;
   color: #000;
 }
 
-.banner-title h1{
+.banner-title h1 {
   font-size: 4rem;
 }
 
@@ -78,4 +80,48 @@ body {
   width: 200px;
   margin-top: 20px;
 }
+
+/* section sobre */
+
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.content-title h3,
+.content-info p {
+  text-align: center;
+  color: #fff;
+}
+
+.content-title h2 {
+  font-size: 2.6rem;
+  color: #fff;
+}
+.content-title h3 {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  align-self: flex-end;
+}
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-info img {
+  width: 350px;
+}
+
+.content-info p {
+  width: 400px;
+  font-size: 1.8rem;
+}
+.black {
+  padding: 40px;
+  background: #000;
+}
+
 
