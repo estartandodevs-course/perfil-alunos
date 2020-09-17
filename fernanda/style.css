@@ -1,0 +1,39 @@
+body{
+
+    background-color: rgb(182, 215, 241);
+}
+
+img {
+    padding: 0%;
+    border: 0px;}
+
+h1{
+    color: rgb(233, 147, 18);
+    padding:50px;
+    font-size: 50px;
+    
+}
+
+.menu-item {
+    background-color: rgb(88, 164, 226);
+    padding: 20px;
+    margin-bottom: 3px;}
+p { 
+    padding: 2px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    
+}
+.side-menu{
+    background-color: rgb(55, 148, 209);
+    
+    height: 100%;
+}
+
+@media (max-width:600px)
+{
+    .facet_sidebar
+    {
+        display: none;
+    }
+}
