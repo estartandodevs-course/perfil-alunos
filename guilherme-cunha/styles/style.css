@@ -1,0 +1,305 @@
+@font-face {
+    font-family: "pacifico";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+/*top-page*/
+.menu {
+    position: fixed;
+    align-self: flex-start;
+    width: 70%;
+    height: 100%;
+    transform: translatex(-100%);
+    transition: all 0.4s ease-out;
+    background-color: rgba(0, 128, 128, 0.74);
+}
+.menu h2{
+    color: white;
+    font-size: medium;
+    margin: 10px;
+}
+#menu-switch:checked + .menu{
+    transform: translatex(0px);
+}
+#menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+.menu-nav-list  {
+    padding: 10px;
+    margin: 3px 0 0 4px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(15, 48, 48);
+ }
+#menu-switch{
+    display: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 72%;
+    top: 3px;
+}
+.menu-icon:hover{
+    color: teal;
+}
+.main-header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-org {
+    background-image: url(../images/pexels-felix-mittermeier-956999.jpg);
+    background-position-x: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1920px;
+}
+h1 {
+    font-family: "pacifico";
+    font-size: 70px;
+    color: white;
+    margin:0 0 5px 0;
+    text-decoration: underline white;
+}
+.main-header h2{
+    margin: 0 0 40px 0;
+    color: white;
+}
+.main-header a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.main-header a:hover {
+    color: teal;
+}
+.main-header nav {
+    display: flex;
+    justify-content: center;
+}
+/*main*/
+.about-me {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+main div{
+    background-image: url(./images/Polka-Dots.svg);
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+}
+.about-me-image {
+    display: flex;
+    justify-content: flex-end;
+}
+.me{
+    width: 450px;
+    height: 450px;
+    margin-right: 40px;
+}
+.text {
+    color: white;
+    margin: 10px 0 0 0;
+    width: 550px;
+}
+.title{
+    color: white;
+    margin: 10px 0 0 0;
+}
+/*previus pages*/
+.previus-pages {
+    display: flex;
+    justify-content: space-evenly;
+}
+.previus-pages-org {
+    width: 100%;
+    max-width: 1920px;
+    background-color: teal;
+    margin-top: 40px;
+}
+.previus-pages p{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+.text-section-2{
+    color: white;
+    text-align: center;
+    margin-bottom: 2px;
+}
+.previus-image-org {
+    display: flex;
+    justify-content: space-evenly;
+}
+.previus-pages-image {
+    height: 300px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+.previus-pages-image:hover{
+    background-color: rgb(15, 48, 48);
+    padding: 5px;
+}
+/*footer*/
+.footer{
+    background-color: black;
+    margin-top: 40px;
+}
+footer h2{
+    text-align: center;
+    color: white;
+}
+.icon-organization{
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    font-size: 50px;
+    color: white;
+    margin: 10px;
+}
+.icon:hover {
+    color: teal;
+}
+@media (max-width: 1024px) {
+    .previus-pages-image {
+        height: 240px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1023px) {
+    .menu-icon{
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        left: 100%;
+        top: 3px;
+    }
+    .about-me-image {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .me{
+        width: 300px;
+        height: 300px;
+        margin-right: 40px;
+    }
+    .text {
+        color: white;
+        margin: 10px 0 0 0;
+        width: 390px;
+    }
+    .previus-image-org {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+@media (min-width: 1933px) {
+    .menu {
+        position: absolute;
+        left: 320px;
+    }
+}
+@media (min-width: 770px) {
+    .menu-icon{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+        transform: translatex(0px);
+        background-color: transparent;
+    }
+    #menu-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-nav-list  {
+        padding: 0;
+        margin: 10px;
+        font-size: medium;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+     }
+
+}
+    @media (max-width: 767px) {
+        h1 {
+            font-size: 50px;
+        }
+        main div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-me-content{
+            display: flex;
+            flex-direction: column;
+        }
+        .me{
+            width: 200px;
+            height: 200px;
+            margin-right: 5px;
+        }
+        .text {
+            color: white;
+            margin: 10px 0 0 0;
+            width: 300px;
+            text-align: center;
+        }
+        .previus-pages-image {
+            height: 200px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+    @media (max-width: 375px) {
+        h1 {
+            font-size: 40px;
+        }
+        .previus-pages-image {
+            height: 150px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width: 320px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}

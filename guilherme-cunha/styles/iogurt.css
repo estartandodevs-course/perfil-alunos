@@ -1,0 +1,466 @@
+html{
+    width: 100%;
+}
+body{
+    background-color: #d9e7ff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.portfolio{
+    background-color: black;
+    color: white;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+.portfolio:hover{
+    color: teal;
+}
+ .menu {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    transform: translatex(-100%);
+    transition: all 0.4s ease-out;
+    background-color: rgba(128, 0, 122, 0.24);;
+}
+.menu h2{
+    color: white;
+    font-size: medium;
+    margin: 10px;
+}
+#menu-switch:checked + .menu{
+    transform: translatex(0px);
+}
+#menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+.menu-nav-list  {
+    padding: 10px;
+    margin: 3px 0 0 4px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(15, 48, 48);
+ }
+#menu-switch{
+    display: none;
+}
+.menu-icon{
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: 100%;
+    top: 3px;
+}
+.menu-icon:hover{
+    color: rgb(238, 26, 185);
+}
+#orkut{
+    background-color: rgb(105, 144, 252);
+    width: 100%;
+}
+#orkut-organization{
+    display: flex;
+}
+#orkut-icon{
+   margin: 1px 15px 1px 5px;
+}
+.td-options{
+    color: white;
+    margin-right: 15px;
+}
+.r-top{
+    display: flex;
+    position: absolute;
+    right: 5%;
+}
+#sair{
+    color: white;
+}
+#email{
+    color: white;
+    margin-right: 10px;
+}
+#search{
+    background-color: rgb(54, 62, 172);
+    width: 180px;
+    height: 40px;
+    margin: 5px;
+}
+#search p {
+    background-color: white;
+    padding: 1px 2px 1px 2px;
+    margin: 5px 5px 5px 2px;
+    text-align: center;
+    color: rgb(184, 184, 184);
+}
+.perfil{
+   padding: 3px 12px 20px 3px; 
+   margin: 5px 0 0 0;
+   background-color: white;
+}
+#inicio{
+    font-size: small;
+    color: rgb(72, 121, 255);
+}
+.texts{
+    font-size: medium;
+    color: rgb(184, 184, 184);
+}
+h1{
+    margin-bottom: 0;
+}
+h2{
+    margin-top: 0;
+    font-size: small;
+    color: rgb(184, 184, 184);
+}
+#box{
+  border: 1px solid rgb(184, 184, 184); 
+  width: 380px;
+}
+button{
+    color:rgb(72, 121, 255);
+    background-color: white;
+    border: 2px solid rgb(184, 184, 184);
+    margin: 0 0 0 2px;
+}
+#box_text{
+    margin: 0 0 0 5px;
+}
+.icon{
+    width: 30px;
+    height: 15px;
+    margin: 0;
+}
+.iconC{
+    width: 15px;
+    height: 15px;
+    margin: 0 3px 0 0;
+}
+#things-border{
+    margin-top: 20px;
+    border-top: 1px solid rgb(184, 184, 184);
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+.things-text{
+    margin: 0 5px 0 0;
+}
+#social{
+    font-size: medium;
+    color: white;
+    background-color: rgb(88, 110, 172);
+    width: 40px;
+    margin-left: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+#about-you{
+    border-top: 1px solid rgb(184, 184, 184);
+}
+.about-you-impar{
+    font-size: medium;
+    color: rgb(153, 153, 153);
+    background-color: rgb(186, 203, 250);
+    margin: 0;
+    height: 40px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+.about-you-par{
+    font-size: medium;
+    color: rgb(153, 153, 153);
+    background-color: rgb(214, 223, 252);
+    margin: 0;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 50px;
+}
+#aby1{
+    margin: 10px 0 0 0;
+}
+.page-organization{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#left-side{
+    background-color: white;
+    margin: 5px 10px 0 0;
+}
+#profile-picture{
+    height: 180px;
+    width: 150px;
+    padding: 0 50px 0 50px;
+    margin-top: 5px;
+}
+#left-side h3{
+    color: rgb(64, 109, 233);
+    margin: 20px 5px 2px 5px;
+    border-top: 1px solid rgb(184, 184, 184);
+}
+.text-right{
+    font-size: medium;
+    color: rgb(184, 184, 184);
+    margin: 0 0 0 5px;
+}
+#profile-right{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    margin: 0 5px 0 5px;
+}
+.font-menu{
+    font-size: medium;
+    color: rgb(64, 109, 233);
+    margin: 2px 0 2px 5px;
+}
+.font-menu-2{
+    font-size: medium;
+    color: rgb(64, 109, 233);
+    margin: 2px 5px 2px 5px;
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+#menu1{
+    border-bottom: 1px solid rgb(184, 184, 184);
+    margin: 0 5px 0 5px;
+}
+.menu2{
+    margin: 5px 5px 5px 5px;
+    border: 1px solid  rgb(184, 184, 184);
+    background-color: rgb(214, 223, 252);
+}
+#right-side{
+    margin: 5px 0 0 10px;
+}
+#friends{
+    background-color: white;
+    padding: 0 10px 2px 0;
+    margin-bottom: 5px;
+}
+#adding-friends{
+    font-size: small;
+    color: rgb(235, 235, 235);
+    background-color: rgb(180, 208, 252);
+    width: max-content;
+    margin: 3px 3px 10px 3px;
+    padding: 2px;
+}
+#community{
+    background-color: white;
+    padding: 0 0 2px 0;
+}
+#right-side h3{
+    font-size: medium;
+    width: max-content;
+    margin: 0 0 0 5px;
+}
+.friend-community-number{
+    margin: 0;
+    color: rgb(64, 109, 233);
+    font-size: medium;
+}
+#community-ajust{
+    display: flex;
+    justify-content: center;
+}
+#community-place1{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#community-place2{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#community-place3{
+    background-color: rgb(212, 211, 211) ;
+    padding: 0;
+    margin: 5px 2px 2px 2px;
+    width: 70px;
+    height: 110px;
+}
+#see-all{
+    font: small;
+    color: rgb(64, 109, 233);
+    text-decoration: rgb(64, 109, 233) underline;
+    margin: 0 0 0 5px;
+}
+
+@media (min-width: 770px) {
+    .menu-icon{
+        display: none;
+    }
+    #menu1-mobile{
+        display: none;
+    }
+    .menu2-mobile{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        position: relative;
+        align-self: flex-start;
+        width: 100%;
+        height: auto;
+        transform: translatex(0px);
+        background-color: rgb(26, 125, 238);
+    }
+    #menu-nav {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-nav-list  {
+        padding: 0;
+        margin: 10px;
+        font-size: medium;
+        color: white;
+        text-decoration: none;
+        background-color: transparent;
+     }
+}
+@media (max-width: 1244px){
+    #profile-picture{
+        height: 120px;
+        width: 110px;
+        padding:10px;
+        padding-left: 25px;
+        margin-top: 10px;
+    }
+    #community h3{
+        font-size: 12px;
+    }
+    #community-place3 {
+        display: none;
+    }
+    #community-ajust {
+        justify-content: flex-start;
+        width: 142px;
+        margin: 0;
+    }
+    #community{
+        width: 155px;
+    }
+    #adding-friends {
+        width: 130px;
+        text-align: center;
+    }
+}
+@media (max-width: 1023px) {
+    .r-top {
+        display: none;
+    }
+    .font-menu{
+        color:white;
+        border-bottom: 1px solid rgb(184, 184, 184);
+    }
+    .font-menu-2{
+        color: white;
+    }
+    #menu1{
+        display: none;
+    }
+    .menu2{
+        display: none;
+    }
+    #orkut-organization{
+        display: none;
+    }
+    .page-organization{
+        flex-direction: column;
+        align-items: center;
+    }
+    #left-side {
+        display: flex;
+    }
+    #right-side{
+        display: flex;
+    }
+    #friends {
+        margin-right: 10px;
+    }
+    #profile-picture{
+        height: 100px;
+        width: 90px;
+        padding:10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) {
+    #right-side{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    #friends {
+        margin-right: 0;
+    }
+  
+    #left-side {
+        margin: 0;
+    }
+    .perfil{
+        padding: 3px;
+    }
+}
+@media (max-width: 424px){
+    #profile-right{
+        margin-right: 0;
+    }
+    .about-you-impar{
+        font-size: small;
+        color: rgb(153, 153, 153);
+        background-color: rgb(186, 203, 250);
+        margin: 0;
+        height: 40px;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 0;
+    }
+    .about-you-par{
+        font-size: small;
+        color: rgb(153, 153, 153);
+        background-color: rgb(214, 223, 252);
+        margin: 0;
+        height: 30px;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 0;
+    }
+    h3{
+        margin: 0;
+        margin-block-end: 0;
+        margin-block-start: 0;
+    }
+    .texts{
+        font-size: small;
+        color: rgb(184, 184, 184);
+    }
+    .perfil{
+        padding:0;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+    #box{
+        border: 1px solid rgb(184, 184, 184); 
+        width: 90%;
+      }
+    #social {
+        margin-right: 0;
+    }
+    table {
+        border-collapse: unset;
+        box-sizing: unset;
+        border-spacing: 0;
+        margin: 0;
+    }
+}
