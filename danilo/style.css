@@ -18,17 +18,17 @@ body {
 
 /* MENU */
 
-.header {
-  background-color: #000;
+.menu-bg {
+  background: #000;
 }
 
-.logo {
+.logo, .logo h3 {
   font-size: 1.6rem;
-  align-self: center;
-  text-align: center;
   margin-left: 30px;
   color: #fff;
+  align-self: center;
 }
+
 
 .menu {
   flex: 1;
