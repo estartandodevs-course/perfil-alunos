@@ -29,7 +29,6 @@ body {
   align-self: center;
 }
 
-
 .menu {
   flex: 1;
 }
@@ -55,3 +54,28 @@ body {
   border-radius: 30%;
   transition: 0.5s;
 }
+
+/* benner */
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.banner-title h1, .banner-title h3{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.banner-title h1{
+  font-size: 4rem;
+}
+
+.banner-img img {
+  width: 200px;
+  margin-top: 20px;
+}
+
