@@ -1,27 +1,28 @@
-body {
-  background-image: url(./imagens/background.jpg);
-  background-size: auto;
+body{
+    background-image: url(./imagens/background.jpg);
+    background-size: auto;
+    
 }
 
-html {
-  cursor: url(./imagens/navi.ico), auto;
+html{
+    cursor: url(./imagens/navi.ico),auto;
 }
 
-#page {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 70px 0;
-  background: white;
-  -moz-box-shadow: 0 0 50px black;
-  -webkit-box-shadow: 0 0 50px black;
-  box-shadow: 0 0 50px black;
-  border-style: double;
-  position: absolute;
-  opacity: 0.6;
+#page{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 70px 0;
+    background: white;
+    -moz-box-shadow: 0 0 50px black;
+    -webkit-box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px black;
+    border-style: double;
+    position: absolute;
+    opacity: 0.6;
 }
 
-#page2 {
+#page2{
   margin: 80px;
   width: 50%;
   border: 3px solid green;
@@ -38,6 +39,7 @@ html {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-57%, -70%);
+ 
 }
 
 #nav {
@@ -51,11 +53,11 @@ html {
   justify-content: center;
   border-radius: 30px;
 }
-
+  
 li {
   float: left;
 }
-
+  
 li a {
   display: block;
   color: white;
@@ -64,33 +66,33 @@ li a {
   text-decoration: none;
   font-size: 24px;
 }
-
+  
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
 
-#under {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
+#under{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
 
-#foto {
-  position: fixed;
-  right: 90px;
-  top: 150px;
-  border-radius: 50%;
-  border: solid;
+#foto{
+    position:fixed;
+    right: 90px;
+    top:150px;
+    border-radius: 50%;
+    border: solid;
 }
 
-#footer {
-  position: absolute;
-  display: inline;
-  bottom: 0;
+#footer{
+    position: absolute;
+    display: inline;
+    bottom:0;
 }
 
-.block {
+.block{
   width: 300px;
   height: 150px;
   margin: 10px;
@@ -102,22 +104,21 @@ li a:hover {
   justify-content: center;
 }
 
-.contato {
+.contato{
   display: inline-block;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius:5px ;
 }
 
-p a {
-  text-decoration: none;
+p a{
+  text-decoration:none;
+  
 }
 
-p {
-  font-family: "Times New Roman", Times, serif;
+p{
+  font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   font-weight: 900;
-  text-decoration: none;
+  text-decoration:none;
 }
-
-/*# sourceMappingURL=style.css.map */
