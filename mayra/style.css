@@ -72,14 +72,12 @@ body {
     display: flex;
     align-items: center;
     text-align: justify;
-    margin-bottom: 50px;
-    margin-left: 80px;
+    justify-content: center;
+    margin-bottom: 50px; 
 }
 
-.text {
+.about-me .text {
     width: 30%;
-    padding-left: 70px;
-    margin-left: 70px;
     font-size: 23px;
 }
 
@@ -156,12 +154,21 @@ h1, h2 {
 
 #contact img {
     width: 5%;
-    padding-top: 30px;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
 #contact {
-    margin-top: 450px;
+    margin-top: 450px;   
+}
+
+#contact img:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+
+#contact a {
+    margin-right: 5px;
 }
 
 div .welcome { 
@@ -179,3 +186,39 @@ div .welcome {
     from { opacity: 0; }
     to   { opacity: 2; }
 }
+
+@media(max-width:680px){
+    div .welcome { 
+        font-size: 30px;
+        width: 30%;
+        display: flex;
+        margin-right: 10rem;
+    }
+    
+    .about-me .text {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .about-me img {
+        width: 30%;
+    }
+}
+
+@media(max-width:320px){
+    div .welcome { 
+        width: 50%;
+        font-size: 20px;
+        margin: 50% 10%;
+    }
+    
+    .about-me .text {
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .about-me img {
+        width: 25%;
+    }
+}
+
