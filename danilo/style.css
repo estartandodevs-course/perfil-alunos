@@ -140,3 +140,13 @@ body {
   flex: 1;
   border: 1px solid #fff;
 }
+
+.team {
+  margin-top: 20px;
+}
+
+.team img {
+  width: 120px;
+  
+  border-radius: 30%;
+}
