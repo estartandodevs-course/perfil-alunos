@@ -32,7 +32,7 @@ html, body {
 }
 
 .menu-item:hover{
-    background-color: #0f123b;
+    background-color: #7e7e7e;
 }
 
 .side-menu nav{
@@ -64,51 +64,62 @@ html, body {
 
 .body-home{
     background-color: #0d0625;
-    background-image: url(./img/DFF.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 45%;
-
-}
-/* styles contato */
-
-.body-contato{
-    background-color: #0d0625;
     display: flex;
-}
-
-.fotos{
-    display: flex;
-    justify-content: space-between;
-}
-
-#contato{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height:100%;
 }
 
 .page{
-    width: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#p{
+    color: white;
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    font-family: "Alegreya";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0f123b ;
+    padding: 40px;
+    margin-left: 70px;
+}
+
+#icons {
+    display:flex;
+    color: white;
     flex-direction: column;
     justify-content:center;
     align-items: center;
 }
 
+#icons img{
+    margin:20px;
+}
+
+#apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin-right:0;
+}
+
 @media screen and (max-width:915px)
 {
-    .body-contato{
+    .body-home{
         background-color: #0d0625;
         display: flex;
         flex-direction: column;
     }
     .menu-item{
     background-color: transparent;
-    display:flex;
-    align-items: center;
+    margin:auto;
     }
     .menu-icon{
     display: none;
@@ -131,20 +142,26 @@ html, body {
 
     .page{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     }
 
     .fotos {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width:100%;
-        height: 50%;
-        margin:10px;
+        display: block;
+        width: 40%;
+        height: 40%;
     }
 
+    #p{
+        font-size: 14px;
+        margin: 0;
+        padding: 20px;
+    }
     .menu-item a {
         font-size: 10px;
+    }
+
+    #icons {
+        display:flex;
+        flex-direction: row;
     }
 }
