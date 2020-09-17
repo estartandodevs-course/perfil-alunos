@@ -4,6 +4,7 @@
 @import "project.css";
 @import "navbar.css";
 @import "intro.css";
+@import "contact.css";
 
 /* =======================================
                 GENERAL
@@ -13,12 +14,15 @@
 }
 html, body {
     height: 100%;
+    width: 100%;
 }
 section {
     display: block;
+    position: relative;
     height: 100%;
     width: 100vw - var(--nav-size); 
-    margin-left: var(--nav-size);
+    padding: 0 var(--nav-size);
+    box-sizing: border-box;
 }
 body {
     background-color: #000000;
@@ -30,7 +34,7 @@ body {
 }
 section h1 {
     font-size: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.3em;
 }
 section p {
     margin-bottom: 0.4em;
@@ -40,6 +44,16 @@ section p {
 }
 .right {
     right: 0;
+}
+.blue {
+    color: #325cf3;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+    text-shadow: 0.5px 0.5px white;
 }
 .italic {
     font-style: italic;
@@ -62,19 +76,132 @@ section p {
     position: absolute;
     right: 10%;
     top: 0;
-    min-height: 60%;
-    max-height: 100%;
+    min-height: 60vh;
+    max-height: 100vh;
 }
+
+
+@media (max-width: 760px), (min-height: 640px) {
 /* =======================================
-                CONTACT
+                NAVBAR/BG
 ======================================= */
-.contact svg {
-    width: 10vmin;
-    height: 10vmin;
+    .bg-photo {
+        right: -10%;
+        max-width: 100vw;
+    }
+    nav {
+        width: 100vw;
+        height: 15vh;
+    }
+    .toggle-sidemenu {
+        left: 0;
+        top: 10%;
+    }
+    #toggle-sidemenu + label svg {
+        transform: rotate(90deg);
+    }
+    #toggle-sidemenu:checked + label svg {
+        transform: rotate(270deg);
+    }
+    .nav-container {
+        width: 100%;
+        height: 100%;
+    }
+    .nav-links {
+        top: 0;
+        height: 100%;
+        margin-left: calc(var(--icon-size) + 1vmin);
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .nav-link {
+        flex-direction: column;
+        align-items: center;
+        height: var(--icon-size);
+    }
+    #toggle-sidemenu:checked ~ .nav-container {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg, #e4171736, #000)
+    }
+    .intro-container {
+        left: 0;
+        top: 60%;
+    }
+    .nav-icon {
+        margin: 0 0 1px 0;
+    }
+/* =======================================
+                ABOUT
+======================================= */
+    .img-about {
+        flex-direction: row;
+        width: 100%;
+        height: 15%;
+        position: relative;
+        top: 10%;
+    }
+    :root {
+        --central-div: 85%;
+    }
+    .central {
+        left: 0;
+    }
+    section {
+        width: 100vw;
+        padding: 0 5%;
+        /* margin-left: 0; */
+    }
+    .left {
+        left:0;
+    }
+    .right {
+        right: 0;
+    }
+/* =======================================
+                PROJECT
+======================================= */    
+    .whole-screen {
+        flex-direction: column;
+        align-content: center;
+    }
+    .card {
+        width: 60%;
+        height: 30vh;
+    }
+    .card img {
+        max-width: 100%;
+        min-height: 0;
+        max-height: 100%;
+    }
 }
-div.inspiration {
-    margin-top: 60vh;
-}
-div.inspiration p {
-    text-align: center;
+
+
+@media (orientation: landscape) and (min-width: 760px) {
+/* =======================================
+                NAVBAR
+======================================= */
+    #toggle-sidemenu:checked ~ .nav-container {
+        width: 10vw;
+    }
+/* =======================================
+                HOVER
+======================================= */
+    figure:hover {
+        border: 5px solid #15e01ce0;
+    }
+    figure:hover img {
+        transform: translateY(-4vw);
+        transition: all .5s cubic-bezier(0.6, 0.5);
+    }
+    figure:hover #three-lines-description {
+        transform: translateY(-35%);
+    }
+    figcaption {
+        display: none;
+    }
+    figure:hover figcaption {
+        display: block;
+    }    
 }

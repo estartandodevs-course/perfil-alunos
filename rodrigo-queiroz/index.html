@@ -11,69 +11,63 @@
 </head>
 
 <body>
+    <div class="bg-photo">
+        <img src="./assets/bg-photo.png" alt="background-photo" class="bg-photo">
+    </div>
+
     <nav>
-        <div class="nav-icon">
-            <img src="./assets/favicon.png" alt="icon">
-        </div>
+        <!-- toggle -->
+        <input type="checkbox" id="toggle-sidemenu" class="toggle-sidemenu">
+        <label for="toggle-sidemenu" class="toggle-sidemenu">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="nav-icon icon-fill" id="toggle-icon">
+                <path
+                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                </path>
+            </svg>
+        </label>
+
         <div class="nav-container">
-            <div class="nav">
-                <a href="#about">
-                    <svg width="118" height="156" viewBox="0 0 118 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- icons -->
+            <div class="nav-links">
+                <a href="#about" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                        class="nav-icon icon-stroke icon-fill">
                         <path
-                            d="M59 152.5H9.13833C4.99285 152.5 2.64796 147.745 5.1714 144.456L39.3537 99.9044C41.4089 97.2256 40.3162 93.1869 37.4034 91.4793C28.2456 86.1107 12 72.9941 12 47.5C12 14.735 52.463 5.39592 58.6977 4.15137C59.2473 4.04167 59.7531 4.04214 60.3024 4.15306C66.4992 5.40432 106.5 14.7498 106.5 47.5C106.5 73.003 89.9852 86.1199 80.6838 91.485C77.7401 93.1829 76.6386 97.2563 78.7218 99.9412L113.243 144.435C115.792 147.72 113.45 152.5 109.292 152.5H59.5001"
-                            stroke-width="7" />
+                            d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z">
+                        </path>
                     </svg>
+                    <span class="nav-text">sobre</span>
                 </a>
-                <a href="#project">
-                    <svg width="219" height="119" viewBox="0 0 219 119" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
-                            <path
-                                d="M13.0711 47.9289L56.75 4.25C56.8881 4.11193 57.1119 4.11193 57.25 4.25C57.3881 4.38807 57.3881 4.61193 57.25 4.75L14.0711 47.9289C10.7377 51.2623 9.07107 52.9289 9.07107 55C9.07107 57.0711 10.7377 58.7377 14.0711 62.0711L57.25 105.25C57.3881 105.388 57.3881 105.612 57.25 105.75C57.1119 105.888 56.8881 105.888 56.75 105.75L13.0711 62.0711C9.73773 58.7377 8.07107 57.0711 8.07107 55C8.07107 52.9289 9.73773 51.2623 13.0711 47.9289Z"
-                                stroke-width="7" />
-                            <path
-                                d="M206.429 48.9289L162.75 5.25C162.612 5.11193 162.388 5.11193 162.25 5.25C162.112 5.38807 162.112 5.61193 162.25 5.75L205.429 48.9289C208.762 52.2623 210.429 53.9289 210.429 56C210.429 58.0711 208.762 59.7377 205.429 63.0711L162.25 106.25C162.112 106.388 162.112 106.612 162.25 106.75C162.388 106.888 162.612 106.888 162.75 106.75L206.429 63.0711C209.762 59.7377 211.429 58.0711 211.429 56C211.429 53.9289 209.762 52.2623 206.429 48.9289Z"
-                                stroke-width="7" />
-                            <path
-                                d="M81.6733 105.676L135.938 4.11659C135.976 4.04482 136.051 4 136.132 4C136.299 4 136.405 4.17753 136.327 4.32441L82.0623 105.883C82.0239 105.955 81.9492 106 81.8678 106C81.7013 106 81.5949 105.822 81.6733 105.676Z"
-                                stroke-width="7" />
-                        </g>
-                        <defs>
-                            <filter id="filter0_d" x="0.571075" y="0.5" width="218.358" height="117.854"
-                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                <feColorMatrix in="SourceAlpha" type="matrix"
-                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                                <feOffset dy="4" />
-                                <feGaussianBlur stdDeviation="2" />
-                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-                            </filter>
-                        </defs>
+                <a href="#project" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                        class="nav-icon icon-stroke icon-fill">
+                        <path
+                            d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z">
+                        </path>
                     </svg>
+                    <span class="nav-text">projetos</span>
                 </a>
-                <a href="#contact">
-                    <svg width="224" height="124" viewBox="0 0 224 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#contact" class="nav-link">
+                    <svg width="224" height="124" viewBox="0 0 224 124" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="nav-icon icon-stroke">
                         <path
                             d="M3.5 119V6.43597L105.149 72.2553C107.912 74.0446 111.46 74.0773 114.256 72.3393L220.5 6.29675V119C220.5 119.828 219.828 120.5 219 120.5H4.99999C4.17157 120.5 3.5 119.828 3.5 119ZM11.8448 3.5H211.74L110.561 66.3943C110.067 66.701 109.441 66.6953 108.954 66.3795L11.8448 3.5Z"
                             stroke-width="7" />
                     </svg>
+                    <span class="nav-text">contato</span>
                 </a>
             </div>
         </div>
 
     </nav>
 
-    <div class="bg-photo">
-        <img src="./assets/bg-photo.png" alt="background-photo" class="bg-photo">
-    </div>
-
     <section class="intro">
         <div class="intro-container">
             <a href="#about">
                 <div id="about-text" class="intro-text white-text"></div>
             </a>
-            <a href="project">
+            <a href="#project">
                 <div id="project-text" class="intro-text red-text"></div>
             </a>
             <a href="#contact">
@@ -127,22 +121,25 @@
             <h1>PROJETOS</h1>
         </div>
         <div class="whole-screen">
-            <a href="https://github.com/teddiur/mortality-simulation">
-                <figure class="card">
+            <figure class="card">
+                <a href="https://github.com/teddiur/mortality-simulation">
                     <img src="./assets/python-project.png" alt="python project" id="three-lines-description">
                     <figcaption>Simulação usando um <span class="italic">toymodel</span> em Python sobre contagio em uma
-                        pandemia. Bolas azuis são individuos infectaveis, vermelhas infectados e pretas mortos.
+                        pandemia. Estão representadors <span class="blue">individuos infectáveis</span>, <span
+                            class="red">infectados</span> e <span class="black">mortos</span>.
                     </figcaption>
-                </figure>
-            </a>
-            <a href="https://teddiur.github.io/estartando-devs/">
-                <figure class="card">
-                    <img src="./assets/page-project.png" alt="page project">
+                </a>
+            </figure>
+
+            <figure class="card">
+                <a href="https://teddiur.github.io/estartando-devs/">
+                    <img src="./assets/page-project.png" alt="project page">
                     <figcaption>Projeto desenvolvido para treinar HTML e CSS. É uma wiki do curso <span
                             class="italic">estartando devs.</span>
                     </figcaption>
-                </figure>
-            </a>
+                </a>
+            </figure>
+
             <figure class="card">
                 <img src="./assets/devtools-project.jpeg" alt="devtools project">
                 <figcaption>Edição de um site para treinar DevTools e entedimento da estrutura HTML.</figcaption>

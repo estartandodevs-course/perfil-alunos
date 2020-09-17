@@ -5,12 +5,12 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.whole-screen a{
+.card a{
     color: var(--font-color);
 }
 figure {
-    width: 35vw;
-    height: 35vh;
+    width: 33vw;
+    height: 40vh;
     box-sizing: border-box;
     background-color: #0a1707;
     border: 5px solid #0a1707;
@@ -19,16 +19,6 @@ figure {
     flex-direction: column;
     position: relative;
     margin-bottom: 2%;
-}
-figure:hover {
-    border: 5px solid #15e01ce0;
-}
-figure:hover img {
-    transform: translateY(-20%);
-    transition: all .5s cubic-bezier(0.6, 0.5);
-}
-figure:hover #three-lines-description {
-    transform: translateY(-30%);
 }
 figure img {
     min-height: 30vh;
@@ -40,8 +30,7 @@ figcaption {
     bottom: 2%;
     font-size: 0.8em;
     text-align: center;
-    display: none;
-}
-figure:hover figcaption {
     display: block;
+    padding: 1% 0;
+    background-color: #0a1707;
 }

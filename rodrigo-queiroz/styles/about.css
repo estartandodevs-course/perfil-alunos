@@ -1,9 +1,9 @@
 .img-about {
     position: absolute;
-    top: 100%;
+    top: 0;
     height: 100vh;
     width: calc((100% - var(--central-div))/2);
-    vertical-align: top;
+    /* vertical-align: top; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,13 +27,6 @@
     min-height: 5em;
     max-height: 7em;
 }
-.contact svg {
-    margin: 0 20px;
-    fill: white;
-}
-.contact svg:hover {
-    fill: #10ff10;
-}
 .img-tooltip + .tooltip-text {
     visibility: hidden;
     position: absolute;
@@ -45,5 +38,4 @@
 }
 .img-tooltip:hover + .tooltip-text, .img-tooltip + .tooltip-text:hover {
     visibility: visible;
-    /* padding: 5px; */
 }
