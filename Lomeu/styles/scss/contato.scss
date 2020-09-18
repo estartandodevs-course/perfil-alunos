@@ -1,0 +1,43 @@
+$color-icon: white;
+$hover-color: #21bf73;
+$margin-default: 10px 0;
+
+@mixin flexbox($direction, $justify, $align, $text) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text
+}
+
+section#contato {
+    @include flexbox(column, space-around, center, center);
+
+    div.social {
+        a {
+            margin: 0 30px;
+            color: $color-icon;
+        }
+
+        a:hover {
+            color: $hover-color;
+        }
+    }
+
+    div.wpp {
+        margin: $margin-default;
+
+        a {
+            @include flexbox(row, center, baseline, center)
+        }
+
+        i {
+            margin: 0 10px;
+        }
+    }
+
+    div.email {
+        font-size: 1.4rem;
+        margin: $margin-default;
+    }
+}
