@@ -1,0 +1,70 @@
+/*IMPORTS*/
+
+@import url("../css/reset.css");
+@import url("../css/default.css");
+@import url("../css/nav.css");
+@import url("../css/sobre.css");
+@import url("../css/projetos.css");
+@import url("../css/contato.css");
+@import url("../css/mediaquerie.css");
+
+/*MAIN SCSS*/
+
+$hover-color: #21bf73;
+$font-size: 2rem;
+$h1-letter-spacing: 1rem;
+$letter-spacing: 0.3rem;
+$cursor: pointer;
+
+@mixin flexbox($direction, $justify, $align, $text) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text
+}
+
+//CODE
+header {
+    h1 {
+        font-size: 4rem;
+        letter-spacing: $h1-letter-spacing;
+        margin: 2rem 0;
+    }
+
+    h1:hover {
+        color: $hover-color;
+        cursor: $cursor;
+    }
+}
+
+section#home {
+    height: 90vh;
+    @include flexbox(column, space-around, center, center)
+}
+
+div.welcome {
+    h1 {
+        font-size: 6.5rem;
+        letter-spacing: $h1-letter-spacing
+    }
+
+    h1:hover {
+        color: $hover-color;
+        cursor: $cursor;
+    }
+
+    h2,
+    p {
+        font-size: $font-size;
+        letter-spacing: $letter-spacing;
+    }
+
+    .btnSobre {
+        margin-bottom: 2rem;
+
+        a:hover {
+            color: $hover-color;
+        }
+    }
+}

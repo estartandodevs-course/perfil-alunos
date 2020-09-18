@@ -1,0 +1,36 @@
+section#sobre {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section#sobre div.sobre {
+  max-width: 700px;
+}
+section#sobre div.sobre img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 4rem 0;
+}
+section#sobre div.sobre p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.07rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+section#sobre div.skill {
+  margin: 3.5rem;
+}
+section#sobre div.skill i {
+  color: white;
+  margin: 0 1rem;
+}
+section#sobre div.skill i:hover {
+  color: #21bf73;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=sobre.css.map */

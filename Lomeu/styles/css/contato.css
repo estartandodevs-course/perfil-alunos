@@ -1,0 +1,33 @@
+section#contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+section#contato div.social a {
+  margin: 0 30px;
+  color: white;
+}
+section#contato div.social a:hover {
+  color: #21bf73;
+}
+section#contato div.wpp {
+  margin: 10px 0;
+}
+section#contato div.wpp a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+}
+section#contato div.wpp i {
+  margin: 0 10px;
+}
+section#contato div.email {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+/*# sourceMappingURL=contato.css.map */

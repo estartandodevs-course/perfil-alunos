@@ -1,0 +1,52 @@
+$hover-color: #21bf73;
+$margin-default: 10px 0;
+$border: 4px solid #101010;
+$border-color: #21bf73;
+$bg-color: #0a0a0a;
+
+@mixin flexbox($direction, $justify, $align, $text) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text
+}
+
+%flexboxWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#projetos {
+    @include flexbox(column, space-around, center, center);
+    @extend %flexboxWrap;
+    min-height: 100vh;
+
+    div.projetosImg {
+        @extend %flexboxWrap;
+        max-width: 900px;
+        margin: 2rem 0.8rem;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    figure {
+        margin: 1.1rem auto;
+        border: $border;
+        border-radius: 3px;
+        background-color: $bg-color;
+    }
+
+    figure:hover {
+        border-color: $border-color;
+        color: $hover-color;
+        cursor: pointer;
+    }
+
+    figcaption {
+        font-size: 1.3rem;
+        margin: 2px 0;
+    }
+}
