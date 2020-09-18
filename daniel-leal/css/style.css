@@ -22,6 +22,16 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin: 2vh;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
 #tela-principal {
     display: flex;
     flex-direction: line;
@@ -49,6 +59,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     margin: 50px;
+    line-height: 3vh;
 }
 
 .redes-sociais-logo {
