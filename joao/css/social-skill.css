@@ -1,0 +1,49 @@
+/*----------Pagina-Skill----------*/
+.sobre .skill {
+  max-width: 7800px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.sobre .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sobre .box .box-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 30px 90px 30px;
+}
+.sobre .box .box-box p {
+  margin-top: 25px;
+  color: #919191;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*----------Pagina-Skill----------*/
+/*----------------Media Queries----------------*/
+@media (max-width: 830px) {
+  .box {
+    display: inline !important;
+  }
+  .box .box-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px 30px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .box-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 70px 0px;
+  }
+}
+/*----------------Media Queries----------------*/
+
+/*# sourceMappingURL=social-skill.css.map */

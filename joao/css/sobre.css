@@ -1,210 +1,245 @@
-*{
-    font-family: 'IBM Plex Sans', sans-serif;
+@charset "UTF-8";
+* {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
-body, h1,ul,li,p,a{
-    margin: 0;
-    padding: 0;
+body, h1, ul, li, p, a {
+  margin: 0;
+  padding: 0;
 }
 
-img{
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+}
+
+/*----------------Gerais----------------*/
+/*----------------Perfil----------------*/
+.perfil {
+  min-width: 392px;
+  min-height: 100vh;
+  background-color: #A13838;
+}
+.perfil img {
+  margin: 181px auto 50px auto;
+}
+.perfil #menu, .perfil .menu {
+  display: none;
+}
+.perfil .cor {
+  color: #919191;
+}
+.perfil ul li a {
+  font-size: 23px;
+  font-weight: bold;
+  font-style: none;
+  color: #FFFFFF;
+  margin-left: 163px;
+  line-height: 50px;
+}
+
+/*----------------Perfil----------------*/
+/*----------------Sobre----------------*/
+.sobre {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+.sobre .titulo {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: italic;
+  color: #840D0D;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.sobre ul li {
+  font-size: 23px;
+  font-weight: bold;
+  font-style: none;
+  color: black;
+  padding: 7.5px;
+}
+.sobre ul li img {
+  display: inline-block;
+  padding-right: 10px;
+}
+.sobre .paragrafo-um {
+  font-size: 20px;
+  font-weight: none;
+  font-style: italic;
+  color: #919191;
+  margin-top: 102px;
+  text-align: left;
+}
+.sobre .paragrafo-dois {
+  display: none;
+}
+
+/*----------------Sobre----------------*/
+/*----------------footer----------------*/
+footer {
+  display: none;
+  padding: 20px;
+  background-color: #A13838;
+}
+footer p {
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/*----------------footer----------------*/
+/*----------------Media Queries----------------*/
+/*Gerais-Media-Queries*/
+@media (max-width: 1090px) {
+  h1 {
+    text-align: center;
+  }
+}
+/*Gerais-Media-Queries*/
+/*Perfil-Media-Queries*/
+@media (max-width: 1090px) {
+  .perfil {
+    min-width: 302px;
+    padding: 0 0;
+    height: 500px;
+  }
+  .perfil .menu {
     display: block;
-    max-width: 100%;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration:none;  
-}
-
-.container{
+    background: #e9e9a2;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #840D0D;
+    border-radius: 50%;
+    margin: 50px auto;
+    cursor: pointer;
+  }
+  .perfil .menu::after {
+    content: "→";
+    position: relative;
+    top: 5px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+  .perfil #menu:checked ~ nav {
+    display: block;
+    animation: nav 0.5s ease-in 0s alternate;
+  }
+  .perfil nav {
+    display: none;
+  }
+  .perfil img {
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .perfil ul {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -40px;
+    padding-bottom: 15px;
+    background-color: #840D0D;
+    width: 100%;
+  }
+  .perfil ul li {
+    margin: 15px auto 0 auto !important;
+  }
+  .perfil ul li a {
+    margin-left: 0px;
+    line-height: 0px;
+  }
 }
-
-@media (max-width:1090px){
-    .container{
-        display: inline;
-    }
+/*Perfil-Media-Queries*/
+/*Sobre-Media-Queries*/
+@media (max-width: 1090px) {
+  .container {
+    display: inline;
+  }
 }
+@media (max-width: 790px) {
+  .sobre {
+    width: 95%;
+    margin: 0 0;
+    padding: 0 2%;
+  }
+  .sobre .titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+  .sobre ul li {
+    font-size: 18px;
+    padding: 7.5px;
+  }
+  .sobre .paragrafo-um {
+    text-align: justify;
+    font-size: 18px;
+  }
+}
+@media (max-width: 550px) {
+  .paragrafo-um {
+    display: none;
+  }
 
-/*Gerais*/
+  .paragrafo-dois {
+    display: block !important;
+    font-size: 17px;
+    font-weight: none;
+    font-style: italic;
+    color: #919191;
+    margin-top: 52px;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 550px) and (max-width: 350px) {
+  .paragrafo-dois {
+    font-size: 15px !important;
+  }
+}
+/*Sobre-Media-Queries*/
+/*copy*/
+@media (max-width: 1090px) {
+  footer {
+    margin-top: 100px;
+    display: block;
+  }
+}
+/*copy*/
+/*----------------Media Queries----------------*/
+/*----------------keyframes----------------*/
+@keyframes nav {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+/*----------------keyframes----------------*/
 
-/*perfil*/
-
-    .perfil{
-        min-width: 392px;
-        height: 100vh;
-        background-color: #A13838;
-    }
-    .perfil img{
-        margin: 181px auto 50px auto;
-    }
-
-    .cor{
-        color: #919191 !important;
-    }
-    
-    .perfil ul li a{
-        font-weight: bold;
-        font-size: 23px;
-        color: #FFFFFF;
-        margin-left: 163px;
-        line-height: 50px;
-    }
-
-    @media (max-width:1090px){
-
-        .perfil{
-            min-width: 302px;
-            padding: 0 2%;
-            height: 500px;
-        }
-
-        .perfil img{
-            margin: 0 auto;
-            padding-top: 100px;
-        }
-
-        .perfil ul li a{
-            font-weight: bold;
-            font-size: 23px;
-            color: #FFFFFF;
-            margin-left: 0px;
-            line-height: 0px;
-            
-        }
-
-        .perfil ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 80px;
-        }
-
-        .perfil ul li + li{
-            margin-left: 20px;
-        }
-
-        h1{
-            text-align: center;
-        }
-
-        .copy{
-            margin-top: 100px;
-            display: block !important;
-        }
-    }
-/*perfil*/
-
-/*sobre*/
-
-    .sobre{
-        width: 724px;
-        margin: 0 auto;
-        padding: 0 2%;
-    }
-
-    h1{
-        font-size: 50px;
-        color: #840D0D;
-        font-style: italic;
-        font-weight: 700;
-        margin-top: 60px;
-        margin-bottom: 50px;
-    }
-
-    .sobre ul li{
-        font-size: 23px;
-        font-weight: bold;
-        color: black;
-        padding: 7.5px;
-    }
-
-    .sobre ul li img{
-        display: inline-block;
-        padding-right: 10px;
-    }
-
-    .sobre p{
-        color: #919191;
-        font-style: italic;
-        font-size: 20px;
-        margin-top: 102px;
-    }
-
-    .paragrafo-dois{
-        display: none;
-    }
-
-    @media (max-width:790px){
-
-        .sobre{
-            width: 95%;
-            margin: 0 0;
-            padding: 0 2%;
-        }
-
-        h1.titulo{
-            font-size: 40px;
-        }
-    
-        .sobre ul li{
-            font-size: 18px;
-            padding: 7.5px;
-        }
-        
-
-        .sobre p{
-            text-align: justify;
-            font-size: 18px;
-        }
-
-        
-    }
-
-    @media (max-width:550px){
-
-        .paragrafo-um{
-            display: none;
-        }
-
-        .paragrafo-dois {
-            display: block;
-            font-size: 17px !important;
-            text-align: center;
-            word-wrap: break-word;
-            padding: 0 10px;
-        }
-
-        @media (max-width:350px){
-
-            .paragrafo-dois {
-                font-size: 15px !important;
-            }
-        }
-    }
-
-
-/*sobre*/
-
-/*footer*/
-
-    .copy{
-        display: none;
-    }
-
-    footer{
-        padding: 20px;
-        background-color: #A13838;
-    }
-
-    footer p{
-        font-size: 15px;
-        font-weight: 600;
-        color: white;
-        text-align: center;
-    }
-/*footer*/
+/*# sourceMappingURL=sobre.css.map */
