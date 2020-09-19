@@ -36,6 +36,7 @@ h1, h2 {
     display: flex;
     height: 100%;
     margin-top: 20rem;
+    background-color: $background_color;
     
     h1 {
         text-align: center;
@@ -163,9 +164,11 @@ h1, h2 {
     }
 }
   
-#toggle:checked + .side-menu {
-    transform: translateX(0px);
-    background-color: #4d2349d3;
+#toggle:checked {
+    + .side-menu {
+        transform: translateX(0px);
+        background-color: #4d2349d3;
+    }
 }
   
 #toggle {
@@ -280,6 +283,7 @@ h1, h2 {
             margin: 50% 10%;
         }    
     }
+
     #about {
         h1 {
             @include font_position(18px, relative);
@@ -298,6 +302,7 @@ h1, h2 {
             }
         }
     }
+
     #contact {
         img {
             width: 20%;

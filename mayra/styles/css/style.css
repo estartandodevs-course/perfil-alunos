@@ -28,6 +28,7 @@ h1, h2 {
   display: flex;
   height: 100%;
   margin-top: 20rem;
+  background-color: #4b0f2d9c;
 }
 #about h1 {
   text-align: center;
