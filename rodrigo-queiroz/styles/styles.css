@@ -81,7 +81,7 @@ section p {
 }
 
 
-@media (max-width: 760px), (min-height: 640px) {
+@media (max-width: 760px) {
 /* =======================================
                 NAVBAR/BG
 ======================================= */
@@ -127,7 +127,7 @@ section p {
     }
     .intro-container {
         left: 0;
-        top: 60%;
+        top: 50%;
     }
     .nav-icon {
         margin: 0 0 1px 0;
