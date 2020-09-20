@@ -18,6 +18,8 @@ html {
   display: flex;
   justify-content: center;
   border-radius: 30px;
+  position: relative;
+  flex-direction: row;
 }
 
 li {
@@ -54,7 +56,7 @@ li a:hover {
 }
 
 #foto {
-  position: fixed;
+  position: relative;
   right: 90px;
   top: 150px;
   border-radius: 50%;
@@ -98,7 +100,7 @@ li a:hover {
 
 #projetos .legenda{
   width: 300px;
-  height: 90px;
+  height: 108px;
   background: gray;
   margin:auto;
   margin-bottom: 20px;
@@ -108,6 +110,8 @@ li a:hover {
   text-decoration: none;
   text-align: center;
   border-radius: 3%;
+  /*text-align: center;
+  padding-top: 50px;*/
 }
 .legenda a{
   text-decoration: none;
@@ -161,6 +165,39 @@ li a:hover {
   right: 30px;
 }
 
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+}
 
-
+@media (min-width: 360px) and (max-width: 768px) {
+#nav {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+#apresentacao{
+  padding: 0;
+}
+#apresentacao p{
+  font-size: 12px;
+}
+#apresentacao h1{
+  font-size: 15px;
+}
+#foto{
+  width: 45%;
+  height: 15%;
+  left: 5px;
+  top:0px;
+}
+#footer{
+  right:35px;
+  top:350px;
+}
+#audio{
+  width: 100%;
+}
+}
 
