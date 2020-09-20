@@ -1,3 +1,120 @@
+@charset "UTF-8";
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-out;
+  z-index: 1;
+}
+nav a {
+  color: #cfcfcf;
+}
+nav input.toggle-sidemenu {
+  display: none;
+}
+nav .toggle-sidemenu {
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  z-index: 2;
+}
+nav .nav-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.6s ease-in-out;
+  margin: 0 1px 0 0;
+}
+nav .nav-text {
+  display: none;
+}
+nav .nav-links {
+  position: relative;
+  height: 100%;
+  width: 54px;
+  visibility: hidden;
+  transition: all 0.6s ease-out;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+nav .nav-links .nav-link {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1vmin;
+  align-items: center;
+}
+nav .nav-link:hover .icon-fill, nav .toggle-sidemenu:hover svg {
+  fill: #10ff10;
+}
+nav .nav-link:hover .icon-stroke {
+  stroke: #10ff10;
+}
+nav .nav-link:hover .nav-text {
+  color: #10ff10;
+  transition: all 0.6s ease-in-out;
+}
+nav #toggle-sidemenu:checked + label svg {
+  transform: rotate(180deg);
+}
+nav #toggle-sidemenu:checked ~ .nav-links {
+  visibility: visible;
+  transition: all 0.6s ease-out;
+  min-width: 15vw;
+  background-image: linear-gradient(180deg, #840707, #000);
+}
+nav #toggle-sidemenu:checked ~ .nav-links .nav-text {
+  display: inline-block;
+  transition: all 0.6s ease-out;
+}
+
+.intro-container {
+  position: relative;
+  left: 15%;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.intro-container .intro-text {
+  font-size: 4.5em;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.29, 1.33, 0.9, 1.14);
+}
+.intro-container .intro-text:hover {
+  transform: translateX(20%);
+}
+.intro-container #about-text::after {
+  content: "OLÁ.";
+}
+.intro-container #about-text:hover::after {
+  content: "SOBRE";
+}
+.intro-container #project-text::after {
+  content: "SOU O";
+}
+.intro-container #project-text:hover::after {
+  content: "PROJETOS";
+}
+.intro-container #contact-text::after {
+  content: "RODRIGO";
+}
+.intro-container #contact-text:hover::after {
+  content: "CONTATO";
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -40,69 +157,57 @@ section p {
   margin-bottom: 0.4em;
 }
 
-nav {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 54px;
-  transition: all 0.6s ease-out;
-  z-index: 1;
-}
-nav a {
-  color: #cfcfcf;
-}
-nav input.toggle-sidemenu {
-  display: none;
-}
-nav .toggle-sidemenu {
-  cursor: pointer;
-  position: absolute;
-  right: 10%;
-  z-index: 2;
-}
-nav .nav-icon {
-  width: 40px;
-  height: 40px;
-  transition: all 0.6s ease-in-out;
-  margin: 0 1px 0 0;
-}
-nav .nav-links {
-  height: 100%;
-  transition: all 0.6s ease-out;
-  position: relative;
-  top: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  z-index: 2;
-}
-nav .nav-links .nav-link {
-  display: flex;
-  justify-content: flex-start;
-  margin: 1vmin;
-  align-items: center;
-}
-nav .nav-links .nav-link .nav-text {
-  display: none;
-}
-nav .nav-link:hover .icon-fill, nav .toggle-sidemenu:hover svg {
-  fill: #10ff10;
-}
-nav .nav-link:hover .icon-stroke {
-  stroke: #10ff10;
-}
-nav .nav-link:hover .nav-text {
-  color: #10ff10;
-  transition: all 0.6s ease-in-out;
-}
-
 .icon-fill {
   fill: #fff;
 }
 
 .icon-stroke {
   stroke: #fff;
+}
+
+.white-text {
+  color: white;
+}
+
+.red-text {
+  color: red;
+}
+
+.left {
+  left: var(--nav-size);
+}
+
+.right {
+  right: 0;
+}
+
+.blue {
+  color: #325cf3;
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+  text-shadow: 0.5px 0.5px white;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.big-font {
+  font-size: 1.25em;
+  margin-bottom: 0.8em;
+}
+
+.central {
+  max-width: 55%;
+  position: relative;
+  left: 22.5%;
+  top: 10%;
 }
 
 /*# sourceMappingURL=styles.css.map */

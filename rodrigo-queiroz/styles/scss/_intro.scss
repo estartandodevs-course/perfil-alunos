@@ -1,0 +1,35 @@
+.intro-container {
+    position: relative;
+    left: 15%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .intro-text {
+        font-size: 4.5em;
+        font-weight: bold;
+        display: inline-block;
+        transition: all .5s cubic-bezier(.29,1.33,.9,1.14);
+    }
+    .intro-text:hover {
+        transform: translateX(20%);
+    }
+    #about-text::after {
+        content: "OLÁ.";
+    }
+    #about-text:hover::after {
+        content: "SOBRE";
+    }
+    #project-text::after {
+        content: "SOU O";
+    }
+    #project-text:hover::after {
+        content: "PROJETOS";
+    }
+    #contact-text::after {
+        content: "RODRIGO";
+    }
+    #contact-text:hover::after {
+        content: "CONTATO";
+    }
+}

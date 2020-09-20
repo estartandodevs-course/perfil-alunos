@@ -1,4 +1,7 @@
 @use 'variables';
+@use 'reset';
+@use 'navbar';
+@use 'intro';
 
 ::-webkit-scrollbar {
     width: 0;
@@ -37,100 +40,7 @@ section {
         margin-bottom: 0.4em;
     }
 }
-// =========================================
-//                  NAVBAR
-// =========================================
 
-nav {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: variables.$nav-size;
-    transition: all .6s ease-out;
-    z-index: 1;
-    a {
-        color: #cfcfcf;
-    }
-    input.toggle-sidemenu {
-        display: none;
-    }
-    .toggle-sidemenu {
-        cursor: pointer;
-        position: absolute;
-        right: 10%;
-        z-index: 2;
-    }
-    .nav-icon {
-        width: variables.$icon-size;
-        height: variables.$icon-size;
-        transition: all .6s ease-in-out;
-        margin: 0 1px 0 0;
-    }
-    .nav-links {
-        height: 100%;
-        // visibility: hidden;
-        transition: all .6s ease-out;
-        position: relative;
-        top: variables.$icon-size + 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        z-index: 2;
-        .nav-link {
-            display: flex;
-            justify-content: flex-start;
-            margin: 1vmin;
-            align-items: center;
-            .nav-text {
-                display: none;
-            }    
-        }
-            
-    }
-    .nav-link:hover .icon-fill, .toggle-sidemenu:hover svg {
-        fill: #10ff10;
-    } 
-    .nav-link:hover {
-        .icon-stroke {
-            stroke: #10ff10;
-        }
-        .nav-text {
-            color: #10ff10;
-            transition: all .6s ease-in-out;
-        }
-    } 
-        
-}
-
-// #toggle-sidemenu:checked + label svg {
-//     transform: rotate(180deg);
-// }
-// #toggle-sidemenu:checked ~ .nav-container {
-//     visibility: visible;
-//     transition: all .6s ease-out;
-//     background-image: linear-gradient(180deg, #e4171736, #000)
-// }
-// #toggle-sidemenu:checked ~ .nav-container .nav-text {
-//     display: inline-block;
-//     transition: all .6s ease-out;
-// }
-// .nav-container {
-//     height: 100%;
-//     visibility: hidden;
-//     transition: all .6s ease-out;
-// }
-// .nav-links {
-//     position: relative;
-//     top: calc(var(--icon-size) + 1vmin);
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: start;
-//     z-index: 2;
-// }
-// .nav-text {
-//     display: none;
-// }
 // =========================================
 //             GENERIC CLAASSES
 // =========================================
@@ -140,4 +50,39 @@ nav {
 }
 .icon-stroke {
     stroke: #fff;
+}
+.white-text {
+    color: white;
+}
+.red-text {
+    color: red;
+}
+.left {
+    left: var(--nav-size);
+}
+.right {
+    right: 0;
+}
+.blue {
+    color: #325cf3;
+}
+.red {
+    color: red;
+}
+.black {
+    color: black;
+    text-shadow: 0.5px 0.5px white;
+}
+.italic {
+    font-style: italic;
+}
+.big-font {
+    font-size: 1.25em;
+    margin-bottom: .8em;
+}
+.central {
+    max-width: variables.$central-div;
+    position: relative;
+    left: (100% - variables.$central-div)/2;
+    top: 10%;
 }
