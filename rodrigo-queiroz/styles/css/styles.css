@@ -115,6 +115,110 @@ nav #toggle-sidemenu:checked ~ .nav-links .nav-text {
   content: "CONTATO";
 }
 
+.img-about {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 22.5%;
+  /* vertical-align: top; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-about .small-img {
+  min-width: 2em;
+  max-width: 4em;
+  min-height: 2em;
+  max-height: 4em;
+}
+.img-about .medium-img {
+  min-width: 3.5em;
+  max-width: 6em;
+  min-height: 3.5em;
+  max-height: 6em;
+}
+.img-about .large-img {
+  min-width: 5em;
+  max-width: 7em;
+  min-height: 5em;
+  max-height: 7em;
+}
+
+.img-tooltip + .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background-color: gray;
+  border-radius: 5px;
+  border: 1px solid #8eea94a8;
+  padding: 5px;
+}
+
+.img-tooltip:hover + .tooltip-text, .img-tooltip + .tooltip-text:hover {
+  visibility: visible;
+}
+
+.card {
+  width: 27vw;
+  height: 40vh;
+  box-sizing: border-box;
+  background-color: #0a1707;
+  border: 5px solid #0a1707;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2%;
+}
+.card a {
+  color: #cfcfcf;
+  height: 100%;
+  width: 100%;
+}
+.card a img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card a figcaption {
+  position: absolute;
+  bottom: 2%;
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  padding: 1% 0;
+  background-color: #0a1707;
+}
+.card a #no-link {
+  cursor: default;
+}
+
+.contact svg {
+  width: 10vmin;
+  height: 10vmin;
+  margin: 0 20px;
+  fill: white;
+}
+.contact svg:hover {
+  transition: fill 0.4s ease-out;
+  fill: #24dc32;
+}
+.contact svg {
+  fill: white;
+}
+
+div.inspiration {
+  margin-top: 60vh;
+}
+div.inspiration p {
+  text-align: center;
+}
+div.inspiration a:hover {
+  transition: color 0.5s ease-out;
+  color: white;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -208,6 +312,14 @@ section p {
   position: relative;
   left: 22.5%;
   top: 10%;
+}
+
+.whole-screen {
+  position: relative;
+  top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=styles.css.map */

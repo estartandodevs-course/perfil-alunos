@@ -1,0 +1,35 @@
+@use 'variables';
+@use 'reusable';
+
+.card {
+    width: 27vw;
+    height: 40vh;
+    box-sizing: border-box;
+    background-color: #0a1707;
+    border: 5px solid #0a1707;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2%;
+    a{
+        color: variables.$font-color;
+        @include reusable.fullsize;
+        img {
+            @include reusable.fullsize;
+            border-radius: 10px;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 2%;
+            font-size: 0.8em;
+            text-align: center;
+            display: block;
+            padding: 1% 0;
+            background-color: #0a1707;
+        }
+        #no-link {
+            cursor: default;
+        }
+    }
+}

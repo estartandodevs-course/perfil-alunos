@@ -1,14 +1,17 @@
 @use 'variables';
+@use 'reusable';
 @use 'reset';
 @use 'navbar';
 @use 'intro';
+@use 'about';
+@use 'project';
+@use 'contacts';
 
 ::-webkit-scrollbar {
     width: 0;
 }
 html, body, main {
-    height: 100%;
-    width: 100%;
+    @include reusable.fullsize;
 }
 body {
     background-color: #000000;
@@ -85,4 +88,11 @@ section {
     position: relative;
     left: (100% - variables.$central-div)/2;
     top: 10%;
+}
+.whole-screen {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
