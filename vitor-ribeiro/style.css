@@ -1,4 +1,3 @@
-
 /* Início do CSS global */
 body {
   background-image: url(./imagens/background.jpg);
@@ -72,7 +71,7 @@ li a:hover {
 /* Início do CSS da página de projetos */
 #projetos {
   margin: 80px;
-  width: 800px;
+  width: 80%;
   border: 3px solid green;
   background: white;
   -moz-box-shadow: 0 0 60px black;
@@ -83,7 +82,6 @@ li a:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-57%, -70%);
   display: flex;
   flex-flow: row wrap;
@@ -92,9 +90,28 @@ li a:hover {
 }
 
 .projetos{
+  transition: ease-in-out .3s;
   margin:auto;
   padding: 30px;
   border-radius: 15%;
+}
+
+#projetos .legenda{
+  width: 300px;
+  height: 90px;
+  background: gray;
+  margin:auto;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3%;
+}
+.legenda a{
+  text-decoration: none;
+  color: black;
 }
 /* Fim do CSS da página de projetos */
 
@@ -114,7 +131,6 @@ li a:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
   transform: translate(-57%, -70%);
 }
 
@@ -126,8 +142,7 @@ li a:hover {
   background: #3f3f3f;
   border-radius: 5px;
   font-size: 22px;
-  align-items: center;
-  justify-content: center;
+  transition: ease-in-out .3s;
 }
 
 .contato {
@@ -146,13 +161,6 @@ li a:hover {
   right: 30px;
 }
 
-p a {
-  text-decoration: none;
-}
 
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
-  font-weight: 900;
-  text-decoration: none;
-}
+
+
