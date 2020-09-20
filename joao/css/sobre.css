@@ -118,7 +118,7 @@ footer p {
   .perfil {
     min-width: 302px;
     padding: 0 0;
-    height: 500px;
+    min-height: 500px;
   }
   .perfil .menu {
     display: block;
