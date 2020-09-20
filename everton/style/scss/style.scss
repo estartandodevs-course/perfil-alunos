@@ -1,0 +1,442 @@
+@mixin google-font($family) {
+    @import url('https://fonts.googleapis.com/css?family=#{$family}');
+}
+
+@include google-font("Open Sans");
+
+/* HEADER */
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+    img {
+        width: 260px;
+    }
+
+    .menu {
+        ul {
+            display: flex;
+
+            li {
+                margin: 10px 15px;
+
+                a {
+                    color: #fff
+                }
+            }
+        }
+    }
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url('../../img/background-hero.jpg') fixed;
+    background-size: cover;
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    h1 {
+        font-size: 4rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 2;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 4.2s;
+}
+
+.fadeInUp {
+    animation: fadeInUp 2.5s;
+}
+
+/* SOBRE MIM */
+
+.sobre {
+    display: flex;
+    padding: 80px 100px;
+    flex-direction: column;
+
+    h4 {
+        font-size: 2rem;
+        color: #585B5E;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    p {
+        color: #322C28;
+        text-align: left;
+        font-size: 1.1rem;
+    }
+}
+
+/* PROJECT */
+
+.project {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)), url('../../img/background-projetos.jpg') fixed;
+    background-size: cover;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(223, 223, 223);
+    padding: 80px 100px;
+
+    .grid {
+        display: flex;
+
+        li {
+            text-align: center;
+            margin: 0 80px;
+
+            h4 {
+                font-size: 4.5rem;
+                margin-bottom: 20px;
+                font-weight: 100;
+                color: rgb(255, 255, 255);
+            }
+
+            h5 {
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.89);
+                font-weight: 500
+            }
+        }
+    }
+}
+
+/* CONTATO */
+
+.contato {
+    padding: 80px 100px;
+
+    .grid {
+        width: 100%;
+        display: flex;
+
+        li {
+            margin: 0 30px;
+            text-align: left;
+
+            &.grid-one {
+                flex-basis: 50%
+            }
+
+            &.grid-two {
+                flex-basis: 50%
+            }
+
+            h4 {
+                text-transform: uppercase;
+                color: #585B5E;
+                margin-bottom: 30px;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+
+            p {
+                color: #322C28;
+                margin-bottom: 1rem;
+            }
+
+            hr {
+                width: 300px;
+                height: 1px;
+                background-color: rgb(50, 44, 40, 0.5);
+                border: none;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            i {
+                color: #322C28;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .form {
+        width: 100%;
+        padding: .375rem .75rem;
+        margin: 8px;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+    }
+
+    button {
+        cursor: pointer;
+        color: #fff;
+        background-color: #322C28;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        padding: .375rem .75rem;
+        margin-left: 7px;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #DFDFDF;
+    padding: 30px 30px 0 30px;
+
+    a {
+        color: #585B5E;
+
+        &:hover {
+            color: #404142;
+        }
+    }
+
+    .grid {
+        width: 100%;
+        display: flex;
+        margin-bottom: 15px;
+
+        .one {
+            flex-basis: 33.3333333333%;
+            text-align: left;
+        }
+
+        .two {
+            flex-basis: 33.3333333333%;
+            text-align: center;
+
+            a {
+                margin-right: 15px;
+
+                i {
+                    font-size: 1.8rem;
+                    color: #585B5E;
+                }
+            }
+
+            i {
+                &:hover {
+                    color: #000000;
+                }
+            }
+        }
+
+        .three {
+            flex-basis: 33.3333333333%;
+            text-align: right;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+/* ===== MEDIA QUERY ==== */
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .hero {
+        h1 {
+            font-size: 2.8rem;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: center;
+        }
+    }
+
+    .sobre {
+        padding: 40px 100px;
+
+        h4 {
+            text-align: center;
+            font-size: 1.7rem;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+
+    .project {
+        .grid {
+            flex-direction: column;
+            li {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .contato {
+        .grid {
+            flex-direction: column;
+
+            li {
+                margin-bottom: 40px;
+
+                p {
+                    font-size: 0.9rem;
+                }
+
+                &.grid-one,
+                &.grid-two {
+                    flex-basis: 100%
+                }
+            }
+        }
+    }
+
+    footer {
+        .grid {
+            flex-direction: column;
+
+            .one,
+            .two,
+            .three {
+                flex-basis: 100%;
+                text-align: center;
+            }
+
+            .one{
+                margin-top: 20px;
+            }
+
+            .two{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 430px){
+
+    header{
+        padding: 0 40px;
+
+        .menu{
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                li{
+                    margin: 0 15px 5px 15px;
+
+                    &:first-child{
+                        margin-left: 15px;
+                    }
+
+                    &:last-child{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero{
+        h1{
+            margin-top: 100px;
+        }
+    }
+
+    .sobre{
+        padding: 80px 50px;
+
+        h4{
+            font-size: 1.3rem;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+
+    .contato{
+        padding: 80px 40px;
+
+        .grid{
+            li{
+                hr{
+                    width: 100px;
+                }
+
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+}
