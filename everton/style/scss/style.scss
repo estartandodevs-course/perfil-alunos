@@ -4,10 +4,14 @@
 
 @include google-font("Open Sans");
 
+$color-brown: #322C28;
+$color-gradiente: rgba(0, 0, 0, 0.7);
+$color-grey: #585B5E;
+
 /* HEADER */
 
 header {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: $color-gradiente;
     width: 100%;
     position: absolute;
     top: 0;
@@ -39,8 +43,8 @@ header {
 /* HERO */
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
+    background: linear-gradient($color-gradiente,
+            $color-gradiente),
         url('../../img/background-hero.jpg') fixed;
     background-size: cover;
     min-height: 82vh;
@@ -107,14 +111,14 @@ header {
 
     h4 {
         font-size: 2rem;
-        color: #585B5E;
+        color: $color-grey;
         margin-bottom: 30px;
         text-transform: uppercase;
         font-weight: 500;
     }
 
     p {
-        color: #322C28;
+        color: $color-brown;
         text-align: left;
         font-size: 1.1rem;
     }
@@ -181,14 +185,14 @@ header {
 
             h4 {
                 text-transform: uppercase;
-                color: #585B5E;
+                color: $color-grey;
                 margin-bottom: 30px;
                 font-size: 1.5rem;
                 font-weight: 500;
             }
 
             p {
-                color: #322C28;
+                color: $color-brown;
                 margin-bottom: 1rem;
             }
 
@@ -202,7 +206,7 @@ header {
             }
 
             i {
-                color: #322C28;
+                color: $color-brown;
                 margin-right: 5px;
             }
         }
@@ -223,7 +227,7 @@ header {
     button {
         cursor: pointer;
         color: #fff;
-        background-color: #322C28;
+        background-color: $color-brown;
         border: 1px solid transparent;
         border-radius: .25rem;
         padding: .375rem .75rem;
@@ -240,7 +244,7 @@ footer {
     padding: 30px 30px 0 30px;
 
     a {
-        color: #585B5E;
+        color: $color-grey;
 
         &:hover {
             color: #404142;
@@ -266,7 +270,7 @@ footer {
 
                 i {
                     font-size: 1.8rem;
-                    color: #585B5E;
+                    color: $color-grey;
                 }
             }
 
