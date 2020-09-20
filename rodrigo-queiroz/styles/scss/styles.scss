@@ -1,0 +1,39 @@
+@use 'variables';
+
+::-webkit-scrollbar {
+    width: 0;
+}
+html, body, main {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: variables.$font-color;
+    font-size: variables.$font-size;
+    font-family: 'Poppins', sans-serif;
+}
+.bg-photo {
+    z-index: -9;
+    position: absolute;
+    right: 10%;
+    top: 0;
+    max-height: 100vh;
+}
+section {
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 variables.$nav-size;
+    box-sizing: border-box;
+    h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    p {
+        margin-bottom: 0.4em;
+    }
+}

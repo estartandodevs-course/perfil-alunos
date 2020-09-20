@@ -12,7 +12,7 @@
 ::-webkit-scrollbar {
     width: 0;
 }
-html, body {
+html, body, main {
     height: 100%;
     width: 100%;
 }

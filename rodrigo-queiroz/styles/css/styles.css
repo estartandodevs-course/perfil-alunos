@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #cfcfcf;
+  font-size: calc(10px + 10 * ((100vw - 500px) / (866) ));
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-photo {
+  z-index: -9;
+  position: absolute;
+  right: 10%;
+  top: 0;
+  max-height: 100vh;
+}
+
+section {
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0 54px;
+  box-sizing: border-box;
+}
+section h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+section p {
+  margin-bottom: 0.4em;
+}
+
+/*# sourceMappingURL=styles.css.map */
