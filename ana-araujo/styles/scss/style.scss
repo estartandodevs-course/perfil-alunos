@@ -1,15 +1,21 @@
 
-  @include font-face-titulo("Ubuntu", "../../assests/fonts/Ubuntu-Medium.ttf");
-  @include font-face("Open Sans", "../../assests/fonts/OpenSans-Light.ttf"); 
-
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../../assets/fonts/OpenSans-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: "Ubuntu";
+    src: url("../../assets/fonts/Ubuntu-Medium.ttf");
+  }
+  
   $color-background: linear-gradient(90deg, rgba(232,116,198,1) 0%, rgba(235,140,229,0.6110644086736257) 50%, rgba(231,133,217,1) 100%);
   $color-hover: rgba(231,133,217,1);
   $height-desktop: 10vh;
   $height-media-query: 15vh;
   $alinhamento-texto: center;
 
-  @mixin flex-box ($direction) {
-    flex-direction: $direction;
+  @mixin flex-box  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +27,13 @@
   }
 
   body {
-    font-family: font-face;
+    font-family: "Open Sans";
     height: 100vh;
   }
 
   .menu {
     @include flex-box;
+    flex-direction: column;
     height: $height-desktop;
     background-color: #000;
    
@@ -48,18 +55,19 @@
   }
 
   .container-index {
-    @include flex-box(column);
+    @include flex-box;
+    flex-direction: column;
     background: $color-background;
     height: 80vh;
     display: flex;
 
       h1 {
-          margin-top: 150px;
+          margin-top: -50px;
           text-transform: uppercase;
-          font-size: 150px; 
+          font-size: 120px; 
           font-weight: 700;
           text-align:  $alinhamento-texto;
-          font-family: font-face-titulo;
+          font-family: "Ubuntu";
         }
 
         p {
@@ -91,7 +99,8 @@
   }
 
   .container-about {
-    @include flex-box(column);
+    @include flex-box;
+    flex-direction: column;
     background: $color-background;
     height: 80vh;
     display: flex;
@@ -99,8 +108,8 @@
       p {
         @include flex-box;
           width: 80vh;
-          margin-top: 200px;
-          font-family: font-face;
+          margin-top: -10px;
+          font-family: "Open Sans";
           font-weight: 300;
           font-size: 27px;
           line-height: 45px;
@@ -139,27 +148,28 @@
       background-color: #fff;
 
       h1 {
-          margin-top: 100px;
+          margin-top: -100px;
           font-size: 70px;
-          text-align:  $alinhamento-texto;
+          text-align: $alinhamento-texto;
         }
 
         p {
           text-align: center;
-          margin-top: 50px;
+          margin-top: 20px;
           font-size: 20px;
         }
     }
     
    .container-about {
     @include flex-box;
+      flex-direction: column;
       background: $color-background;
       height: 100vh;
 
         p {
           @include flex-box;
-          margin-top: 90px;
-          font-family: font-face;
+          margin-top: -70px;
+          font-family: "Open Sans";
           font-weight: 300;
           font-size: 17px;
           text-align:  $alinhamento-texto;
