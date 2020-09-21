@@ -1,4 +1,16 @@
 @mixin fullsize {
     height: 100%;
-    width: 100%
+    width: 100%;
+}
+
+@mixin img-size($min, $max) {
+    min-width: $min;
+    max-width: $max;
+    min-height: $min;
+    max-height: $max;
+}
+
+@mixin central($column-size, $left-size) {
+    max-width: $column-size;
+    left: (100% - $left-size)/2;
 }

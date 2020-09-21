@@ -28,11 +28,16 @@ body {
     top: 0;
     max-height: 100vh;
 }
+@media (max-width: 760px) {
+    .bg-photo {
+        right: -10%;
+        max-width: 100vw;
+    }
+}
 section {
+    @include reusable.fullsize;
     display: block;
     position: relative;
-    height: 100%;
-    width: 100%;
     padding: 0 variables.$nav-size;
     box-sizing: border-box;
     h1 {
@@ -43,7 +48,6 @@ section {
         margin-bottom: 0.4em;
     }
 }
-
 // =========================================
 //             GENERIC CLAASSES
 // =========================================
@@ -84,10 +88,24 @@ section {
     margin-bottom: .8em;
 }
 .central {
-    max-width: variables.$central-div;
+    @include reusable.central(variables.$central-div, variables.$central-div);
     position: relative;
-    left: (100% - variables.$central-div)/2;
     top: 10%;
+}
+@media (max-width: 760px) {
+    .central {
+        @include reusable.central(85%, 100%);
+    }
+    section {
+        width: 100vw;
+        padding: 0 5%;
+    }
+    .left {
+        left:0;
+    }
+    .right {
+        right: 0;
+    }
 }
 .whole-screen {
     position: relative;

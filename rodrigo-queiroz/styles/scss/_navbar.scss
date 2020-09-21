@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'reusable';
 
 nav {
     position: fixed;
@@ -24,6 +25,11 @@ nav {
         height: variables.$icon-size;
         transition: all .6s ease-in-out;
         margin: 0 1px 0 0;
+    }
+    @media (max-width: 760px) {
+        .nav-icon {
+            margin: 0 0 1px 0;
+        }
     }
     .nav-text {
         display: none;
@@ -73,4 +79,44 @@ nav {
             }
         }
     }     
+}
+
+@media (max-width: 760px) {
+    nav {
+    width: 100vw;
+    height: 15vh;
+        .nav-links {
+            top: 0;
+            padding-left: variables.$icon-size;
+            padding-top: 0;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            @include reusable.fullsize;
+            .nav-link {
+                flex-direction: column;
+                align-items: center;
+                height: variables.$icon-size;
+            }
+        }
+        .toggle-sidemenu {
+            left: 0;
+            top: 10%;
+        }
+        #toggle-sidemenu {
+            + label svg{
+                transform: rotate(90deg);
+            }
+            &:checked {
+                + label svg {
+                    transform: rotate(270deg);
+                }
+                ~ .nav-links {
+                    width: 100%;
+                    height: 100%;
+                    background-image: linear-gradient(90deg, #e4171736, #000)
+                }
+            }
+        }
+    }
 }
