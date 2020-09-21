@@ -1,3 +1,14 @@
+.project-button a {
+  padding: 50px 50px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  display: block;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 800;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -78,6 +89,7 @@ a:visited {
 .project-area {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .projects-buttons {
@@ -93,24 +105,13 @@ a:visited {
   font-family: "Roboto Mono", monospace;
   letter-spacing: 0.21em;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .project-button {
   width: 100%;
   max-width: 300px;
   text-align: center;
-}
-
-.project-button a {
-  padding: 50px 50px;
-  margin-bottom: 20px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 30px;
-  display: block;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 800;
 }
 
 @media (max-width: 1000px) {
@@ -144,8 +145,8 @@ a:visited {
   }
 
   #project h1 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 
   .projects-buttons {

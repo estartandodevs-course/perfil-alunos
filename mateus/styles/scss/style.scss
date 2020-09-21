@@ -2,6 +2,17 @@ $first-color: black;
 $second-color: white;
 $principal-font: 'Roboto Mono', monospace;
 
+%button-default{
+    padding: 50px 50px;
+    margin-bottom: 20px;
+    background-color: $second-color;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    display: block;
+    font-family: $principal-font;
+    font-weight: 800;
+}
+
 
 @mixin flexbox () {
     display: flex;
@@ -96,6 +107,7 @@ a:visited{
 .project-area{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .projects-buttons{
@@ -113,7 +125,7 @@ a:visited{
         font-family: $principal-font;
         letter-spacing: 0.21em;
         margin-top: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 }
 .project-button{
@@ -124,14 +136,7 @@ a:visited{
 
 .project-button{
     a{
-        padding: 50px 50px;
-        margin-bottom: 20px;
-        background-color: $second-color;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 30px;
-        display: block;
-        font-family: $principal-font;
-        font-weight: 800;
+        @extend %button-default
     }
 }
 
@@ -176,8 +181,8 @@ a:visited{
 
    #project{
        h1{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 150px;
+        margin-bottom: 150px;
        }
    }
 
