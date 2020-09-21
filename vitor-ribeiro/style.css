@@ -18,7 +18,7 @@ html {
   display: flex;
   justify-content: center;
   border-radius: 30px;
-  position: relative;
+  position: sticky;
   flex-direction: row;
 }
 
@@ -42,7 +42,7 @@ li a:hover {
 
 /* Início do CSS exclusivo do index.html */
 #apresentacao {
-  margin: auto;
+  margin-top: 100px;
   width: 50%;
   border: 3px solid green;
   padding: 70px 0;
@@ -179,22 +179,23 @@ p {
   }
 #apresentacao{
   padding: 0;
+  margin-top: 10px;
 }
 #apresentacao p{
   font-size: 12px;
 }
 #apresentacao h1{
-  font-size: 15px;
+  font-size: 13px;
 }
 #foto{
   width: 45%;
   height: 15%;
-  left: 5px;
+  right: -8px;
   top:0px;
 }
 #footer{
-  right:40px;
-  top:360px;
+  right:30px;
+  top:200px;
 }
 #audio{
   width: 100%;

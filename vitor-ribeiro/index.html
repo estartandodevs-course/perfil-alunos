@@ -6,17 +6,25 @@
     <title>Home</title>
     <link rel="icon" href="./imagens/icons/icons8-home-64.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
-    <nav>
-        <div> 
-            <ul id="nav">
-                <li><a href="./index.html">Página Inicial</a></li>
-                <li><a href="projetos.html">Meus Projetos</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </div>
-    </nav>
+    <input type="checkbox" name="toggle" id="toggle">
+    <div class="side-menu">
+        <nav>
+            <label class="menu-icon" for="toggle">&#9776</label>
+            <div class="menu-item menu-active">
+                <a href="./index.html">Página Inicial</a>
+              </div>
+              <div class="menu-item">
+                <a href="./projetos.html">Meus Projetos</a>
+              </div>
+              <div class="menu-item">
+                <a href="./contatos.html">Contatos</a>
+              </div>
+            </div>
+        </nav>
+    </div>
 
     <br/><br/>
 
