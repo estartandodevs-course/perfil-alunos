@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0; }
 
+body {
+  font-family: "Fredericka the Great", cursive; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,7 +17,7 @@
     margin-left: 30px;
     align-self: center; }
     .menu-bg .logo h3 {
-      font-size: 1.6rem;
+      font-size: 2.6rem;
       color: #fff; }
 
 .menu {
@@ -49,5 +52,60 @@
   .banner .banner-img img {
     width: 200px;
     margin-top: 20px; }
+
+.black {
+  padding: 40px;
+  background: #000; }
+
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px; }
+  .content-title h3,
+  .content-title p {
+    text-align: center;
+    color: #fff; }
+  .content-title h2 {
+    font-size: 2.6rem;
+    color: #fff; }
+  .content-title h3 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    align-self: flex-end; }
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .content-info img {
+    width: 350px; }
+  .content-info p {
+    width: 400px;
+    font-size: 1.8rem;
+    color: #fff; }
+
+.white {
+  padding: 40px; }
+  .white h2,
+  .white h3,
+  .white p {
+    color: #000; }
+
+.content-port img {
+  width: 400px;
+  margin: 20px;
+  flex: 1;
+  border: 1px solid #fff; }
+
+.team {
+  margin-top: 20px; }
+
+.team img {
+  width: 120px;
+  border-radius: 30%; }
+
+.icon img {
+  width: 50px; }
 
 /*# sourceMappingURL=base.css.map */
