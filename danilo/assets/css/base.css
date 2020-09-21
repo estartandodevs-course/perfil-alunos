@@ -34,4 +34,20 @@
           border-radius: 30%;
           transition: 0.5s; }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0; }
+  .banner .banner-title h1,
+  .banner .banner-title h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; }
+  .banner h1 {
+    font-size: 4rem; }
+  .banner .banner-img img {
+    width: 200px;
+    margin-top: 20px; }
+
 /*# sourceMappingURL=base.css.map */
