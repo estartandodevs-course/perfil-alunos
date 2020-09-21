@@ -47,6 +47,9 @@ html {
                 text-decoration: none;
                 margin: 3px;
             }
+            .menu-nav-list:hover {
+                color: $secundary-color;
+            }
         }
         .menu-icon {
             color: $primary-text-color;

@@ -44,6 +44,9 @@ html {
   text-decoration: none;
   margin: 3px;
 }
+.menu .menu-org .menu-nav .menu-nav-list:hover {
+  color: teal;
+}
 .menu .menu-org .menu-icon {
   color: white;
   font-size: 30px;
