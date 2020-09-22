@@ -1,0 +1,265 @@
+//   sass
+@mixin text-style1 ($textp, $textpx, $color: #ffffff) {
+    font-size: $textpx;
+    margin-top: $textp;
+    color: $color;
+}
+
+@mixin tamanho ($wdt, $hgt) {
+    width: $wdt;
+    height: $hgt;
+}
+
+$background: #000000;
+$background_2: #00000000;
+$white: #ffffff;
+// sass
+
+/* * Menu da página * */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background-color: $background;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+.menu-item {
+    background-color: #000000;
+    padding: 10px;
+    margin-bottom: 31px;
+    a {
+        text-decoration: none;
+        color: $white;
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+.side-menu {
+    background-color: $background_2;
+    width: 20%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+    nav {
+        display: block;
+        position: relative;
+    }
+}
+
+.menu-icon {
+    color: $white;
+    position: absolute;
+    right: 80px;
+    left: 75%;
+    top: -0%;
+    font-size: 40px;
+}
+
+#toggle {
+    display: none;
+    &:checked+.side-menu {
+        position: relative;
+        right: -20px;
+        top: 10px;
+        transform: translateX(-40%);
+    }
+}
+
+//   Menu da página
+
+/** formata elementos que tem backgrounds  **/
+
+.name {
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    background: {
+        position: 50% 0% 0%;
+        repeat: repeat;
+        attachment: fixed;
+    }
+}
+
+.main {
+    font-family: 'Times New Roman';
+    color: $white;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    min-height: 0%;
+    background: {
+        position: 50% 0% 0%;
+        repeat: repeat;
+        attachment: fixed;
+    }
+}
+
+
+/* Define backgrounds dos divs */
+
+#nome {
+    background-image: url("images/4.png");
+}
+
+
+/** formata texto **/
+
+.name article {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10% 0% 30%;
+    h1 {
+        @include text-style1 (-35%,
+        90px);
+        text-align: center;
+        margin-bottom: 0%;
+    }
+    p {
+        @include text-style1 (5%,
+        25px);
+        text-align: center;
+        margin-bottom: 0%;
+    }
+}
+
+.about {
+    text-align: center;
+    #sobre {
+        padding: 5% 2% 5%;
+    }
+    #H2 {
+        @include text-style1 (-5%,
+        44px);
+        margin-bottom: 2%;
+        padding: 5% 0% 2%;
+        text-decoration-line: underline;
+    }
+    #sobretxt {
+        @include text-style1 (5%,
+        20px);
+        padding: 5% 0% 10%;
+    }
+}
+
+
+/** Caixinhas maneiras com links **/
+
+#box {
+    @include tamanho(880px,
+    auto);
+    margin: 15px auto;
+    display: block;
+    margin-bottom: 50px;
+    &:after {
+        display: block;
+        content: '.';
+        line-height: 0;
+        visibility: hidden;
+    }
+    .estilizacao {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    .estilizacao li {
+        @include tamanho(400px,
+        300px);
+        position: relative;
+        display: block;
+        margin: 20px;
+        cursor: pointer;
+        &:hover img {
+            margin-top: -80px;
+        }
+    }
+    .estilizacao li img {
+        @include tamanho(100%,
+        100%);
+        display: block;
+        z-index: 999;
+        position: absolute;
+        transition: .5s;
+    }
+}
+
+.conteudo {
+    @include tamanho(100%,
+    80px);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: $background;
+    overflow: hidden;
+    color: $white;
+    margin-top: 220px;
+    p {
+        @include tamanho(250px,
+        10px);
+        display: block;
+        color: $white;
+        position: relative;
+        float: right;
+        margin-top: 8%;
+        margin-bottom: 0;
+        text-indent: 10px;
+    }
+}
+
+.btn-more {
+    display: block;
+    text-decoration: none;
+    color: $white;
+    position: relative;
+    float: right;
+    padding: 3px 10px;
+    background: #003a27;
+    border-radius: 4px;
+    margin: 14px;
+}
+
+.nome-secao {
+    font-size: 18px;
+}
+
+.descricao {
+    margin-top: 8%;
+    font-size: 14px;
+}
+
+
+/** Caixinhas maneiras com links **/
+
+
+/* * Footer da página * */
+
+.site-fooder {
+    width: 100%;
+}
+
+.footer {
+    background-color: $background;
+    text-align: center;
+    ul li {
+        font-family: 'Times New Roman';
+        display: inline-block;
+    }
+    ul li a,
+    p {
+        display: block;
+        color: $white;
+        padding: 10px 10px;
+    }
+}
+
+
+/* * Footer da página * */

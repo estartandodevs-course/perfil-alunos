@@ -61,13 +61,10 @@
   
   .name {
       font-family: 'Playfair Display', serif;
-      font-weight: lighter;
       margin: 0 auto;
       width: 100%;
-      max-width: 1920px;
       position: relative;
       min-height: 100%;
-      /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); */
       background-position: 50% 0% 0%;
       background-repeat: repeat;
       background-attachment: fixed;
@@ -81,7 +78,6 @@
       max-width: 100%;
       position: relative;
       min-height: 0%;
-      /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); */
       background-position: 50% 0% 0%;
       background-repeat: repeat;
       background-attachment: fixed;
@@ -103,7 +99,7 @@
       color: #FFF;
       font-size: 90px;
       text-align: center;
-      margin-top: -15%;
+      margin-top: -30%;
       margin-bottom: 0%;
   }
   
@@ -146,7 +142,6 @@
       margin: 15px auto;
       display: block;
       margin-bottom: 50px;
-      /* background-color: cyan; */
   }
   
   #box:after {
