@@ -6,6 +6,27 @@
 html,
 body {
   height: 100%;
+  font-family: "Oxygen";
+}
+
+main {
+  text-align: center;
+  min-height: 100%;
+  background-color: #CFCFCF;
+  padding-top: 70px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  justify-items: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
 }
 
 .menu-item {
@@ -20,7 +41,7 @@ body {
 
 .side-menu {
   position: fixed;
-  background-color: #a84141;
+  background-color: #3BC14A;
   width: 70%;
   height: 100%;
   transform: translateX(-100%);
