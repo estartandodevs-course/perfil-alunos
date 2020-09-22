@@ -80,7 +80,7 @@ flex-direction: row;
 
 .menu-icon {
 position: absolute;
-right: -80px;
+right: -90px;
 font-size: 30px;
 }
 
@@ -268,4 +268,3 @@ p {
   }
   
 }
-

@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div > 
-            <ul id="nav">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="projetos.html">Meus Projetos</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </div>
-    </nav>
+    <input type="checkbox" name="toggle" id="toggle">
+    <div class="side-menu">
+        <nav>
+            <label class="menu-icon" for="toggle">&#9776</label>
+            <div class="menu-item menu-active">
+                <a href="./index.html">Página Inicial</a>
+              </div>
+              <div class="menu-item">
+                <a href="./projetos.html">Meus Projetos</a>
+              </div>
+              <div class="menu-item">
+                <a href="./contatos.html">Contatos</a>
+              </div>
+        </nav>
+    </div>
     <div id="projetos">
         <img src="imagens/projetos/bravely.jpg" class="projetos" width="300px" height="270px">
         <img src="imagens/projetos/bravely.jpg" class="projetos" width="300px" height="270px">
