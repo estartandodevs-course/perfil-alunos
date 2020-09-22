@@ -43,13 +43,12 @@ input.toggle-sidemenu {
 .nav-text {
     display: none;
 }
-nav .nav-icon {
+.nav-icon {
     width: var(--icon-size);
     height: var(--icon-size);
     transition: all .6s ease-in-out;
     margin: 0 1px 0 0;
 }
-
 .icon-fill {
     fill: #fff;
 }

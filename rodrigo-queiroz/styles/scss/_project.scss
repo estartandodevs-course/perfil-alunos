@@ -1,0 +1,55 @@
+@use 'variables';
+@use 'reusable';
+
+.card {
+    width: 27vw;
+    height: 40vh;
+    box-sizing: border-box;
+    background-color: #0a1707;
+    border: 5px solid #0a1707;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2%;
+    a{
+        color: variables.$font-color;
+        @include reusable.fullsize;
+        img {
+            @include reusable.fullsize;
+            border-radius: 10px;
+        }
+        @at-root .card figcaption {
+            position: absolute;
+            bottom: 2%;
+            font-size: 0.8em;
+            text-align: center;
+            display: block;
+            padding: 1% 0;
+            background-color: #0a1707;
+        }
+        #no-link {
+            cursor: default;
+        }
+    }
+}
+@media (orientation: landscape) and (min-width: 760px) {
+    .card{
+        &:hover {
+            border: 5px solid #15e01ce0;
+            img {
+                transform: translateY(-4vw);
+                transition: all .5s cubic-bezier(0.6, 0.5);
+            }
+            #three-lines-description {
+                transform: translateY(-35%);
+            }
+            figcaption {
+                display: block;
+            }
+        }
+        figcaption {
+            display: none;
+        }
+    }
+}
