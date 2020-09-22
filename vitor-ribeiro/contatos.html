@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meus Contatos</title>
+    <link rel="icon" href="./imagens/icons/icons8-contacts-128.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div> 
-            <ul id="nav">
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="projetos.html">Meus Projetos</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div id="page2" align='center'>
+    <input type="checkbox" name="toggle" id="toggle">
+    <div class="side-menu">
+        <nav>
+            <label class="menu-icon" for="toggle">&#9776</label>
+            <div class="menu-item menu-active">
+                <a href="./index.html">Página Inicial</a>
+              </div>
+              <div class="menu-item">
+                <a href="./projetos.html">Meus Projetos</a>
+              </div>
+              <div class="menu-item">
+                <a href="./contatos.html">Contatos</a>
+              </div>
+        </nav>
+    </div>
+    <div id="contatos" align='center'>
         <h1 style="text-align:justify;">Meus Contatos:</h1>
         <ul>
             <li class="block">
@@ -44,10 +51,6 @@
                 </a>
             </li>
         </ul>
-    </div>
-    
-    <div align="center" id="under"> 
-        <img src="./imagens/Under_construction1.gif">
     </div>
 </body>
 </html>
