@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  height: 100%;
+  font-family: "Fredericka the Great", cursive;
+  scroll-behavior: smooth; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.menu-bg {
+  background: #000; }
+  .menu-bg .logo {
+    margin-left: 30px;
+    align-self: center; }
+    .menu-bg .logo h3 {
+      font-size: 2.6rem;
+      color: #fff; }
+
+.menu {
+  flex: 1; }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; }
+    .menu ul li {
+      margin-right: 20px;
+      padding: 10px; }
+      .menu ul li img {
+        width: 50px;
+        padding: 5px; }
+        .menu ul li img:hover {
+          background-color: #fff;
+          border-radius: 30%;
+          transition: 0.5s; }
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0; }
+  .banner .banner-title h1,
+  .banner .banner-title h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000; }
+  .banner h1 {
+    font-size: 4rem; }
+  .banner .banner-img img {
+    width: 200px;
+    margin-top: 20px; }
+
+.black {
+  padding: 40px;
+  background: #000; }
+
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px; }
+  .content-title h3,
+  .content-title p {
+    text-align: center;
+    color: #fff; }
+  .content-title h2 {
+    font-size: 2.6rem;
+    color: #fff; }
+  .content-title h3 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    align-self: flex-end; }
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .content-info img {
+    width: 300px; }
+  .content-info p {
+    width: 400px;
+    font-size: 1.8rem;
+    color: #fff; }
+
+.white {
+  padding: 40px; }
+  .white h2,
+  .white h3,
+  .white p {
+    color: #000; }
+
+.content-port img {
+  width: 400px;
+  margin: 20px;
+  flex: 1;
+  border: 1px solid #fff; }
+
+.team {
+  margin-top: 20px; }
+
+.team img {
+  width: 120px;
+  border-radius: 30%; }
+
+#toggle {
+  display: none; }
+
+#toggle:checked + .menu {
+  transform: translateX(0px); }
+
+.icon img {
+  width: 50px; }
+
+@media (max-width: 805px) {
+  .logo {
+    display: none; }
+
+  .banner .banner-img img {
+    width: 150px; }
+
+  .content-port img {
+    width: 40%; }
+
+  .team {
+    text-align: center; }
+
+  .menu ul {
+    text-align: center;
+    display: inline-block; }
+
+  .menu {
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+    background: #000; }
+
+  .mobile {
+    position: absolute;
+    right: -37px;
+    font-size: 30px;
+    color: #07c1fa;
+    cursor: pointer; } }
+
+/*# sourceMappingURL=base.css.map */
