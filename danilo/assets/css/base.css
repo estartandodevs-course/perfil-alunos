@@ -4,7 +4,8 @@
 
 body, html {
   height: 100%;
-  font-family: "Fredericka the Great", cursive; }
+  font-family: "Fredericka the Great", cursive;
+  scroll-behavior: smooth; }
 
 .container {
   max-width: 1200px;
@@ -115,7 +116,7 @@ body, html {
 .icon img {
   width: 50px; }
 
-@media (max-width: 710px) {
+@media (max-width: 805px) {
   .logo {
     display: none; }
 
