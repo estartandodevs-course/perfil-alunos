@@ -55,7 +55,11 @@
         }
         
         .img {
-            border-radius: 250%
+            border-style: double;
+        }
+        
+        .fotoperfil {
+            
         }
         
         .devs {
@@ -143,7 +147,7 @@
             margin: 5px;
             padding: 5%;
             width: 98%;
-            height: 25%;
+            height: 35%;
         }
         
         .ladoalado {
