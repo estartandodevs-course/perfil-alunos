@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0; }
 
-body {
+body, html {
+  height: 100%;
   font-family: "Fredericka the Great", cursive; }
 
 .container {
@@ -79,7 +80,7 @@ body {
   align-items: center;
   justify-content: space-around; }
   .content-info img {
-    width: 350px; }
+    width: 300px; }
   .content-info p {
     width: 400px;
     font-size: 1.8rem;
@@ -105,7 +106,44 @@ body {
   width: 120px;
   border-radius: 30%; }
 
+#toggle {
+  display: none; }
+
+#toggle:checked + .menu {
+  transform: translateX(0px); }
+
 .icon img {
   width: 50px; }
+
+@media (max-width: 710px) {
+  .logo {
+    display: none; }
+
+  .banner .banner-img img {
+    width: 150px; }
+
+  .content-port img {
+    width: 40%; }
+
+  .team {
+    text-align: center; }
+
+  .menu ul {
+    text-align: center;
+    display: inline-block; }
+
+  .menu {
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+    background: #000; }
+
+  .mobile {
+    position: absolute;
+    right: -37px;
+    font-size: 30px;
+    color: #07c1fa;
+    cursor: pointer; } }
 
 /*# sourceMappingURL=base.css.map */
