@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Início do CSS global */
 body {
   background-image: url(./imagens/background.jpg);
@@ -25,7 +26,6 @@ html {
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -34,16 +34,23 @@ li a {
   text-decoration: none;
   font-size: 24px;
 }
-
 li a:hover {
   background-color: #111;
 }
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Fim do CSS Global */
 /* Menu Responsivo*/
 .menu-item {
   padding: 20px;
   margin-bottom: 3px;
 }
-
 .menu-item a {
   display: block;
   color: white;
@@ -51,48 +58,43 @@ li a:hover {
   text-decoration: none;
   font-size: 24px;
 }
+
+.side-menu {
+  position: fixed;
+  background-color: gray;
+  width: 80%;
+  height: 100%;
+  transform: translateX(-105%);
+  transition: transform 0.5s cubic-bezier(0.71, 0.14, 0.7, 1.23);
+  z-index: 1;
+  text-align: center;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.side-menu nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 .side-menu a:hover {
   background-color: #111;
   border-radius: 30%;
 }
 
-
-.side-menu nav {
-display: flex;
-flex-direction: column;
-position: relative;
-}
-
-.side-menu {
-position: fixed;
-background-color: gray;
-width: 80%;
-height: 100%;
-transform: translateX(-105%);
-transition: transform 0.5s cubic-bezier(0.71, 0.14, 0.7, 1.23);
-z-index: 1;
-text-align: center;
-border-radius: 30px;
-display: flex;
-justify-content: center;
-flex-direction: row;
-}
-
 .menu-icon {
-position: absolute;
-right: -90px;
-font-size: 30px;
-}
-
-#toggle:checked + .side-menu {
-transform: translateX(-10px);
+  position: absolute;
+  right: -90px;
+  font-size: 30px;
 }
 
 #toggle {
-display: none;
+  display: none;
 }
-
-/* Fim do CSS Global */
+#toggle:checked + .side-menu {
+  transform: translateX(-10px);
+}
 
 /* Início do CSS exclusivo do index.html */
 #apresentacao {
@@ -122,8 +124,8 @@ display: none;
   display: inline;
   bottom: 0;
 }
-/* Fim do CSS exclusivo do index.html */
 
+/* Fim do CSS exclusivo do index.html */
 /* Início do CSS da página de projetos */
 #projetos {
   margin: 80px;
@@ -141,22 +143,14 @@ display: none;
   transform: translate(-57%, -70%);
   display: flex;
   flex-flow: row wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
-
-.projetos{
-  transition: ease-in-out .3s;
-  margin:auto;
-  padding: 30px;
-  border-radius: 15%;
-}
-
-#projetos .legenda{
+#projetos .legenda {
   width: 300px;
   height: 108px;
   background: gray;
-  margin:auto;
+  margin: auto;
   margin-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
   font-size: 24px;
@@ -167,12 +161,19 @@ display: none;
   /*text-align: center;
   padding-top: 50px;*/
 }
-.legenda a{
+#projetos .legenda a {
   text-decoration: none;
   color: black;
 }
-/* Fim do CSS da página de projetos */
 
+.projetos {
+  transition: ease-in-out 0.3s;
+  margin: auto;
+  padding: 30px;
+  border-radius: 15%;
+}
+
+/* Fim do CSS da página de projetos */
 /* Inicio do CSS da página de contatos */
 #contatos {
   margin: 80px;
@@ -196,11 +197,12 @@ display: none;
   width: 300px;
   height: 150px;
   margin: 10px;
+  padding: 10px;
   display: inline-flex;
   background: #3f3f3f;
   border-radius: 5px;
   font-size: 22px;
-  transition: ease-in-out .3s;
+  transition: ease-in-out 0.3s;
 }
 
 .contato {
@@ -209,23 +211,9 @@ display: none;
   height: 100%;
   border-radius: 5px;
 }
+
 /* Fim do CSS da página de contatos */
-
-
 /* CSS genéricos usados em partes do site abaixo */
-#under {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 24px;
-  font-weight: 900;
-  text-decoration: none;
-}
-
 @media (min-width: 480px) {
   .menu-icon {
     display: none;
@@ -236,35 +224,37 @@ p {
     width: 100%;
     transform: translateX(0px);
   }
-
   .side-menu nav {
     flex-direction: row;
   }
 }
-
 @media (min-width: 360px) and (max-width: 768px) {
-  #apresentacao{
-    padding: 0;
-    margin-top: 0px;
+  #apresentacao {
+    padding: 0px;
+    margin-top: 50px;
   }
-  #apresentacao p{
+  #apresentacao p {
     font-size: 12px;
   }
-  #apresentacao h1{
+  #apresentacao h1 {
     font-size: 13px;
   }
-  #foto{
+
+  #foto {
     width: 45%;
     height: 15%;
     right: -8px;
-    top:0px;
+    top: 100px;
   }
-  #footer{
-    right:30px;
-    top:200px;
+
+  #footer {
+    right: 30px;
+    top: 250px;
   }
-  #audio{
+
+  #audio {
     width: 100%;
   }
-  
 }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,258 @@
+/* Início do CSS global */
+body {
+    background-image: url(./imagens/background.jpg);
+    background-size: auto;
+  }
+  
+  html {
+    cursor: url(./imagens/navi.ico), auto;
+  }
+  
+  #nav {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    position: sticky;
+    flex-direction: row;
+  }
+  
+  li {
+    float: left;
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+    }
+    a:hover{
+        background-color: #111;
+    }
+  }
+  
+  p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  /* Fim do CSS Global */
+
+  /* Menu Responsivo*/
+  .menu-item {
+    padding: 20px;
+    margin-bottom: 3px;
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+    }
+  }
+  .side-menu {
+    position: fixed;
+    background-color: gray;
+    width: 80%;
+    height: 100%;
+    transform: translateX(-105%);
+    transition: transform 0.5s cubic-bezier(0.71, 0.14, 0.7, 1.23);
+    z-index: 1;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    a:hover{
+        background-color: #111;
+        border-radius: 30%;
+    }
+  }
+  
+  .menu-icon {
+  position: absolute;
+  right: -90px;
+  font-size: 30px;
+  }
+  
+  #toggle {
+    display: none;
+    &:checked + .side-menu {
+        transform: translateX(-10px);
+    }
+}
+  
+  /* Início do CSS exclusivo do index.html */
+  #apresentacao {
+    margin-top: 100px;
+    width: 50%;
+    border: 3px solid green;
+    padding: 70px 0;
+    background: white;
+    -moz-box-shadow: 0 0 50px black;
+    -webkit-box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px black;
+    border-style: double;
+    position: absolute;
+    opacity: 0.6;
+  }
+  
+  #foto {
+    position: relative;
+    right: 90px;
+    top: 150px;
+    border-radius: 50%;
+    border: solid;
+  }
+  
+  #footer {
+    position: absolute;
+    display: inline;
+    bottom: 0;
+  }
+  /* Fim do CSS exclusivo do index.html */
+  
+  /* Início do CSS da página de projetos */
+  #projetos {
+    margin: 80px;
+    width: 80%;
+    border: 3px solid green;
+    background: white;
+    -moz-box-shadow: 0 0 60px black;
+    -webkit-box-shadow: 0 0 60px black;
+    box-shadow: 0 0 60px black;
+    border-style: double;
+    opacity: 0.9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, -70%);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items: center;
+    .legenda{
+        width: 300px;
+        height: 108px;
+        background: gray;
+        margin:auto;
+        margin-bottom: 20px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 24px;
+        font-weight: 900;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 3%;
+        /*text-align: center;
+        padding-top: 50px;*/
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+  }
+  
+  .projetos{
+    transition: ease-in-out .3s;
+    margin:auto;
+    padding: 30px;
+    border-radius: 15%;
+  }
+  /* Fim do CSS da página de projetos */
+  
+  /* Inicio do CSS da página de contatos */
+  #contatos {
+    margin: 80px;
+    width: 50%;
+    border: 3px solid green;
+    padding: 70px 0;
+    padding-left: 190px;
+    background: white;
+    -moz-box-shadow: 0 0 50px black;
+    -webkit-box-shadow: 0 0 50px black;
+    box-shadow: 0 0 50px black;
+    border-style: double;
+    opacity: 0.9;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-57%, -70%);
+  }
+  
+  .block {
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-flex;
+    background: #3f3f3f;
+    border-radius: 5px;
+    font-size: 22px;
+    transition: ease-in-out .3s;
+  }
+  
+  .contato {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  /* Fim do CSS da página de contatos */
+  
+  
+  /* CSS genéricos usados em partes do site abaixo */
+  
+  @media (min-width: 480px) {
+    .menu-icon {
+      display: none;
+    }
+    .side-menu {
+      height: auto;
+      width: 100%;
+      transform: translateX(0px);
+      nav{
+        flex-direction: row;
+      }
+    }
+  }
+  
+  @media (min-width: 360px) and (max-width: 768px) {
+    #apresentacao{
+      padding: 0px;
+      margin-top: 50px;
+      p{
+          font-size: 12px;
+      }
+      h1{
+          font-size: 13px;
+      }
+    }
+
+    #foto{
+      width: 45%;
+      height: 15%;
+      right: -8px;
+      top:100px;
+    }
+    #footer{
+      right:30px;
+      top:250px;
+    }
+    #audio{
+      width: 100%;
+    }
+    
+  }
