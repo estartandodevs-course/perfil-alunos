@@ -1,0 +1,140 @@
+$color-primary:#FFBABA;
+$color-secondary:hsl(25, 100%, 93%);
+$color-topo:#678a74;
+$border-radius:30px;
+@mixin h2 ($fonte:50px, $cor:violet, $borda:double) {
+    font-size: $fonte;
+    color: $cor;
+    text-align: start;
+    border-bottom: 2px solid $color-primary;
+    border-left: 30%;
+}
+
+body {
+    background-color: $color-topo;
+    div {
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+            margin: 10px;
+            border-radius: 20%;
+        }
+        .h2 {
+            @include h2;
+        }
+        .historia {
+            display: flex;
+            justify-content: center;
+            text-align: start;
+            border-radius: 30%;
+            height: 350px;
+            margin: 10px;
+            align-content: space-around;
+            justify-content: space-evenly;
+            .img {
+                border-radius: 30px;
+                margin: 15px;
+            }
+        }
+        p {
+            font-size: 35px;
+            font: medium;
+            color: black;
+        }
+    }
+    .navegar {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 30px;
+        color: violet;
+        bottom: auto;
+        border-style: double;
+        font-style: #f7c5a8;
+        .bottom {
+            font-style: #f7c5a8;
+            display: block;
+            text-decoration: none;
+            bottom: 10px;
+            color: cornsilk;
+        }
+    }
+    .gif {
+        display: flex;
+        justify-content: flex-end;
+        border-radius: $border-radius;
+        height: 350px;
+        margin: 15px;
+        .img {
+            display: flex;
+            justify-content: flex-start;
+            border-radius: 30%;
+            height: 350px;
+            margin: 15px;
+        }
+    }
+}
+
+.historia2 {
+    display: flex;
+    align-content: center;
+    border-radius: 30%;
+    height: 350px;
+    margin: 10px;
+}
+
+.paes {
+    align-items: center;
+    border-radius: $border-radius;
+    height: 250px;
+    margin: 10px;
+    width: 200px;
+}
+
+.missao {
+    display: flex;
+    justify-self: end;
+    border-radius: $border-radius;
+    height: 250px;
+    margin: 30px;
+    width: 450px;
+    float: right;
+    .list {
+        font-size: 30px;
+    }
+}
+
+body {
+    @media screen and (max-width: 768px) {
+        body {
+            p {
+                font-size: 35px;
+                font: medium;
+                color: black;
+            }
+            .logo {
+                display: flex;
+                flex-wrap: wrap;
+                height: 500px;
+                margin: 10px;
+                border-radius: 20%;
+            }
+            .h2 {
+                @include h2;
+            }
+            .historia {
+                display: flex;
+                justify-content: center;
+                text-align: start;
+                border-radius: 30%;
+                height: 350px;
+                margin: 10px;
+                align-content: space-around;
+                justify-content: space-evenly;
+                .img {
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}

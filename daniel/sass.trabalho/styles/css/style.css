@@ -1,0 +1,132 @@
+body {
+  background-color: #678a74;
+}
+body div .logo {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  margin: 10px;
+  border-radius: 20%;
+}
+body div .h2 {
+  font-size: 50px;
+  color: violet;
+  text-align: start;
+  border-bottom: 2px solid #FFBABA;
+  border-left: 30%;
+}
+body div .historia {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  border-radius: 30%;
+  height: 350px;
+  margin: 10px;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+body div .historia .img {
+  border-radius: 30px;
+  margin: 15px;
+}
+body div p {
+  font-size: 35px;
+  font: medium;
+  color: black;
+}
+body .navegar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  color: violet;
+  bottom: auto;
+  border-style: double;
+  font-style: #f7c5a8;
+}
+body .navegar .bottom {
+  font-style: #f7c5a8;
+  display: block;
+  text-decoration: none;
+  bottom: 10px;
+  color: cornsilk;
+}
+body .gif {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 30px;
+  height: 350px;
+  margin: 15px;
+}
+body .gif .img {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 30%;
+  height: 350px;
+  margin: 15px;
+}
+
+.historia2 {
+  display: flex;
+  align-content: center;
+  border-radius: 30%;
+  height: 350px;
+  margin: 10px;
+}
+
+.paes {
+  align-items: center;
+  border-radius: 30px;
+  height: 250px;
+  margin: 10px;
+  width: 200px;
+}
+
+.missao {
+  display: flex;
+  justify-self: end;
+  border-radius: 30px;
+  height: 250px;
+  margin: 30px;
+  width: 450px;
+  float: right;
+}
+.missao .list {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  body body p {
+    font-size: 35px;
+    font: medium;
+    color: black;
+  }
+  body body .logo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    margin: 10px;
+    border-radius: 20%;
+  }
+  body body .h2 {
+    font-size: 50px;
+    color: violet;
+    text-align: start;
+    border-bottom: 2px solid #FFBABA;
+    border-left: 30%;
+  }
+  body body .historia {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    border-radius: 30%;
+    height: 350px;
+    margin: 10px;
+    align-content: space-around;
+    justify-content: space-evenly;
+  }
+  body body .historia .img {
+    border-radius: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
