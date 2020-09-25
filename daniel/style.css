@@ -58,9 +58,7 @@
             border-style: double;
         }
         
-        .fotoperfil {
-            
-        }
+        .fotoperfil {}
         
         .devs {
             margin-top: 100%;
@@ -131,6 +129,7 @@
             align-content: center;
             font-size: 100%;
             color: cornsilk;
+            padding: 20px;
         }
         
         .iframevideo {
