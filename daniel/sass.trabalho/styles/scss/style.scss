@@ -2,7 +2,7 @@ $color-primary:#FFBABA;
 $color-secondary:hsl(25, 100%, 93%);
 $color-topo:#678a74;
 $border-radius:30px;
-@mixin h2 ($fonte:50px, $cor:violet, $borda:double) {
+@mixin h3 ($fonte:50px, $cor: cornsilk, $borda:double) {
     font-size: $fonte;
     color: $cor;
     text-align: start;
@@ -19,9 +19,11 @@ body {
             height: 500px;
             margin: 10px;
             border-radius: 20%;
+            background-position: bottom 10px right 20px;
+            padding-top: 15px;
         }
-        .h2 {
-            @include h2;
+        .h3 {
+            @include h3;
         }
         .historia {
             display: flex;
@@ -29,58 +31,79 @@ body {
             text-align: start;
             border-radius: 30%;
             height: 350px;
-            margin: 10px;
+            margin: 0px;
             align-content: space-around;
             justify-content: space-evenly;
             .img {
-                border-radius: 30px;
-                margin: 15px;
+                display: flex;
+                justify-content: flex-start;
+                border-radius: 30%;
+                height: 350px;
+                margin: 0px;
             }
         }
-        p {
-            font-size: 35px;
-            font: medium;
-            color: black;
-        }
     }
-    .navegar {
-        display: flex;
-        justify-content: space-evenly;
+    p {
         font-size: 30px;
-        color: violet;
-        bottom: auto;
-        border-style: double;
-        font-style: #f7c5a8;
-        .bottom {
-            font-style: #f7c5a8;
-            display: block;
-            text-decoration: none;
-            bottom: 10px;
-            color: cornsilk;
-        }
+        font: medium;
+        color: cornsilk;
     }
-    .gif {
+    .icones {
         display: flex;
-        justify-content: flex-end;
-        border-radius: $border-radius;
-        height: 350px;
+        justify-content: space-around;
+        border-radius: 50%;
+        border: double;
+        height: 100px;
         margin: 15px;
-        .img {
-            display: flex;
-            justify-content: flex-start;
-            border-radius: 30%;
-            height: 350px;
-            margin: 15px;
-        }
+        padding: 50px, 10px;
     }
 }
 
-.historia2 {
+.navegar2 {
     display: flex;
-    align-content: center;
-    border-radius: 30%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-size: 30px;
+    border-style: double;
+    .bottom {
+        font-style: #000000;
+        display: block;
+        text-decoration: none;
+        bottom: 10px;
+        color: cornsilk;
+    }
+}
+
+.navegar {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    color: violet;
+    bottom: auto;
+    border: $color-primary;
+    font-style: #f7c5a8;
+    .bottom {
+        font-style: #f7c5a8;
+        display: block;
+        text-decoration: none;
+        bottom: 10px;
+        color: cornsilk;
+    }
+}
+
+.gif {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: $border-radius;
     height: 350px;
-    margin: 10px;
+    margin: 15px;
+    .img {
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 30%;
+        height: 350px;
+        margin: 15px;
+    }
 }
 
 .paes {
@@ -91,17 +114,50 @@ body {
     width: 200px;
 }
 
+.paes2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .missao {
     display: flex;
-    justify-self: end;
+    justify-content: center;
+    align-content: center;
     border-radius: $border-radius;
-    height: 250px;
+    height: 350px;
     margin: 30px;
-    width: 450px;
+    width: 550px;
     float: right;
     .list {
         font-size: 30px;
     }
+}
+
+.aplv {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30%;
+    height: 350px;
+    margin: 15px;
+}
+
+.vd {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primary;
+    align-items: center;
+    border-radius: 30px;
+    width: 85%;
+    margin: 90px;
+    padding: 10, 10, 10;
+    height: 500px;
+}
+
+.rodape {
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 body {
@@ -119,8 +175,8 @@ body {
                 margin: 10px;
                 border-radius: 20%;
             }
-            .h2 {
-                @include h2;
+            .h3 {
+                @include h3;
             }
             .historia {
                 display: flex;

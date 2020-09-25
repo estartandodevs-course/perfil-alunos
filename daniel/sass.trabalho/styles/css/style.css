@@ -7,10 +7,12 @@ body div .logo {
   height: 500px;
   margin: 10px;
   border-radius: 20%;
+  background-position: bottom 10px right 20px;
+  padding-top: 15px;
 }
-body div .h2 {
+body div .h3 {
   font-size: 50px;
-  color: violet;
+  color: cornsilk;
   text-align: start;
   border-bottom: 2px solid #FFBABA;
   border-left: 30%;
@@ -21,56 +23,77 @@ body div .historia {
   text-align: start;
   border-radius: 30%;
   height: 350px;
-  margin: 10px;
+  margin: 0px;
   align-content: space-around;
   justify-content: space-evenly;
 }
 body div .historia .img {
-  border-radius: 30px;
-  margin: 15px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 30%;
+  height: 350px;
+  margin: 0px;
 }
-body div p {
-  font-size: 35px;
+body p {
+  font-size: 30px;
   font: medium;
-  color: black;
+  color: cornsilk;
 }
-body .navegar {
+body .icones {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50%;
+  border: double;
+  height: 100px;
+  margin: 15px;
+  padding: 50px, 10px;
+}
+
+.navegar2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-size: 30px;
+  border-style: double;
+}
+.navegar2 .bottom {
+  font-style: #000000;
+  display: block;
+  text-decoration: none;
+  bottom: 10px;
+  color: cornsilk;
+}
+
+.navegar {
   display: flex;
   justify-content: space-evenly;
   font-size: 30px;
   color: violet;
   bottom: auto;
-  border-style: double;
+  border: #FFBABA;
   font-style: #f7c5a8;
 }
-body .navegar .bottom {
+.navegar .bottom {
   font-style: #f7c5a8;
   display: block;
   text-decoration: none;
   bottom: 10px;
   color: cornsilk;
 }
-body .gif {
+
+.gif {
   display: flex;
   justify-content: flex-end;
   border-radius: 30px;
   height: 350px;
   margin: 15px;
 }
-body .gif .img {
+.gif .img {
   display: flex;
   justify-content: flex-start;
   border-radius: 30%;
   height: 350px;
   margin: 15px;
-}
-
-.historia2 {
-  display: flex;
-  align-content: center;
-  border-radius: 30%;
-  height: 350px;
-  margin: 10px;
 }
 
 .paes {
@@ -81,17 +104,50 @@ body .gif .img {
   width: 200px;
 }
 
+.paes2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .missao {
   display: flex;
-  justify-self: end;
+  justify-content: center;
+  align-content: center;
   border-radius: 30px;
-  height: 250px;
+  height: 350px;
   margin: 30px;
-  width: 450px;
+  width: 550px;
   float: right;
 }
 .missao .list {
   font-size: 30px;
+}
+
+.aplv {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 30%;
+  height: 350px;
+  margin: 15px;
+}
+
+.vd {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFBABA;
+  align-items: center;
+  border-radius: 30px;
+  width: 85%;
+  margin: 90px;
+  padding: 10, 10, 10;
+  height: 500px;
+}
+
+.rodape {
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -107,9 +163,9 @@ body .gif .img {
     margin: 10px;
     border-radius: 20%;
   }
-  body body .h2 {
+  body body .h3 {
     font-size: 50px;
-    color: violet;
+    color: cornsilk;
     text-align: start;
     border-bottom: 2px solid #FFBABA;
     border-left: 30%;
