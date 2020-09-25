@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* * Menu da página * */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #000000;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.menu-item {
+  background-color: #000000;
+  padding: 10px;
+  margin-bottom: 31px;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+}
+
+.side-menu {
+  background-color: #00000000;
+  width: 20%;
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out, background-color 1s ease-out;
+}
+.side-menu nav {
+  display: block;
+  position: relative;
+}
+
+.menu-icon {
+  color: #ffffff;
+  position: absolute;
+  right: 80px;
+  left: 75%;
+  top: 0%;
+  font-size: 40px;
+}
+
+#toggle {
+  display: none;
+}
+#toggle:checked + .side-menu {
+  position: relative;
+  right: -20px;
+  top: 10px;
+  transform: translateX(-40%);
+}
+
+/** formata elementos que tem backgrounds  **/
+.name {
+  font-family: "Playfair Display", serif;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  min-height: 100%;
+  background-position: 50% 0% 0%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  font-family: "Times New Roman";
+  color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  min-height: 0%;
+  background-position: 50% 0% 0%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* Define backgrounds dos divs */
+#nome {
+  background-image: url("images/4.png");
+}
+
+/** formata texto **/
+.name article {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 0% 30%;
+}
+.name article h1 {
+  font-size: 90px;
+  margin-top: -35%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0%;
+}
+.name article p {
+  font-size: 25px;
+  margin-top: 5%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+.about {
+  text-align: center;
+}
+.about #sobre {
+  padding: 5% 2% 5%;
+}
+.about #H2 {
+  font-size: 44px;
+  margin-top: -5%;
+  color: #ffffff;
+  margin-bottom: 2%;
+  padding: 5% 0% 2%;
+  text-decoration-line: underline;
+}
+.about #sobretxt {
+  font-size: 20px;
+  margin-top: 5%;
+  color: #ffffff;
+  padding: 5% 0% 10%;
+}
+
+/** Caixinhas maneiras com links **/
+#box {
+  width: 880px;
+  height: auto;
+  margin: 15px auto;
+  display: block;
+  margin-bottom: 50px;
+}
+#box:after {
+  display: block;
+  content: ".";
+  line-height: 0;
+  visibility: hidden;
+}
+#box .estilizacao {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+#box .estilizacao li {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  display: block;
+  margin: 20px;
+  cursor: pointer;
+}
+#box .estilizacao li:hover img {
+  margin-top: -80px;
+}
+#box .estilizacao li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 999;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.conteudo {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  overflow: hidden;
+  color: #ffffff;
+  margin-top: 220px;
+}
+.conteudo p {
+  width: 250px;
+  height: 10px;
+  display: block;
+  color: #ffffff;
+  position: relative;
+  float: right;
+  margin-top: 8%;
+  margin-bottom: 0;
+  text-indent: 10px;
+}
+
+.btn-more {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  float: right;
+  padding: 3px 10px;
+  background: #003a27;
+  border-radius: 4px;
+  margin: 14px;
+}
+
+.nome-secao {
+  font-size: 18px;
+}
+
+.descricao {
+  margin-top: 8%;
+  font-size: 14px;
+}
+
+/** Caixinhas maneiras com links **/
+/* * Footer da página * */
+.site-fooder {
+  width: 100%;
+}
+
+.footer {
+  background-color: #000000;
+  text-align: center;
+}
+.footer ul li {
+  font-family: "Times New Roman";
+  display: inline-block;
+}
+.footer ul li a,
+.footer p {
+  display: block;
+  color: #ffffff;
+  padding: 10px 10px;
+}
+
+/* * Footer da página * */
+
+/*# sourceMappingURL=style.css.map */

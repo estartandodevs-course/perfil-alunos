@@ -12,36 +12,29 @@
 
 <body>
    <header id="about">
-      <nav class="navbar">
-         <h2>{YO}</h2>
-         <ul class="menu-items">
-            <li>
-               <a href="#about">About</a>
-            </li>
-            <li>
-               <a href="#projects">Projects</a>
-            </li>
-            <li>
-               <a href="#contact">Contact</a>
-            </li>
-         </ul>
-         <ul class="language">
-            <li>
-               <a href="#index.html">EN</a>
-            </li>
-            <li>
-               <a href="#pt.html">PT</a>
-            </li>
-         </ul>
+      <nav class="nav">
+         <label for="toggle">&#9776;</label>
+         <input type="checkbox" id="toggle">
+         <div class="menu">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+         </div>
       </nav>
 
       <div class="header-container">
-         <div class="picture">
-            <img src="ynara.jpg" alt="Profile picture">
+         <div class="info">
+            <img src="./images/profile-pic.jpg" alt="Profile picture">
             <h1>Ynara Oliveira</h1>
+            <h3><a href="https://www.linkedin.com/in/ynaraoliveira/" target="_blank">Frontend Developer</a></h3>
+            <div class="language">
+               <a href="./index.html" class="english current">EN</a>
+               <a href="./pt.html" class="portuguese">PT</a>
+            </div>
          </div>
          <div class="description">
-            <p>Hi, my name is Ynara. I am a frontend developer with experience in building web applications applying
+            <p>Hi, my name is Ynara. I am a frontend developer with experience in
+               building web applications applying
                HTML, CSS, SASS,
                Bootstrap, JavaScript, React and Git. Throughout my projects I have also used SCRUM and SEO.</p>
             <p>I am a life-long learner and problem-solving oriented person. As a developer, I seek to deliver a
@@ -52,7 +45,6 @@
          </div>
       </div>
    </header>
-
 </body>
 
 </html>

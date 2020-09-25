@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f2f2f2;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Rock Salt", cursive;
+}
+
+.up {
+  color: rgba(14, 17, 21, 0.85);
+  width: 50px;
+  font-size: 1.1rem;
+  height: 50px;
+  position: fixed;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  background: #8c7c42;
+  border-radius: 50%;
+  opacity: 0.85;
+  text-align: center;
+}
+.up span {
+  position: relative;
+  top: 30%;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Concert One", cursive;
+  height: 90vh;
+}
+header input.toggle {
+  display: none;
+}
+header input.toggle:checked + .menu-mobile {
+  transform: translateX(0%);
+}
+header input.toggle:checked ~ .content-header {
+  margin-top: 2rem;
+}
+header .menu-mobile {
+  background: #8c7c42;
+  background-position-y: bottom;
+  position: relative;
+  transform: translateX(-100%);
+  width: 65%;
+  transition: 400ms ease-out;
+}
+header .menu-mobile .menu-icon {
+  position: absolute;
+  top: 0.9rem;
+  right: -4.5rem;
+}
+header .menu-mobile .menu-icon:hover {
+  transform: scale(1.1);
+}
+header .menu-mobile ul {
+  padding: 0.625rem 0.5rem;
+}
+header .menu-mobile li {
+  border-bottom: 1px solid #9c8e59;
+}
+header .menu-mobile a {
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  transition: color 200ms;
+}
+header .menu-mobile a:hover {
+  color: rgba(0, 0, 0, 0.85);
+}
+header .menu-mobile a img {
+  margin-right: 0.625rem;
+}
+header .menu-mobile a img:hover {
+  transform: scale(1.1);
+}
+header nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  background: rgba(14, 17, 21, 0.85);
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+}
+header nav li {
+  margin-left: 1.5rem;
+}
+header nav li:nth-child(1) {
+  margin-left: 0;
+}
+header nav a {
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+  padding: 1rem 1.2rem;
+  transition: color 200ms linear;
+}
+header nav a:hover {
+  color: #8c7c42;
+}
+header .content-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .content-header h1 {
+  font-family: "Rock Salt", cursive;
+  transition: all 400ms;
+}
+header .content-header h1:hover {
+  background: linear-gradient(to right, #ff4754, #e82ce8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+header .content-header p.presentation {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  text-align: center;
+  max-width: 27rem;
+  margin: 0.6rem 0.8rem;
+}
+
+#about, #projects, #contact {
+  max-width: 85%;
+  margin: 3rem auto 2rem auto;
+}
+
+#about img {
+  width: 200px;
+}
+#about p {
+  margin-top: 0.5rem;
+  line-height: 1.7rem;
+  max-width: 36rem;
+}
+
+/*# sourceMappingURL=main.css.map */

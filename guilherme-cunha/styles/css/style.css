@@ -1,0 +1,362 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "pacifico";
+  src: url(../../fonts/Pacifico-Regular.ttf);
+}
+#menu-switch {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.menu .menu-org {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1920px;
+  background-color: #13133b;
+  background-image: url(../../images/pexels-felix-mittermeier-956999.jpg);
+  padding-top: 5px;
+}
+.menu .menu-org h2 {
+  color: white;
+  font-size: medium;
+  margin: 3px;
+}
+.menu .menu-org .menu-nav .menu-nav-list {
+  color: white;
+  font-size: medium;
+  text-decoration: none;
+  margin: 3px;
+}
+.menu .menu-org .menu-nav .menu-nav-list:hover {
+  color: teal;
+}
+.menu .menu-org .menu-icon {
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+.menu .menu-org .menu-icon:hover {
+  color: teal;
+}
+
+.main-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-header .header-org {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #13133b;
+  background-image: url(../../images/pexels-felix-mittermeier-956999.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1920px;
+}
+.main-header .header-org h1 {
+  font-family: "pacifico";
+  margin: 0;
+  text-decoration: underline;
+  font-size: 70px;
+}
+.main-header .header-org h2 {
+  margin-top: 5px;
+}
+.main-header .header-org nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.main-header .header-org nav a:hover {
+  color: teal;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.about-me .about-me-org {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  background-image: url(../../images/Polka-Dots.svg);
+  max-width: 1920px;
+  width: 100%;
+}
+.about-me .about-me-org .about-me-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about-me .about-me-org .about-me-image .me {
+  width: 450px;
+  height: 450px;
+  margin-right: 40px;
+}
+.about-me .about-me-org .about-me-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.about-me .about-me-org .about-me-content .title {
+  color: white;
+}
+.about-me .about-me-org .about-me-content .text {
+  color: white;
+  width: 550px;
+}
+
+.previus-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.previus-pages .previus-pages-org {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+  width: 100%;
+  max-width: 1920px;
+}
+.previus-pages .previus-pages-org .text-section-2 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  margin-top: 10px;
+}
+.previus-pages .previus-pages-org p {
+  text-align: center;
+  color: white;
+  margin: 3px 0 3px 0;
+}
+.previus-pages .previus-pages-org .previus-image-org {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.previus-pages .previus-pages-org .previus-image-org .previus-pages-image {
+  height: 300px;
+  width: 600px;
+  margin-bottom: 20px;
+}
+.previus-pages .previus-pages-org .previus-image-org .previus-pages-image:hover {
+  background-color: #094646;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer h2 {
+  color: white;
+}
+.footer .icon-org {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .icon-org .icon {
+  color: white;
+  font-size: 50px;
+  margin: 10px;
+}
+.footer .icon-org .icon:hover {
+  color: teal;
+}
+
+@media (max-width: 1218px) {
+  .previus-pages .previus-pages-org .previus-image-org .previus-pages-image {
+    height: 240px;
+    width: 500px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .about-me .about-me-org .about-me-image .me {
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
+  }
+  .about-me .about-me-org .about-me-content .text {
+    color: white;
+    width: 390px;
+  }
+
+  .previus-pages .previus-pages-org .previus-image-org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previus-pages .previus-pages-org .previus-image-org .previus-pages-image {
+    height: 240px;
+    width: 500px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 770px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 128, 128, 0.671);
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .menu .menu-org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-image: none;
+    padding-top: 0;
+  }
+  .menu .menu-org h2 {
+    font-size: xx-large;
+  }
+  .menu .menu-org .menu-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu .menu-org .menu-nav .menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e2b2b;
+    width: 90%;
+    font-size: xx-large;
+  }
+  .menu .menu-org .menu-icon {
+    display: flex;
+    position: absolute;
+    right: -40px;
+    top: 10px;
+  }
+
+  #menu-switch:checked + .menu {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 767px) {
+  .main-header .header-org h1 {
+    font-size: 50px;
+  }
+
+  .about-me .about-me-org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me .about-me-org .about-me-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me .about-me-org .about-me-image .me {
+    width: 200px;
+    height: 200px;
+    margin-right: 0px;
+  }
+  .about-me .about-me-org .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me .about-me-org .about-me-content .text {
+    text-align: center;
+    color: white;
+    width: 390px;
+  }
+
+  .previus-pages .previus-pages-org .previus-image-org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previus-pages .previus-pages-org .previus-image-org .previus-pages-image {
+    height: 200px;
+    width: 400px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 424px) {
+  .main-header .header-org h1 {
+    font-size: 40px;
+  }
+
+  .about-me .about-me-org .about-me-content .text {
+    color: white;
+    width: 300px;
+  }
+
+  .previus-pages .previus-pages-org .previus-image-org {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previus-pages .previus-pages-org .previus-image-org .previus-pages-image {
+    height: 150px;
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

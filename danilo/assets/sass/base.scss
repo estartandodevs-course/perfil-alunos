@@ -1,0 +1,179 @@
+$color-text: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  height: 100%;
+  font-family: "Fredericka the Great", cursive;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-bg {
+  background: #000;
+  .logo {
+    margin-left: 30px;
+    align-self: center;
+    h3 {
+      font-size: 2.6rem;
+      color: $color-text;
+    }
+  }
+}
+
+.menu {
+  flex: 1;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    li {
+      margin-right: 20px;
+      padding: 10px;
+      img {
+        width: 50px;
+        padding: 5px;
+        &:hover {
+          background-color: #fff;
+          border-radius: 30%;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  .banner-title h1,
+  .banner-title h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .banner-img img {
+    width: 200px;
+    margin-top: 20px;
+  }
+}
+.black {
+  padding: 40px;
+  background: #000;
+}
+
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
+  h3,
+  p {
+    text-align: center;
+    color: $color-text;
+  }
+  h2 {
+    font-size: 2.6rem;
+    color: $color-text;
+  }
+  h3 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+    align-self: flex-end;
+  }
+}
+
+.content-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  img {
+    width: 300px;
+  }
+  p {
+    width: 400px;
+    font-size: 1.8rem;
+    color: $color-text;
+  }
+}
+
+.white {
+  padding: 40px;
+  h2,
+  h3,
+  p {
+    color: #000;
+  }
+}
+.content-port img {
+  width: 400px;
+  margin: 20px;
+  flex: 1;
+  border: 1px solid #fff;
+}
+.team {
+  margin-top: 20px;
+}
+.team img {
+  width: 120px;
+  border-radius: 30%;
+}
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .menu {
+  transform: translateX(0px);
+}
+
+.icon img{
+  width: 50px;
+}
+@media(max-width: 805px) {
+  .logo{
+    display: none;
+  }
+  .banner .banner-img img{
+    width: 150px;
+  }
+ 
+  .content-port img {
+    width: 40%;
+  }
+  .team{
+    text-align: center;
+  }
+  .menu ul{
+    text-align: center;
+    display: inline-block;
+  }
+  .menu {
+    position: fixed;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+    background: #000;
+  }
+  .mobile {
+    position: absolute;
+    right: -37px;
+    font-size: 30px;
+    color: rgb(7, 193, 250);
+    cursor: pointer;
+  } 
+  
+}

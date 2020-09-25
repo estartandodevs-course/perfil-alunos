@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "pacifico";
+  src: url(../../../../fonts/Pacifico-Regular.ttf);
+}
+.portfolio {
+  background-color: black;
+  color: white;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.portfolio:hover {
+  color: teal;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 204, 255, 0.5), rgba(0, 0, 255, 0.5)), url(../../images/Large-Triangles.svg);
+  background-color: #0a0a47;
+  width: 100%;
+}
+.main-header .title {
+  text-align: center;
+}
+.main-header .title h1 {
+  font-family: "pacifico";
+  color: white;
+  margin: 0;
+}
+.main-header .title h2 {
+  font-size: medium;
+  font-family: "pacifico";
+  color: white;
+  margin-top: 3px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.article .article-header {
+  text-align: center;
+}
+.article .text-org {
+  width: 70%;
+}
+.article .text-org .text {
+  text-align: center;
+}
+
+.image-org {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.image-org .image {
+  max-width: 800px;
+  max-height: 500px;
+}
+.image-org iframe {
+  width: 1280px;
+  height: 720px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+nav .link {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+  transition: all 0.5s ease-out;
+  width: 100%;
+  margin: 3px;
+  background-color: #a8a8a8;
+}
+nav .link:hover {
+  background-color: #2525af;
+}
+
+@media (max-width: 1439px) {
+  .image2 {
+    max-width: 600px;
+    max-height: 350px;
+  }
+}
+@media (max-width: 1023px) {
+  .image-org iframe {
+    width: 640px;
+    height: 360px;
+  }
+}
+@media (max-width: 600px) {
+  .image-org .image {
+    max-width: 400px;
+    max-height: 400px;
+  }
+
+  .image2 {
+    width: 400px;
+    height: 289px;
+  }
+}
+@media (max-width: 423px) {
+  .image-org .image {
+    width: 300px;
+    height: 300px;
+  }
+  .image-org iframe {
+    width: 370px;
+    height: 208px;
+  }
+
+  .image2 {
+    width: 300px;
+    height: 216.75px;
+  }
+}
+@media (max-width: 375px) {
+  .image-org iframe {
+    width: 310px;
+    height: 174px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

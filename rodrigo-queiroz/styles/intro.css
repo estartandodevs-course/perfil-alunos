@@ -1,0 +1,42 @@
+.white-text {
+    color: white;
+}
+.red-text {
+    color: red;
+}
+.intro-container {
+    position: relative;
+    left: 15%;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.intro-text {
+    font-size: 4.5em;
+    font-weight: bold;
+    display: inline-block;
+    transition: all .4s ease-out;
+}
+.intro-text:hover {
+    transform: translateX(10%);
+}
+#about-text::after {
+    content: "OLÁ.";
+}
+.intro #about-text:hover::after {
+    content: "SOBRE";
+}
+
+.intro #project-text::after {
+    content: "SOU O";
+}
+.intro #project-text:hover::after {
+    content: "PROJETOS";
+}
+.intro #contact-text::after {
+    content: "RODRIGO";
+}
+.intro #contact-text:hover::after {
+    content: "CONTATO";
+}

@@ -1,0 +1,129 @@
+$font-sizeh1: 2rem;
+$font-sizeh2: 1.3rem;
+$border-projetos: 2px solid #000;
+
+@mixin flexbox($justify, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* DEFAULT */
+    section#home,
+    section#sobre,
+    section#projetos,
+    section#contato {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* DEFAULT */
+    section {
+        header {
+            h1 {
+                font-size: $font-sizeh1;
+                margin: 2rem 0;
+            }
+        }
+    }
+
+    /* NAVBAR */
+    section#home {
+        nav {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* INDEX PRINCIPAL */
+        div.welcome {
+            p {
+                font-size: $font-sizeh2;
+            }
+
+            h1 {
+                font-size: 5rem;
+                letter-spacing: 0.4rem;
+                margin: 0 1rem;
+            }
+
+            h2 {
+                font-size: $font-sizeh2;
+            }
+        }
+
+        div.btnSobre {
+            i {
+                font-size: $font-sizeh1;
+            }
+        }
+    }
+
+    /* SOBRE */
+    section#sobre {
+        div.sobre {
+            img {
+                width: 150px;
+                margin: 1.5rem
+            }
+
+            p {
+                font-size: 0.8rem;
+                margin: 0.5rem 2rem;
+            }
+        }
+
+        div.skill {
+            @include flexbox(center, wrap);
+            margin: 2rem 3rem;
+
+            i {
+                margin: 0.5rem;
+            }
+        }
+    }
+
+    /* PROJETOS */
+
+    section#projetos {
+        div.projetos {
+            figure {
+                border: $border-projetos;
+
+                figcaption {
+                    font-size: 1rem;
+                    margin: 1px 0;
+                }
+            }
+
+            div.projetosImg {
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    /* CONTATO */
+    section#contato {
+        div.contato {
+            div.social {
+                a {
+                    margin: 0.5rem;
+                }
+
+                i {
+                    font-size: $font-sizeh1;
+                    margin: 2rem 0;
+                }
+            }
+
+            div.wpp {
+                margin: 0rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: all .6s ease-out;
+    z-index: 1;
+}
+input.toggle-sidemenu {
+    display: none;
+}
+.toggle-sidemenu {
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+    z-index: 2;
+}
+#toggle-sidemenu:checked + label svg {
+    transform: rotate(180deg);
+}
+#toggle-sidemenu:checked ~ .nav-container {
+    visibility: visible;
+    transition: all .6s ease-out;
+    background-image: linear-gradient(180deg, #e4171736, #000)
+}
+#toggle-sidemenu:checked ~ .nav-container .nav-text {
+    display: inline-block;
+    transition: all .6s ease-out;
+}
+.nav-container {
+    height: 100%;
+    visibility: hidden;
+    transition: all .6s ease-out;
+}
+.nav-links {
+    position: relative;
+    top: calc(var(--icon-size) + 1vmin);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    z-index: 2;
+}
+.nav-text {
+    display: none;
+}
+.nav-icon {
+    width: var(--icon-size);
+    height: var(--icon-size);
+    transition: all .6s ease-in-out;
+    margin: 0 1px 0 0;
+}
+.icon-fill {
+    fill: #fff;
+}
+.icon-stroke {
+    stroke: #fff;
+}
+.nav-link:hover .icon-fill, .toggle-sidemenu:hover svg {
+    fill: #10ff10;
+}
+.nav-link:hover .icon-stroke {
+    stroke: #10ff10;
+}
+.nav-link:hover .nav-text {
+    color: #10ff10;
+    transition: all .6s ease-in-out;
+}
+nav a {
+    color: white;
+}
+.nav-link {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1vmin;
+    align-items: center;
+}

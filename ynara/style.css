@@ -13,32 +13,61 @@
 body {
    background: var(--bg-color);
    color: var(--text-color);
-   font-family: 'Work Sans',
-      sans-serif;
+   font-family: 'Work Sans', sans-serif;
+   width: 90vw;
+   margin: 0 auto;
 }
 
 #about {
    height: 100vh;
 }
 
-.navbar {
-   display: flex;
-   justify-content: space-around;
-   font-size: 1.5rem;
+.nav {
+   text-align: center;
+   height: 70px;
+   font-size: 1.3rem;
+}
+
+.menu a {
+   text-decoration: none;
+   color: var(--text-color);
+   margin: 0 12px;
+   line-height: 70px;
+}
+
+label {
+   margin: 0 40px 0 0;
+   font-size: 1.8rem;
+   line-height: 70px;
+   display: none;
+   width: 26px;
+}
+
+#toggle {
+   display: none;
+}
+
+.nav a:hover {
+   border-bottom: 1px solid var(--text-color);
+}
+
+#about .english,
+#about .portuguese {
+   color: var(--text-color);
+   border: 1px solid var(--text-color);
+   padding: 0.5rem;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.language {
    padding: 2rem;
 }
 
-.navbar .menu-items li,
-.navbar .language li {
-   display: inline-block;
-   padding: 0 1rem;
-   font-size: 1.2rem;
-}
-
-.navbar .menu-items li a,
-.navbar .language li a {
-   text-decoration: none;
-   color: var(--text-color);
+#about .language a.current {
+   background: var(--text-color);
+   border: 1px solid var(--text-color);
+   color: var(--bg-color);
 }
 
 #about img {
@@ -51,14 +80,20 @@ body {
    display: flex;
 }
 
-.picture {
+.info {
+   width: 30%;
    margin: 5rem;
    text-align: center;
 }
 
-.picture h1 {
-   padding-top: 1.8rem;
+.info h1 {
+   padding: 1.8rem 0 1rem;
    font-size: 2.5rem;
+}
+
+.info h3 a {
+   text-decoration: none;
+   color: var(--text-color);
 }
 
 .description {
@@ -70,4 +105,45 @@ body {
    line-height: 1.8;
    font-size: 1.1rem;
    text-align: justify;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 850px) {
+   label {
+      display: block;
+      cursor: pointer;
+   }
+
+   .menu {
+      text-align: center;
+      width: 100%;
+      display: none;
+   }
+
+   .menu a {
+      display: block;
+      border-bottom: 1px solid var(--primary-color);
+      margin: 0;
+   }
+
+   #toggle:checked+.menu {
+      display: block;
+   }
+
+   .header-container {
+      margin-top: 200px;
+      display: block;
+   }
+
+   .header-container .info {
+      width: 50%;
+      margin: 0 auto;
+   }
+
+   .header-container .description {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 2rem;
+   }
 }

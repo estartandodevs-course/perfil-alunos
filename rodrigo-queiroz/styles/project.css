@@ -1,0 +1,38 @@
+.whole-screen {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    width: 27vw;
+    height: 40vh;
+    box-sizing: border-box;
+    background-color: #0a1707;
+    border: 5px solid #0a1707;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 2%;
+}
+.card a{
+    color: var(--font-color);
+    height: 100%;
+    width: 100%;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+figcaption {
+    position: absolute;
+    bottom: 2%;
+    font-size: 0.8em;
+    text-align: center;
+    display: block;
+    padding: 1% 0;
+    background-color: #0a1707;
+}

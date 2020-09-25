@@ -1,0 +1,167 @@
+/* styles do side menu e da home */
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url("./fonts/Alegreya/Alegreya-Bold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.side-menu {
+    height: 100%;
+    width: 15%;
+    background-color: #0f123b;
+    transform: translatex(-100%);
+    transition: transform 0.3s ease-out, background-color 1s ease-out;
+
+}
+
+.menu-item{
+    background-color: #0d0625;
+    padding:20px;
+    margin-bottom:3px;
+    transition: transform 0.3 ease-out;
+
+}
+
+.menu-item:hover{
+    background-color: #7e7e7e;
+}
+
+.side-menu nav{
+    display:block;
+    position: relative;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+    font-family:"Alegreya";
+}
+
+.menu-icon {
+    position:absolute;
+    right:-37px;
+    font-size:30px;
+    color: white;
+}
+
+#toggle{
+    display:none;
+}
+
+#toggle:checked + .side-menu {
+    transform:translateX(0px)
+
+}
+
+.body-home{
+    background-color: #0d0625;
+    display: flex;
+}
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#p{
+    color: white;
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+    font-family: "Alegreya";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #0f123b ;
+    padding: 40px;
+    margin-left: 70px;
+}
+
+#icons {
+    display:flex;
+    color: white;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+#icons img{
+    margin:20px;
+}
+
+#apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin-right:0;
+}
+
+@media screen and (max-width:915px)
+{
+    .body-home{
+        background-color: #0d0625;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item{
+    background-color: transparent;
+    margin:auto;
+    }
+    .menu-icon{
+    display: none;
+    }
+    
+    .side-menu {
+        height: 10%;
+        width: 100%;
+        transform: translateX(0px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+
+    .side-menu nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .page{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .fotos {
+        display: block;
+        width: 40%;
+        height: 40%;
+    }
+
+    #p{
+        font-size: 14px;
+        margin: 0;
+        padding: 20px;
+    }
+    .menu-item a {
+        font-size: 10px;
+    }
+
+    #icons {
+        display:flex;
+        flex-direction: row;
+    }
+}
