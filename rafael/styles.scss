@@ -1,0 +1,144 @@
+@import "./variables.scss";
+
+body {
+	margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 17.6px;
+	background-color: #fbfbfb;
+}
+
+.header {
+	background-color: $background-header;
+	position: fixed;
+	width: 100%;
+    z-index: 3;
+    border-bottom-color: #fff;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: $background-header;
+        a {
+            display: block;
+            padding: 20px;
+            border-right: 1px solid #fff;
+            text-decoration: none;
+        }
+        a:hover {
+            background-color: #eee;
+        }
+    }
+    .logo {
+        float: left;
+        display: block;
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+    .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+    }
+    .menu-icon {
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+        .nav-icon {
+            background: $background-nav;
+            display: block;
+            height: 2px;
+            width: 18px;
+            position: relative;
+            transition: background .2s ease-out;
+        }
+        .nav-icon:before {
+            background: $background-nav;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            top: 5px;
+        }
+        .nav-icon:after {
+            background: $background-nav;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            top: -5px;
+        }
+    }
+    .menu-btn {
+        display: none;
+    }
+    .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+    .menu-btn:checked ~ .menu-icon {
+        .nav-icon {
+            background: transparent;
+        }
+        .nav-icon:before {
+            transform: rotate (-45deg);
+            top: 0;
+        }
+        .nav-icon:after {
+            transform: rotate (45deg);
+            top: 0;
+        }
+    }
+}
+
+.sobre-mim {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+p {
+	margin: auto;
+	width: 60%;
+	text-align: justify;
+	color: $text-color;
+}
+
+.title {
+	text-align: center;
+	vertical-align: 80%;
+	color: $text-color;
+}
+
+img {
+	border-radius: 50%;
+}
+
+a {
+	color: $background-nav;
+}
+
+@media (min-width: 48em) {
+    .header {
+        li {
+            float: left;
+            a {
+                padding: 20px 30px;
+            }
+        }
+        .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+        }    
+        .menu-icon {
+            display: none;
+        }
+    }
+}
