@@ -1,0 +1,41 @@
+$color: white;
+$bg-img: url(../../assets/img/bg.jpg);
+$bg-color: #101010;
+
+@mixin flexbox($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: $bg-img;
+    background-repeat: no-repeat;
+    background-color: $bg-color;
+    color: $color;
+    width: 100%;
+}
+
+a {
+    color: $color;
+    text-decoration: none;
+}
+
+a:visited {
+    color: $color;
+}
+
+footer {
+    @include flexbox(row, center, center);
+    height: 100px;
+    width: 100vw;
+}
+
+footer p {
+    letter-spacing: 0.13rem;
+}

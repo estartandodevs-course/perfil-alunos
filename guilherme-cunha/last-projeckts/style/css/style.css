@@ -1,0 +1,153 @@
+.portfolio {
+  background-color: black;
+  color: white;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.portfolio:hover {
+  color: teal;
+}
+
+body {
+  background-color: #f3f3f3;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+.title {
+  background-image: url(../../images/Large-Triangles.svg);
+  background-color: #0c0c4b;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.up-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.up-nav .navegation {
+  background-color: #3a3a79;
+  color: #ffffff;
+  text-decoration: unset;
+  font-size: 20px;
+  margin: 0px 0px 20px;
+  padding: 0 60px;
+}
+.up-nav .navegation:hover {
+  color: #4a8dda;
+}
+.up-nav .current-page {
+  background-color: #0c0c4b;
+}
+
+.org {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.org p {
+  max-width: 680px;
+}
+.org .text-news {
+  color: black;
+  text-decoration: unset;
+  margin-right: 10%;
+}
+.org .img-n {
+  width: 680px;
+  height: 381px;
+  margin-bottom: 15%;
+}
+
+.s-news {
+  margin: 10px 0 0 40px;
+  padding-top: 40px;
+}
+.s-news .s-text-news {
+  color: black;
+  text-decoration: unset;
+  font-size: small;
+}
+.s-news .s-picture {
+  padding-left: 5%;
+}
+
+.sponsors {
+  text-align: center;
+  border-top: 1px dashed #0c0c4b;
+}
+
+.disclaimer {
+  text-align: center;
+  width: 100%;
+  font-size: small;
+  border-top: 1px dashed white;
+  background: url(../../images/Large-Triangles.svg) #0c0c4b 2px 2px;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  .org .img-n {
+    width: 400px;
+    height: 220px;
+  }
+
+  .s-news .s-picture {
+    max-width: 400px;
+    height: 220px;
+  }
+}
+@media (max-width: 1023px) {
+  .org {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-news {
+    margin: 0;
+  }
+
+  .org .img-n {
+    margin-bottom: 2px;
+  }
+
+  .main-news1 {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .up-nav .navegation {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  .sponsors .image-p {
+    width: 200px;
+    height: 100px;
+  }
+
+  .title .logo {
+    width: 300px;
+    height: 180px;
+  }
+}
+@media (max-width: 424px) {
+  .org .img-n {
+    width: 300px;
+    height: 215px;
+  }
+
+  .s-news .s-picture {
+    max-width: 300px;
+    height: 215px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

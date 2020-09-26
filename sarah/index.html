@@ -7,13 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
-  <body class="container">
+  <body>
     <header>
+      <input type="checkbox" name="toggle" id="toggle">
       <div class="menu-navegacao">
         <nav>
-          <a href="#sobre">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Contato</a>
+          <label class="menu-icone" for="toggle">&#9776</label>
+          <div class="menu-item"><a href="#sobre">Sobre</a></div>
+          <div class="menu-item"><a href="#">Projetos</a></div>
+          <div class="menu-item"><a href="#">Contato</a></div>
         </nav>
       </div>      
     </header>
@@ -43,10 +45,8 @@
       </div>
     </section>
     <section id="sobre">
-      <div class="sobre-foto">
+      <div class="sobre-conteudo">
         <img src="img/foto.png" alt="foto-perfil">
-      </div>
-      <div class="sobre-texto">
         <h1>Sobre : </h1>
         <p>
           Tenho <span>25 anos</span>, moro em <span>Osasco - SP</span>, sou formada em <span>ciências contábeis</span>, e atualmente estou no segundo semestre de <span>Análise e Desenvolvimento de Sistemas</span>, sempre fui <span>apaixonada por tecnologia</span>, sou a pessoa que tem um App pra cada situação e adoro novidades da área tech. 

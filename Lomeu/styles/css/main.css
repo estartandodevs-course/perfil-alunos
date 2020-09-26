@@ -1,0 +1,49 @@
+/*IMPORTS*/
+@import url("../css/reset.css");
+@import url("../css/default.css");
+@import url("../css/nav.css");
+@import url("../css/sobre.css");
+@import url("../css/projetos.css");
+@import url("../css/contato.css");
+@import url("../css/mediaquerie.css");
+/*MAIN SCSS*/
+header h1 {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  margin: 2rem 0;
+}
+header h1:hover {
+  color: #21bf73;
+  cursor: pointer;
+}
+
+section#home {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+div.welcome h1 {
+  font-size: 6.5rem;
+  letter-spacing: 1rem;
+}
+div.welcome h1:hover {
+  color: #21bf73;
+  cursor: pointer;
+}
+div.welcome h2,
+div.welcome p {
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+div.welcome .btnSobre {
+  margin-bottom: 2rem;
+}
+div.welcome .btnSobre a:hover {
+  color: #21bf73;
+}
+
+/*# sourceMappingURL=main.css.map */

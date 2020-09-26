@@ -1,0 +1,47 @@
+$color-icon: white;
+$hover-color: #21bf73;
+
+@mixin flexbox($direction, $justify, $align, $text) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $text
+}
+
+section#sobre {
+    min-height: 100vh;
+    @include flexbox(column, center, center, center);
+
+    div.sobre {
+        max-width: 700px;
+
+        img {
+            width: 200px;
+            border-radius: 50%;
+            margin: 4rem 0;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.07rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+    }
+
+    div.skill {
+        margin: 3.5rem;
+
+        i {
+            color: $color-icon;
+            margin: 0 1rem;
+        }
+
+        i:hover {
+            color: $hover-color;
+            cursor: pointer;
+        }
+    }
+}

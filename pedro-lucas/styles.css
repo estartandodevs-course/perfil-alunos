@@ -21,7 +21,17 @@ body {
     background-attachment: fixed;
     color: white;
 }
-
+header {
+    margin-bottom: 45rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
 a {
     text-decoration: none;
     color: #f9eac3;
@@ -29,7 +39,11 @@ a {
 
 .main-content {
     margin-left: 5rem;
-  
+    padding-top: 2rem;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
 }
 
 .nav-list {
@@ -40,8 +54,14 @@ a {
     align-items: center;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
+
+.main-content p {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .nav-item {
     width: 100%;
@@ -57,7 +77,6 @@ a {
     width: 5rem;
     height: 100vh;
     position: fixed;
-    top: 0;
     transition: width 200ms ease;
 }
 
@@ -93,4 +112,23 @@ a {
 .link-text {
     display: none;
     margin-left: 1rem;
+}
+
+
+@media (max-width: 350px) {
+    header {
+        text-align: left;
+        display: block;
+        padding: 0;
+    }
+    .nav-bar {
+        width: 3rem;
+    }
+    .nav-link svg {
+        min-width: 1.5rem;
+        margin: 0 0.8rem;
+    }
+    .nav-bar:hover {
+        width: 12rem;
+    }
 }

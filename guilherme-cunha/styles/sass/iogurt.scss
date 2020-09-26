@@ -1,0 +1,545 @@
+$details-color-1:  rgb(64, 109, 233);
+$details-color-2: rgb(184, 184, 184);
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #d9e7ff;
+}
+
+@mixin flexbox ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;    
+}
+.portfolio {
+    background-color: black;
+    color: white;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.portfolio:hover {
+    color: teal;
+}
+
+#menu-switch {
+    display: none;
+}
+
+.menu {
+    @include flexbox(row, center, center);
+    width: 100%;
+    .menu-org {
+        @include flexbox(row, flex-start, center);
+        width: 100%;
+        background-color: rgb(3, 133, 219);
+        padding-top: 5px;
+        #orkut-icon {
+            margin: 1px 15px 1px 5px;
+        }
+        .td-options {
+            color: white;
+            margin-right: 15px;
+        }
+        .r-top{
+            display: flex;
+            position: absolute;
+            right: 5%;
+            .email-sair {
+                color: white;
+                margin-right: 10px;
+            }
+            #search{
+                background-color: rgb(19, 32, 219);
+                width: 180px;
+                height: 40px;
+                margin: 5px;
+                p {
+                    background-color: white;
+                    padding: 1px 2px 1px 2px;
+                    margin: 5px 5px 5px 2px;
+                    text-align: center;
+                    color: rgb(184, 184, 184);
+                }
+            }
+        }
+        h2{
+            color: $details-color-2;
+            font-size: medium;
+            margin: 3px;
+        }
+        .menu-icon {
+            color: $details-color-2;
+            font-size: 30px;
+            display: none;
+        }
+        .menu-icon:hover {
+            color: rgb(219, 26, 210);
+        }
+        #menu1 {
+            display: none;
+            border-bottom: 1px solid $details-color-2;
+            margin: 0 5px 0 5px;
+            .font-menu {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 0 2px 5px;
+                .iconC {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 3px 0 0;
+                }
+            }
+        }
+        .menu2 {
+            display: none;
+            margin: 5px 5px 5px 5px;
+            border: 1px solid $details-color-2;
+            background-color: rgb(214, 223, 252);
+            .font-menu {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 0 2px 5px;
+            }
+            .font-menu-2 {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 5px 2px 5px;
+                border-bottom: 1px solid $details-color-2;
+            }
+            .iconC {
+                width: 15px;
+                height: 15px;
+                margin: 0 3px 0 0;
+            }
+        }
+    }
+}
+
+.page-organization {
+    @include flexbox(row, center, flex-start);
+    #left-side {
+        background-color: white;
+        margin: 5px 10px 0 0;
+        #profile-picture {
+            height: 180px;
+            width: 150px;
+            padding: 0 50px 0 50px;
+            margin-top: 5px;
+        }
+        #profile-right {
+            border-bottom: 1px solid $details-color-2;
+            margin: 0 5px 0 5px;
+            h3{
+                color: $details-color-1;
+                margin: 20px 5px 2px 5px;
+                border-top: 1px solid $details-color-2;
+            }
+            .text-right {
+                font-size: medium;
+                color: $details-color-2;
+                margin: 0 0 0 5px;
+            }
+        }
+        #menu1 {
+            border-bottom: 1px solid $details-color-2;
+            margin: 0 5px 0 5px;
+            .font-menu {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 0 2px 5px;
+                .iconC {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 3px 0 0;
+                }
+            }
+        }
+        .menu2 {
+            margin: 5px 5px 5px 5px;
+            border: 1px solid $details-color-2;
+            background-color: rgb(214, 223, 252);
+            .font-menu {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 0 2px 5px;
+            }
+            .font-menu-2 {
+                font-size: medium;
+                color: $details-color-1;
+                margin: 2px 5px 2px 5px;
+                border-bottom: 1px solid $details-color-2;
+            }
+            .iconC {
+                width: 15px;
+                height: 15px;
+                margin: 0 3px 0 0;
+            }
+        }
+    }
+
+    .perfil {
+        padding: 3px 12px 20px 3px; 
+        margin: 5px 0 0 0;
+        background-color: white;
+        h1 {
+            margin-bottom: 0;
+        }
+        #inicio {
+            color: $details-color-1;
+        }
+        h2 {
+            margin-top: 0;
+            font-size: small;
+            color: $details-color-2;
+        }
+        #box {
+            border: 1px solid $details-color-2; 
+            width: 380px;
+            #box_text {
+                margin: 0 0 0 5px;
+                font-size: medium;
+                color: $details-color-2;
+                button {
+                    color: $details-color-1;
+                    background-color: white;
+                    border: 2px solid $details-color-2;
+                    margin: 0 0 0 2px;
+                }
+            }
+        }
+
+        #things-border {
+            margin-top: 20px;
+            border-top: 1px solid $details-color-2;
+            border-bottom: 1px solid $details-color-2;
+            .texts {
+                font-size: medium;
+                color: $details-color-2;
+                .things-text {
+                    margin: 0 5px 0 0;
+                    .icon{
+                        width: 30px;
+                        height: 15px;
+                        margin: 0;
+                    }
+                    .iconC{
+                        width: 15px;
+                        height: 15px;
+                        margin: 0 3px 0 0;
+                    }
+                }
+            }
+        }
+        #social {
+            font-size: medium;
+            color: white;
+            background-color: rgb(88, 110, 172);
+            width: 40px;
+            margin-left: 10px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        #about-you {
+            border-top: 1px solid $details-color-2;
+            #aby1 {
+                margin: 10px 0 0 0;
+            }
+            %form-component {
+                font-size: medium;
+                color: rgb(153, 153, 153);
+                margin: 0;
+                height: 40px;
+                padding-top: 5px;
+                padding-left: 50px;
+            }
+            .about-you-impar{
+                background-color: rgb(186, 203, 250);
+                @extend %form-component;
+            }
+            .about-you-par{
+                background-color: rgb(214, 223, 252);
+                @extend %form-component;
+            }
+        }
+    }
+
+    #right-side {
+        margin: 5px 0 0 10px;
+        #friends {
+            background-color: white;
+            padding: 0 10px 2px 0;
+            margin-bottom: 5px;
+            p {
+                margin: 0;
+                color: $details-color-1;
+                font-size: medium;
+            }
+            #adding-friends {
+                font-size: small;
+                color: rgb(235, 235, 235);
+                background-color: rgb(180, 208, 252);
+                width: max-content;
+                margin: 3px 3px 10px 3px;
+                padding: 2px;
+            }
+            button {
+                color: $details-color-1;
+                background-color: white;
+                border: 2px solid $details-color-2;
+                margin: 0 0 0 2px;
+            }
+        }
+        #community {
+            background-color: white;
+            padding: 0 0 2px 0;
+            p {
+                margin: 0;
+                color: $details-color-1;
+                font-size: medium;
+            }
+            #community-ajust {
+                @include flexbox(row, center, center);
+                .community-place {
+                    background-color: rgb(212, 211, 211) ;
+                    padding: 0;
+                    margin: 5px 2px 2px 2px;
+                    width: 70px;
+                    height: 110px;
+                }
+            }
+            #see-all {
+                font: small;
+                color: $details-color-1;
+                text-decoration: $details-color-1 underline;
+                margin: 0 0 0 5px;
+                button {
+                    color: $details-color-1;
+                    background-color: white;
+                    border: 2px solid $details-color-2;
+                    margin: 0 0 0 2px;
+                }
+            }
+        } 
+    }
+}
+
+@media (max-width: 956px) {
+    .menu {
+        @include flexbox(column, flex-start, flex-start);
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(3, 133, 219, 0.589);
+        transform: translateX(-100%);
+        transition: all .4s ease-in-out;
+        .menu-org {
+            @include flexbox(column, center, center);
+            background-color: transparent;
+            background-image: none;
+            padding-top: 0;
+            h2{
+                font-size: xx-large;
+            }
+            #orkut-icon {
+                width: 150px;
+                height: 75px;
+            }
+            #menu1 {
+                @include flexbox(column, center, center);
+                width: 100%;
+                border: none;
+                .font-menu {
+                    font-size: 25px;
+                }
+            }
+            .menu2 {
+                @include flexbox(column, center, center);
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                .font-menu-2 {
+                    font-size: 25px;
+                }
+                .font-menu {
+                    font-size: 25px;
+                }
+            }
+            .td-options {
+                background-color: rgb(4, 82, 134);
+                width: 90%;
+                font-size: 25px;
+                margin: 5px 0 5px 0;
+                text-align: center;
+            }
+            .r-top {
+                display: none;
+            }
+            .menu-icon {
+                display: flex;
+                position: absolute;
+                right: -40px;
+                top: 10px;
+            }
+        }
+    }
+    #menu-switch:checked + .menu{
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 947px) {
+    .page-organization {
+        @include flexbox(column, center, center);
+        #left-side {
+            @include flexbox(row, flex-start, flex-start);
+            flex-shrink: 1;
+            flex-basis: 630px 170px ;
+            background-color: white;
+            order: -2;
+            margin: 0;
+            #profile-picture {
+                height: 160px;
+                width: 140px;
+                padding: 0;
+                margin: 4px;
+            }
+            #profile-right {
+                border: none;
+                h3{
+                    font-size: xx-large;
+                    border: none;
+                }
+                .text-right {
+                    font-size: x-large;
+                }
+            }
+            #menu1 {
+                display: none;  
+            }
+            .menu2 {
+                display: none;
+            }
+        }
+        #right-side {
+            margin: 0;
+            margin-top: 5px;
+            order: -1;
+            @include flexbox(row, space-between, center);
+            width: 630px;
+            height: 205px;
+            #friends {
+                align-self: flex-start;
+                width: 49%;
+                @include flexbox(column, center, center);
+                padding: 0;
+                height: 100%;
+                margin: 0;
+            }
+            #community {
+                align-self: flex-start;
+                width: 49%;
+                height: 100%;
+                @include flexbox(column, center, center);
+            }
+
+        } 
+    }
+}
+@media (max-width: 636px) {
+    .page-organization {
+        #right-side { 
+            width: 100%;
+            height: 205px;
+            #friends {
+                #adding-friends {
+                    margin: 0;
+                    margin-bottom: 10px;
+                    padding: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            #community {
+                #community-ajust {
+                    @include flexbox(row, space-evenly, center);
+                    width: 100%;
+                    .community-place:nth-child(3) {
+                        display: none;
+                    }
+                }
+                h3 {
+                    margin: 3px 0 4px 0;
+                }
+            }
+
+        } 
+        .perfil {
+            padding: 0;
+        }
+    }
+}
+@media (max-width: 385px) {
+    .page-organization{
+        .perfil {
+            width: 100%;
+            h1 {
+                margin-bottom: 0;
+            }
+            #inicio {
+                color: $details-color-1;
+            }
+            h2 {
+                margin-top: 0;
+                font-size: small;
+                color: $details-color-2;
+            }
+            #box {
+                @include flexbox(row, space-between, center);
+                width: 90%;
+                #box_text {
+                    margin: 0 0 0 5px;
+                    font-size: 10px;
+                    color: $details-color-2;
+                    button {
+                        color: $details-color-1;
+                        background-color: white;
+                        border: 2px solid $details-color-2;
+                        margin: 0;
+                    }
+                }
+            }
+
+            #things-border {
+                .texts {
+                    font-size: small;
+                    color: $details-color-2;
+                }
+            }
+            #about-you {
+                %form-component {
+                    font-size: medium;
+                    padding-top: 5px;
+                    padding-left: 0;
+                }
+                .about-you-impar{
+                    background-color: rgb(186, 203, 250);
+                    @extend %form-component;
+                }
+                .about-you-par{
+                    background-color: rgb(214, 223, 252);
+                    @extend %form-component;
+                }
+            }
+        }
+    }
+}
+

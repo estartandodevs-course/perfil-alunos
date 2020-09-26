@@ -1,0 +1,61 @@
+$hover-color: #21bf73;
+$bg-color-drop: transparent;
+$bg-color-checked: #101010;
+
+@mixin flexbox($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+section {
+    nav {
+        @include flexbox(row, center);
+        font-size: 2rem;
+        height: 120px;
+    }
+
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+
+    a:hover {
+        color: $hover-color;
+    }
+
+    li {
+        margin: 20px 10px 5px 10px;
+    }
+
+    .drop-menu {
+        background-color: $bg-color-drop;
+        width: 100%;
+        transform: translateY(-60%);
+        transition: transform 0.4s ease-out, background-color 0.6s ease-out;
+    }
+
+    .menu-icon {
+        position: absolute;
+        bottom: 0px;
+        font-size: 30px;
+    }
+
+    .menu-icon:hover {
+        color: $hover-color
+    }
+
+    .drop-menu nav {
+        position: relative;
+    }
+
+    #toggle:checked+.drop-menu {
+        transform: translateY(0px);
+        background-color: $bg-color-checked;
+    }
+
+    #toggle {
+        display: none;
+    }
+}

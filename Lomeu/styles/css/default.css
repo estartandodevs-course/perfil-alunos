@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(../../assets/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-color: #101010;
+  color: white;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+}
+
+footer p {
+  letter-spacing: 0.13rem;
+}
+
+/*# sourceMappingURL=default.css.map */

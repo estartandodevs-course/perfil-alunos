@@ -1,3 +1,4 @@
+/* styles do side menu e da home */
 
 @font-face {
     font-family: 'Alegreya';
@@ -63,7 +64,87 @@ html, body {
 
 .body-home{
     background-color: #0d0625;
-    background-image: url(./img/DFFpng.png);
+    background-image: url(./img/DFF.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 45%;
+
+}
+/* styles contato */
+
+.body-contato{
+    background-color: #0d0625;
+    display: flex;
+}
+
+.fotos{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contato{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+}
+
+.page{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+@media screen and (max-width:915px)
+{
+    .body-contato{
+        background-color: #0d0625;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-item{
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    }
+    .menu-icon{
+    display: none;
+    }
+    
+    .side-menu {
+        height: 10%;
+        width: 100%;
+        transform: translateX(0px);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } 
+
+    .side-menu nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .fotos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        height: 50%;
+        margin:10px;
+    }
+
+    .menu-item a {
+        font-size: 10px;
+    }
 }

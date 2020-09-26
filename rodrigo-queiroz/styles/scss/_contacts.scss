@@ -1,0 +1,25 @@
+.contact {
+    svg{
+    width: 10vmin;
+    height: 10vmin;
+    margin: 0 20px;
+    fill: white;
+    }
+    svg:hover {
+        transition: fill .4s ease-out;
+        fill: #24dc32;
+    }
+    svg {
+        fill: white;
+    }
+}
+div.inspiration {
+    margin-top: 60vh;
+    p {
+        text-align: center;
+    }
+    a:hover {
+        transition: color .5s ease-out;
+        color: white;
+    }
+}
